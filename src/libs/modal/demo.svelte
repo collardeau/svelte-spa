@@ -6,8 +6,9 @@
 
 <script>
   import Modal from "./modal.svelte";
+  // perhaps in another component:
   import { getStore } from "../stores";
-  const openModal = () => getStore(name).open();
+  const openModal = getStore(name).open;
 </script>
 
 <Modal {name}>

@@ -2,16 +2,14 @@ import { writable } from "svelte/store";
 
 const stores = {};
 
-export function createStore(name, state, extend = () => ({})) {
+export function createStore(name = "", state = null, customize = x => x) {
   if (!name) {
     throw new Error("you need to pass a name to create a store");
   }
   if (stores[name]) {
-    console.warn(`the store "${name}" already exists`);
-    return stores[name];
+    throw new Error(`the store "${name}" already exists`);
   }
-  const defaultStore = writable(state);
-  const store = { ...defaultStore, ...extend(defaultStore) };
+  const store = customize(writable(state));
   stores[name] = store;
   return store;
 }
