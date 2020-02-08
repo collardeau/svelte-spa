@@ -1,5 +1,5 @@
 <script>
-  import DemoSection from "./DemoSection.svelte";
+  import KitchenSink from "./KitchenSink.svelte";
 </script>
 
 <style>
@@ -32,5 +32,5 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
-  <DemoSection />
+  <KitchenSink />
 </main>
