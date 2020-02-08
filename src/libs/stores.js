@@ -2,7 +2,7 @@ import { writable } from "svelte/store";
 
 const stores = {};
 
-export function createStore(name = "", state = null, customize = x => x) {
+export function initStore(name = "", state = null, customize = x => x) {
   if (!name) {
     throw new Error("you need to pass a name to create a store");
   }

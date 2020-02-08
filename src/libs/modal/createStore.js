@@ -1,4 +1,4 @@
-import { createStore } from "../stores";
+import { initStore } from "../stores";
 
 const initialState = { isOpen: false };
 
@@ -8,7 +8,4 @@ const customize = ({ subscribe, set }) => ({
   close: () => set({ isOpen: false })
 });
 
-const createModalStore = (name = "", state = initialState) =>
-  createStore(name, state, customize);
-
-export default createModalStore;
+export default (name = "") => initStore(name, initialState, customize);

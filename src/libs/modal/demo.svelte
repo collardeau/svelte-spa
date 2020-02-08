@@ -1,14 +1,15 @@
 <script context="module">
-  import createModalStore from "./createStore";
+  import createStore from "./createStore";
   const name = "my-modal";
-  createModalStore(name, { isOpen: false });
+  createStore(name);
 </script>
 
 <script>
   import Modal from "./modal.svelte";
-  // perhaps in another component:
+
+  // could open modal from another component:
   import { getStore } from "../stores";
-  const openModal = getStore(name).open;
+  const openModal = getStore("my-modal").open;
 </script>
 
 <Modal {name}>

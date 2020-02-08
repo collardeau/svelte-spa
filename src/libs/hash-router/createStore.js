@@ -1,4 +1,4 @@
-import { createStore } from "../stores";
+import { initStore } from "../stores";
 
 const createState = () => {
   const hash = window.location.hash;
@@ -19,4 +19,4 @@ const customize = ({ subscribe, set }) => {
   };
 };
 
-export default name => createStore(name, createState(), customize);
+export default name => initStore(name, createState(), customize);
