@@ -7,6 +7,7 @@
   import { getStore } from "../stores";
   const store = getStore("router");
   // $: console.log("demo hash-router state: ", $store);
+  $: route = $store.route || "home";
 </script>
 
 <nav>
@@ -15,4 +16,4 @@
   <a href="#/page-1">Page 1</a>
 </nav>
 
-<div style="margin-top: 0.5rem;">current route: {$store.route || 'home'}</div>
+<div>current route: {route}</div>
