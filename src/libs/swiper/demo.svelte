@@ -1,8 +1,10 @@
 <script>
+  import Swiper from "./swiper.svelte";
+
   // in order to use this lib, you need to install swipper
   // npm i swiper@5.3.1
   // full api at https://swiperjs.com/api/
-  import Swiper from "./swiper.svelte";
+
   const params = {
     loop: true,
     on: {
