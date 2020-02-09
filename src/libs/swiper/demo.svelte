@@ -1,5 +1,5 @@
 <script>
-  import Swiper from "./swiper.svelte";
+  import Swiper from "./Swiper.svelte";
 
   // in order to use this lib, you need to install swipper
   // npm i swiper@5.3.1
@@ -9,7 +9,7 @@
     loop: true,
     on: {
       init: () => {
-        console.log("swiper initialized");
+        // console.log("swiper initialized");
       }
     }
   };

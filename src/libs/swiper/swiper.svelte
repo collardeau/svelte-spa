@@ -1,11 +1,11 @@
 <script>
-  import Swiper from "swiper";
+  import SwiperJS from "swiper";
   import "../../../node_modules/swiper/css/swiper.css";
 
   export let params = {};
 
   function action(node) {
-    const mySwiper = new Swiper(node, {
+    const mySwiper = new SwiperJS(node, {
       ...params,
       pagination: {
         el: ".swiper-pagination"
@@ -26,6 +26,7 @@
 <style>
   .swiper-container {
     --swiper-theme-color: rgba(255, 255, 255, 0.8);
+    max-width: 300px;
   }
 </style>
 

@@ -1,7 +1,7 @@
 <script>
-  import ModalDemo from "./libs/modal/demo.svelte";
-  import RouterDemo from "./libs/hash-router/demo.svelte";
-  import SwiperDemo from "./libs/swiper/demo.svelte";
+  import ModalDemo from "./libs/modal/Demo.svelte";
+  import RouterDemo from "./libs/hash-router/Demo.svelte";
+  import SwiperDemo from "./libs/swiper/Demo.svelte";
 </script>
 
 <section>

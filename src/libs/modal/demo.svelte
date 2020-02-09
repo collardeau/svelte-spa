@@ -6,7 +6,7 @@
 </script>
 
 <script>
-  import Modal from "./modal.svelte";
+  import Modal from "./Modal.svelte";
   import { getStore } from "../stores";
 
   const openModal = getStore("my-modal").open;
