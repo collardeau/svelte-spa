@@ -1,5 +1,6 @@
 <script>
   import KitchenSink from "./KitchenSink.svelte";
+  import "./global.css";
 </script>
 
 <style>
