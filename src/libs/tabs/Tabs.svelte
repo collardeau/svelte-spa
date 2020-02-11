@@ -8,10 +8,6 @@
 </script>
 
 <style>
-  ul {
-    list-style: none;
-    padding: 0;
-  }
   .selected button {
     border-bottom: 2px solid var(--theme-color);
   }
