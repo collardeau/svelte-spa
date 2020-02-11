@@ -1,20 +1,14 @@
 <script context="module">
-  import createStore from "./createStore";
-
-  createStore("router");
+  // this app already uses and sets up the router
+  // import createStore from "./createStore";
+  // createStore("app-router");
 </script>
 
 <script>
   import { getStore } from "../stores";
 
-  const store = getStore("router");
+  const store = getStore("app-router");
   $: route = $store.route || "home";
 </script>
 
-<nav>
-  <a href="#/">Home</a>
-  |
-  <a href="#/page-1">Page 1</a>
-</nav>
-
-<div>current route: {route}</div>
+<div>Current hash route: {route}</div>
