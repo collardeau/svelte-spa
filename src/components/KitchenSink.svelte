@@ -32,13 +32,13 @@
   </section>
 
   <section>
-    <h3>Swiper</h3>
-    <SwiperDemo />
+    <h3>Form</h3>
+    <FormDemo />
   </section>
 
   <section>
-    <h3>Form</h3>
-    <FormDemo />
+    <h3>Swiper</h3>
+    <SwiperDemo />
   </section>
 
   <section>
