@@ -5,6 +5,7 @@
   import FormDemo from "../libs/form/Demo.svelte";
   import RoughDemo from "../libs/roughjs/Demo.svelte";
   import TabsDemo from "../libs/tabs/Demo.svelte";
+  import SweetAlertDemo from "../libs/sweetalert2/Demo.svelte";
 </script>
 
 <style>
@@ -28,18 +29,23 @@
   </section>
 
   <section>
-    <h3>Modal</h3>
-    <ModalDemo />
-  </section>
-
-  <section>
     <h3>Tabs</h3>
     <TabsDemo />
   </section>
 
   <section>
+    <h3>Modal</h3>
+    <ModalDemo />
+  </section>
+
+  <section>
     <h3>Form</h3>
     <FormDemo />
+  </section>
+
+  <section>
+    <h3>Sweet Alert 2</h3>
+    <SweetAlertDemo />
   </section>
 
   <section>
