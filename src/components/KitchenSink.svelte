@@ -23,6 +23,7 @@
   import RoughDemo from "../libs/roughjs/Demo.svelte";
   import TabsDemo from "../libs/tabs/Demo.svelte";
   import SweetAlertDemo from "../libs/sweetalert2/Demo.svelte";
+  import FirebaseDemo from "../libs/firebase/Demo.svelte";
 
   import Tabs from "../libs/tabs/Tabs.svelte";
 </script>
@@ -68,6 +69,10 @@
 
   <div class="demos">
     {#if $store.selected === 'tab-1'}
+      <section>
+        <h3>Firebase</h3>
+        <FirebaseDemo />
+      </section>
       <section>
         <h3>RoughJS</h3>
         <RoughDemo />
