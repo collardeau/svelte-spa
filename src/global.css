@@ -21,7 +21,14 @@ body {
 h1 {
   color: var(--theme-color);
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+h3 {
+  color: var(--theme-color);
+  text-transform: uppercase;
+  font-size: 1rem;
   font-weight: 100;
 }
 

@@ -17,13 +17,16 @@
 
 <style>
   .swiper-slide {
-    height: 7rem;
+    height: 10rem;
+    color: white;
   }
   .slide-1 {
-    background-color: green;
+    background-color: var(--theme-color);
+    padding-top: 1rem;
   }
   .slide-2 {
-    background-color: red;
+    background-color: rgb(0, 80, 160);
+    padding-top: 1rem;
   }
 </style>
 

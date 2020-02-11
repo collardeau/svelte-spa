@@ -23,17 +23,25 @@
 
 <style>
   div {
-    height: 4rem;
-    border: 1px solid;
     padding-top: 0.5rem;
+  }
+  :global(.tabs-demo ul) {
+    display: flex;
+    justify-content: center;
+  }
+  :global(.tabs-demo li) {
+    margin-right: 0.5rem;
   }
 </style>
 
-<Tabs name="my-tabs" {tabs} />
+<section class="tabs-demo">
 
-{#if selected === 'tab-1'}
-  <div>Content of Tab 1</div>
-{/if}
-{#if selected === 'tab-2'}
-  <div>Content of Tab 2</div>
-{/if}
+  <Tabs name="my-tabs" {tabs} />
+
+  {#if selected === 'tab-1'}
+    <div>Content of Tab 1</div>
+  {/if}
+  {#if selected === 'tab-2'}
+    <div>Content of Tab 2</div>
+  {/if}
+</section>

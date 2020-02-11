@@ -18,6 +18,7 @@
 <style>
   form {
     background-color: beige;
+    padding: 1rem;
   }
 </style>
 

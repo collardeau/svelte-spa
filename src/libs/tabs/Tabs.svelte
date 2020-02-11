@@ -11,14 +11,8 @@
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  li {
-    margin-right: 0.5rem;
   }
   .selected button {
-    /* border: none; */
     border-bottom: 2px solid var(--theme-color);
   }
 </style>

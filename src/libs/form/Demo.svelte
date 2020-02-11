@@ -14,7 +14,8 @@
       type: "textarea",
       defaultValue: "",
       label: "Message",
-      required: true
+      required: true,
+      placeholder: "your message"
     }
     // select inputs not yet available
   ];
@@ -38,4 +39,6 @@
   };
 </script>
 
-<Form name="my-form" {onSubmit} bind:disable={disableForm} />
+<div>
+  <Form name="my-form" {onSubmit} bind:disable={disableForm} />
+</div>
