@@ -1,5 +1,7 @@
 import { initStore } from "../stores";
 
+const initialState = { data: [], loading: false };
+
 export default (name = "", collection) => {
   if (!collection) {
     return console.warn(
@@ -8,7 +10,6 @@ export default (name = "", collection) => {
       `
     );
   }
-  let initialState = { data: [], loading: false };
   const customize = ({ subscribe, set, update }) => ({
     subscribe,
     get: async () => {
