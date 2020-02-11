@@ -52,9 +52,9 @@
   }
 
   :global(.tabs button) {
-    background: transparent;
     padding: 1rem;
-    width: 10rem;
+    width: 8rem;
+    background-color: transparent;
   }
 </style>
 
