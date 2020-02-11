@@ -4,6 +4,7 @@
   import SwiperDemo from "../libs/swiper/Demo.svelte";
   import FormDemo from "../libs/form/Demo.svelte";
   import RoughDemo from "../libs/roughjs/Demo.svelte";
+  import TabsDemo from "../libs/tabs/Demo.svelte";
 </script>
 
 <style>
@@ -29,6 +30,11 @@
   <section>
     <h3>Modal</h3>
     <ModalDemo />
+  </section>
+
+  <section>
+    <h3>Tabs</h3>
+    <TabsDemo />
   </section>
 
   <section>
