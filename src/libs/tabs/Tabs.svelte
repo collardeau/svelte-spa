@@ -19,7 +19,7 @@
   }
   .selected button {
     /* border: none; */
-    border-bottom: 2px solid #ff3e00;
+    border-bottom: 2px solid var(--theme-color);
   }
 </style>
 
