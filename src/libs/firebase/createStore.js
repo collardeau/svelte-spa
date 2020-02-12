@@ -3,14 +3,7 @@ import { initStore } from "../stores";
 const initialState = { data: [], loading: false };
 
 export default (name = "", collection) => {
-  if (!collection) {
-    return console.warn(
-      `please pass in a collection to create a firebase store, for example:
-      createStore("my-data", db.collection("my-data"));
-      `
-    );
-  }
-
+  check(collection);
   let customize;
   const { mock, latency } = collection;
   if (collection.mock) {
@@ -39,6 +32,15 @@ export default (name = "", collection) => {
   return initStore(name, initialState, customize);
 };
 
+function check(collection) {
+  if (!collection) {
+    throw new Error(
+      `Cannot create a firebase store. Invalid collection parameter:
+      ${collection}
+      `
+    );
+  }
+}
 // for mocking
 function delay(fn, duration = 1000) {
   return new Promise(resolve => {
