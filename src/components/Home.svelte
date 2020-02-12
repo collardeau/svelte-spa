@@ -2,11 +2,14 @@
   section {
     text-align: center;
   }
+  .hero {
+    font-size: 2rem;
+  }
 </style>
 
 <section>
-  <h1>Svelte Spa</h1>
-  <p>
+  <p>A starter template for Svelte apps</p>
+  <p class="hero">
     Visit the
     <a href="#/kitchen-sink">Kitchen Sink</a>
   </p>

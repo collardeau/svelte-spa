@@ -59,10 +59,6 @@
 </style>
 
 <div>
-  <a href="#/">Home</a>
-
-  <h1>Kitchen Sink</h1>
-
   <div class="tabs">
     <Tabs name="demo-tabs" {tabs} />
   </div>
