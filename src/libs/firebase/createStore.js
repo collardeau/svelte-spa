@@ -12,13 +12,13 @@ export default (name = "", collection) => {
   }
 
   let customize;
-  const { mock } = collection;
+  const { mock, latency } = collection;
   if (collection.mock) {
     customize = ({ subscribe, set, update }) => ({
       subscribe,
       get: async () => {
         update(st => ({ ...st, loading: true }));
-        const data = await delay(() => mock);
+        const data = await delay(() => mock, latency);
         set({ data, loading: false });
       }
     });

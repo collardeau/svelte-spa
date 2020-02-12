@@ -7,13 +7,14 @@
 
   // you can also mock firestore responses (and work offline):
   // const mockCollection = [{ message: "mock-item-1", _id: "mock-id-1" }];
-  // createStore("my-data", { mock: mockCollection }).get();
+  // createStore("my-data", { mock: mockCollection, latency: 1000 }).get();
 </script>
 
 <script>
   import { getStore } from "../stores";
 
   const store = getStore("my-data");
+  // $: console.log($store);
   $: loading = $store.loading;
   $: items = $store.data;
 </script>
