@@ -6,7 +6,7 @@
     font-size: 1.5rem;
   }
   .extra {
-    margin-top: 2rem;
+    margin-top: var(--gap-8);
   }
 </style>
 
@@ -17,7 +17,7 @@
     <a href="#/kitchen-sink">Kitchen Sink</a>
   </p>
   <p class="extra">
-    Visit the
+    or visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
   </p>
 

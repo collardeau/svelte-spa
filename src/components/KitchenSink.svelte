@@ -31,7 +31,7 @@
     justify-content: space-evenly;
   }
   :global(.tabs button) {
-    padding: 1rem;
+    padding: var(--gap-3);
     width: 8rem;
     background-color: transparent;
   }

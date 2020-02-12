@@ -14,15 +14,14 @@
 
 <style>
   .container {
-    margin-top: 2.5rem;
+    margin-top: var(--gap-7);
   }
   h3 {
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
+    margin: var(--gap-6) 0;
   }
   section {
-    padding-bottom: 3rem;
-    margin-bottom: 2rem;
+    padding-bottom: var(--gap-6);
+    margin-bottom: var(--gap-8);
     border-top: 1px solid #ccc;
   }
 </style>
