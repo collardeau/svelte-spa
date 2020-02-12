@@ -3,7 +3,7 @@
     text-align: center;
   }
   .hero {
-    font-size: 1.5rem;
+    font-size: var(--text-2xl);
   }
   .extra {
     margin-top: var(--gap-8);

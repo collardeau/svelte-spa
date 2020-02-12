@@ -22,7 +22,7 @@
   section {
     padding-bottom: var(--gap-6);
     margin-bottom: var(--gap-8);
-    border-top: 1px solid #ccc;
+    border-top: 0.01rem solid var(--grey);
   }
 </style>
 

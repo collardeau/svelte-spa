@@ -24,7 +24,7 @@
     text-align: center;
   }
   .tabs {
-    min-width: 20rem;
+    min-width: var(--size-8);
   }
   :global(.tabs ul) {
     display: flex;
@@ -32,7 +32,7 @@
   }
   :global(.tabs button) {
     padding: var(--gap-3);
-    width: 8rem;
+    width: var(--size-5);
     background-color: transparent;
   }
 </style>

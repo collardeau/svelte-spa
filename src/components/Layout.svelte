@@ -19,23 +19,23 @@
     margin: 0 auto;
     padding: 0 var(--gap-2);
     flex: 1;
-    display: flex;
-    flex-direction: column; /* so child can flex:1 */
+    display: flex; /* so slot can flex:1 */
+    flex-direction: column;
   }
   header {
     text-align: center;
   }
   nav {
-    min-height: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: var(--size-2);
   }
   footer {
     text-align: center;
     padding: var(--gap-4);
-    background-color: #ccc;
-    font-size: 0.8rem;
+    background-color: var(--grey);
+    font-size: var(--text-sm);
   }
 </style>
 
