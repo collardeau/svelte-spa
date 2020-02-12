@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 10; /* swiper slides hide modal without a z-index */
+    z-index: 10;
   }
   .bg {
     position: absolute;
@@ -25,21 +25,22 @@
     width: 100%;
     height: 100%;
     z-index: -10;
-    background-color: rgba(0, 0, 0, 0.67);
+    background-color: var(--overlay-color, rgba(0, 0, 0, 0.67));
   }
   .modal {
-    width: 50%;
-    min-width: 300px;
+    width: var(--modal-width, 50%);
+    min-width: var(--modal-min-width, 300px);
+    min-height: var(--modal-min-height, 0);
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   button {
     float: right;
+    height: var(--size-2);
+    width: var(--size-2);
     margin: var(--gap-5);
-    height: 3rem;
-    width: 3rem;
-    color: #fff;
+    color: var(--white);
     border: none;
     background-color: transparent;
   }

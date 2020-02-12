@@ -19,7 +19,7 @@
   svg {
     width: 300px;
     height: 150px;
-    background-color: beige;
+    background-color: var(--second-color);
   }
 </style>
 

@@ -1,8 +1,12 @@
 :root {
   --theme-color: #ff3e00;
+  --second-color: beige;
+  --white: #fff;
   --black: #333;
+
   --container-width: 960px;
   --base-font-size: 16px;
+
   --gap-0: 0rem;
   --gap-1: 0.25rem;
   --gap-2: 0.5rem;
@@ -12,6 +16,16 @@
   --gap-6: 1.5rem;
   --gap-7: 2rem;
   --gap-8: 4rem;
+
+  --size-0: 0;
+  --size-1: 2rem;
+  --size-2: 3rem;
+  --size-3: 4rem;
+  --size-4: 6rem;
+  --size-5: 8rem;
+  --size-6: 10rem;
+  --size-7: 14rem;
+  --size-8: 20rem;
 }
 
 html,

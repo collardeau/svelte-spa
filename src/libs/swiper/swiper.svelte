@@ -25,8 +25,7 @@
 
 <style>
   .swiper-container {
-    --swiper-theme-color: rgba(255, 255, 255, 0.8);
-    max-width: 300px;
+    max-width: var(--size-8);
   }
 </style>
 

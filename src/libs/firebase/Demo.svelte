@@ -21,7 +21,7 @@
 
 <style>
   li {
-    margin-bottom: 1rem;
+    margin-bottom: var(--gap-4);
   }
 </style>
 

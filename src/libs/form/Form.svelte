@@ -17,8 +17,8 @@
 
 <style>
   form {
-    background-color: beige;
-    padding: var(--gap-4);
+    background-color: var(--form-bg-color);
+    padding: var(--form-padding);
   }
 </style>
 

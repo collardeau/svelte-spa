@@ -16,22 +16,26 @@
 </script>
 
 <style>
+  .container {
+    --swiper-theme-color: rgba(255, 255, 255, 0.8);
+  }
   .swiper-slide {
-    height: 10rem;
-    color: white;
+    height: var(--size-6);
+    padding-top: var(--gap-4);
+    color: var(--white);
   }
   .slide-1 {
     background-color: var(--theme-color);
-    padding-top: 1rem;
   }
   .slide-2 {
-    background-color: rgb(0, 80, 160);
-    padding-top: 1rem;
+    background-color: green;
   }
 </style>
 
-<Swiper {params}>
-  <!-- each slide requires the class "swiper-slide" -->
-  <div class="swiper-slide slide-1">Slide 1</div>
-  <div class="swiper-slide slide-2">Slide 2</div>
-</Swiper>
+<div class="container">
+  <Swiper {params}>
+    <!-- each slide requires the class "swiper-slide" -->
+    <div class="swiper-slide slide-1">Slide 1</div>
+    <div class="swiper-slide slide-2">Slide 2</div>
+  </Swiper>
+</div>

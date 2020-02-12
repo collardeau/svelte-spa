@@ -39,6 +39,13 @@
   };
 </script>
 
-<div>
+<style>
+  .container {
+    --form-bg-color: var(--second-color)
+    --form-padding: var(--gap-4);
+  }
+</style>
+
+<div class="container">
   <Form name="my-form" {onSubmit} bind:disable={disableForm} />
 </div>
