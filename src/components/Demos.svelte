@@ -13,7 +13,7 @@
 </script>
 
 <style>
-  .demos {
+  .container {
     margin-top: 2.5rem;
   }
   h3 {
@@ -27,7 +27,7 @@
   }
 </style>
 
-<div class="demos">
+<div class="container">
   {#if $store.selected === 'tab-1'}
     <section>
       <h3>Firebase</h3>

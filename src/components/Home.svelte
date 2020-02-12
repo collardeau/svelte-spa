@@ -1,21 +1,24 @@
 <style>
-  section {
+  .container {
     text-align: center;
   }
   .hero {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .extra {
+    margin-top: 2rem;
   }
 </style>
 
-<section>
-  <p>A starter template for Svelte apps</p>
+<div class="container">
+  <h3>A Starter Template</h3>
   <p class="hero">
     Visit the
     <a href="#/kitchen-sink">Kitchen Sink</a>
   </p>
-  <p>
+  <p class="extra">
     Visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
   </p>
 
-</section>
+</div>
