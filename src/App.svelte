@@ -6,10 +6,10 @@
 <script>
   import "./global.css";
   import KitchenSink from "./components/KitchenSink.svelte";
-  import SvelteIntro from "./components/SvelteIntro.svelte";
+  import Home from "./components/Home.svelte";
 
   $: route = $routerStore.route;
-  $: component = route === "kitchen-sink" ? KitchenSink : SvelteIntro;
+  $: component = route === "kitchen-sink" ? KitchenSink : Home;
 </script>
 
 <style>
