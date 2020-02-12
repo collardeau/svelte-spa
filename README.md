@@ -1,16 +1,14 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# svelte spa app
 
----
+You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
+npx degit collardeau/svelte-spa my-svelte-app
+cd my-svelte-app
 ```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
