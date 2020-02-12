@@ -10,6 +10,45 @@
 
   import { getStore } from "../libs/stores";
   const store = getStore("demo-tabs");
+
+  const demos1 = [
+    // integrations
+    {
+      title: "Firebase",
+      comp: FirebaseDemo
+    },
+    {
+      title: "RoughJS",
+      comp: RoughDemo
+    },
+    {
+      title: "Sweet Alert 2",
+      comp: SweetAlertDemo
+    },
+    {
+      title: "Swiper",
+      comp: SwiperDemo
+    }
+  ];
+  const demos2 = [
+    // standalone
+    {
+      title: "Router",
+      comp: RouterDemo
+    },
+    {
+      title: "Tabs",
+      comp: TabsDemo
+    },
+    {
+      title: "Form",
+      comp: FormDemo
+    },
+    {
+      title: "Modal",
+      comp: ModalDemo
+    }
+  ];
 </script>
 
 <style>
@@ -28,43 +67,19 @@
 
 <div class="container">
   {#if $store.selected === 'tab-1'}
-    <section>
-      <h3>Firebase</h3>
-      <FirebaseDemo />
-    </section>
-    <section>
-      <h3>RoughJS</h3>
-      <RoughDemo />
-    </section>
-    <section>
-      <h3>Sweet Alert 2</h3>
-      <SweetAlertDemo />
-    </section>
-
-    <section>
-      <h3>Swiper</h3>
-      <SwiperDemo />
-    </section>
+    {#each demos1 as { title, comp }}
+      <section>
+        <h3>{title}</h3>
+        <svelte:component this={comp} />
+      </section>
+    {/each}
   {/if}
   {#if $store.selected === 'tab-2'}
-    <section>
-      <h3>Router</h3>
-      <RouterDemo />
-    </section>
-
-    <section>
-      <h3>Tabs</h3>
-      <TabsDemo />
-    </section>
-
-    <section>
-      <h3>Form</h3>
-      <FormDemo />
-    </section>
-
-    <section>
-      <h3>Modal</h3>
-      <ModalDemo />
-    </section>
+    {#each demos2 as { title, comp }}
+      <section>
+        <h3>{title}</h3>
+        <svelte:component this={comp} />
+      </section>
+    {/each}
   {/if}
 </div>
