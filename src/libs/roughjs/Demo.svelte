@@ -8,7 +8,9 @@
   let roughSvg;
   function action(node) {
     roughSvg = rough.svg(node);
-    const rect = roughSvg.rectangle(100, 50, 100, 50, { fill: "red" }); // x, y, width, height
+    const rect = roughSvg.rectangle(100, 50, 100, 50, {
+      fill: "var(--theme-color)"
+    }); // x, y, width, height
     node.appendChild(rect);
   }
 </script>

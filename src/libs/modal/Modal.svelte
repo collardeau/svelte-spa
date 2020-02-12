@@ -32,12 +32,11 @@
     min-width: 300px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 1rem;
   }
 
   button {
     float: right;
-    margin: 1rem;
+    margin: var(--gap-5);
     height: 3rem;
     width: 3rem;
     color: #fff;

@@ -22,15 +22,12 @@
 </script>
 
 <style>
-  div {
-    padding-top: 0.5rem;
-  }
   :global(.tabs-demo ul) {
     display: flex;
     justify-content: center;
   }
   :global(.tabs-demo li) {
-    margin-right: 0.5rem;
+    margin-right: var(--gap-2);
   }
 </style>
 
