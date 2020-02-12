@@ -1,13 +1,17 @@
 <script context="module">
   import { db } from "./firebase"; // see this file for setup
   import createStore from "./createStore";
-
-  createStore("my-data", db.collection("my-data")).get();
   // can only *read* a firestore collection (for now) with `.get()`
 
-  // you can also mock firestore responses (and work offline):
-  // const mockCollection = [{ message: "mock-item-1", _id: "mock-id-1" }];
-  // createStore("my-data", { mock: mockCollection, latency: 1000 }).get();
+  const dev = false;
+  if (dev) {
+    // you can mock firestore responses (and work offline):
+    const mockCollection = [{ message: "mock-item-1", _id: "mock-id-1" }];
+    createStore("my-data", { mock: mockCollection, latency: 1000 }).get();
+  } else {
+    // or use live firestore
+    createStore("my-data", db.collection("my-data")).get();
+  }
 </script>
 
 <script>
