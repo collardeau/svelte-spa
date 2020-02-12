@@ -41,7 +41,7 @@
 
 <style>
   .container {
-    --form-bg-color: var(--second-color)
+    --form-bg-color: var(--second-color);
     --form-padding: var(--gap-4);
   }
 </style>

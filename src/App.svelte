@@ -5,9 +5,9 @@
 </script>
 
 <script>
+  import Layout from "./components/Layout.svelte";
   import KitchenSink from "./components/KitchenSink.svelte";
   import Home from "./components/Home.svelte";
-  import Layout from "./components/Layout.svelte";
 
   $: route = $routerStore.route || "home";
   $: component = route === "kitchen-sink" ? KitchenSink : Home;
