@@ -8,7 +8,7 @@
     text-align: center;
   }
   h5 {
-    font-size: var(--text-6xl);
+    font-size: var(--text-5xl);
     margin-top: var(--gap-6);
   }
   :global(.hero svg) {
@@ -22,4 +22,4 @@
   <h5>Let's Have Some Sun</h5>
 </div>
 
-<Forecasts />
+<!-- <Forecasts /> -->

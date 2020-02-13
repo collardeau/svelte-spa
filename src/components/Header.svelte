@@ -1,4 +1,5 @@
 <script>
+  import LogoSVG from "../svgs/LogoWhite.svelte";
   import { getStore } from "../libs/stores";
 
   const appTitle = "kairos";
@@ -10,27 +11,47 @@
 
 <style>
   header {
-    padding: var(--gap-2);
     display: flex;
     justify-content: space-between;
+    padding: var(--gap-3);
+  }
+  .left-side {
+    display: flex;
+  }
+  h1 {
+    font-size: var(--text-lg);
+    margin-left: var(--gap-2);
   }
   li {
     width: var(--size-3);
     height: var(--size-1);
-    margin: 0 auto;
     text-align: center;
   }
   a {
     display: block;
     height: 100%;
+  }
+  .svg-wrapper,
+  a,
+  h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  :global(.svg-wrapper svg) {
+    width: var(--gap-6);
+    height: var(--gap-6);
+  }
 </style>
 
 <header>
-  <h1>{title}</h1>
+  <div class="left-side">
+    <div class="svg-wrapper">
+      <LogoSVG />
+    </div>
+    <h1>{title}</h1>
+  </div>
   <nav>
     <ul>
       {#if route}

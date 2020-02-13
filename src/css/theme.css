@@ -13,8 +13,8 @@
   --bg-color: var(--sky-blue);
   --text-color: var(--white);
   --header-color: var(--text-color);
-  --link-color: var(--sun-yellow);
-  --link-visited-color: var(--sun-yellow);
+  --link-color: var(--text-color);
+  --link-visited-color: var(--text-color);
 
   --gap-0: 0rem;
   --gap-1: 0.25rem;
