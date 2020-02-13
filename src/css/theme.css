@@ -2,16 +2,19 @@
   --container-width: 960px;
   --base-font-size: 16px;
 
-  --theme-color: #ff3e00;
+  --sun-yellow: rgb(255, 236, 101);
+  --sky-blue: rgb(0, 206, 232);
+
+  --theme-color: var(--sun-yellow);
   --white: #fff;
   --grey: #ddd;
   --black: #333;
 
-  --bg-color: var(--white);
-  --text-color: var(--black);
-  --heading-color: var(--theme-color);
-  --link-color: rgb(0, 100, 200);
-  --link-visited-color: rgb(0, 80, 160);
+  --bg-color: var(--sky-blue);
+  --text-color: var(--white);
+  --header-color: var(--text-color);
+  --link-color: var(--sun-yellow);
+  --link-visited-color: var(--sun-yellow);
 
   --gap-0: 0rem;
   --gap-1: 0.25rem;
