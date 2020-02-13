@@ -3,7 +3,7 @@
   import createStore from "./createStore";
   // can only *read* a firestore collection (for now) with `.get()`
 
-  const dev = false;
+  const dev = true;
   if (dev) {
     // you can mock firestore responses (and work offline):
     const mockCollection = [{ message: "mock-item-1", _id: "mock-id-1" }];
