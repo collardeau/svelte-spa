@@ -18,6 +18,14 @@
     justify-content: center;
     min-height: var(--size-2);
   }
+  h1 {
+    font-size: var(--text-5xl);
+  }
+  @media (min-width: 640px) {
+    h1 {
+      font-size: var(--text-6xl);
+    }
+  }
 </style>
 
 <header>
