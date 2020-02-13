@@ -2,18 +2,20 @@
   import "./css/theme.css";
   import "./css/global.css";
   import createRouterStore from "./libs/hash-router/createStore";
-  const routerStore = createRouterStore("app-router");
+  const router = createRouterStore("app-router");
 </script>
 
 <script>
   import Layout from "./components/Layout.svelte";
-  import KitchenSink from "./components/KitchenSink.svelte";
+  import About from "./components/About.svelte";
   import Home from "./components/Home.svelte";
+  import KitchenSink from "./components/KitchenSink.svelte";
 
-  $: route = $routerStore.route || "home";
-  $: component = route === "kitchen-sink" ? KitchenSink : Home;
+  $: route = $router.route;
+  $: compToRender =
+    route === "about" ? About : route === "kitchen-sink" ? KitchenSink : Home;
 </script>
 
-<Layout {route}>
-  <svelte:component this={component} />
+<Layout>
+  <svelte:component this={compToRender} />
 </Layout>
