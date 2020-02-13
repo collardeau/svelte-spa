@@ -11,11 +11,6 @@
 <style>
   header {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    order: 2;
   }
   nav {
     display: flex;
@@ -26,10 +21,10 @@
 </style>
 
 <header>
-  <h1>{title}</h1>
   <nav>
     {#if route}
       <a href="#/">Home</a>
     {/if}
   </nav>
+  <h1>{title}</h1>
 </header>
