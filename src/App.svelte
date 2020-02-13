@@ -9,7 +9,7 @@
   import Layout from "./components/Layout.svelte";
   import About from "./components/About.svelte";
   import Home from "./components/Home.svelte";
-  import KitchenSink from "./components/KitchenSink.svelte";
+  import KitchenSink from "./demo/KitchenSink.svelte";
 
   $: route = $router.route;
   $: compToRender =
