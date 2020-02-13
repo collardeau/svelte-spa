@@ -50,7 +50,6 @@ h6 {
   color: var(--heading-color);
   text-transform: uppercase;
   font-weight: 200;
-  margin-bottom: var(--gap-4);
 }
 
 ul {
