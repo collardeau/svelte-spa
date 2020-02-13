@@ -1,7 +1,7 @@
 <script>
   import { getStore } from "../libs/stores";
 
-  const appTitle = "Svelte Spa";
+  const appTitle = "kairos";
 
   const store = getStore("app-router");
   $: route = $store.route;
@@ -10,20 +10,9 @@
 
 <style>
   header {
-    text-align: center;
-    padding: var(--gap-3);
+    padding: var(--gap-2);
     display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    font-size: var(--text-5xl);
-    margin: var(--gap-7) 0;
-    order: 2;
-  }
-  @media (min-width: 640px) {
-    h1 {
-      font-size: var(--text-6xl);
-    }
+    justify-content: space-between;
   }
   li {
     width: var(--size-3);

@@ -1,23 +1,25 @@
+<script>
+  import SunnySVG from "../svgs/Sunny.svelte";
+  import Forecasts from "./Forecasts.svelte";
+</script>
+
 <style>
-  .container {
+  .hero {
     text-align: center;
   }
-  .hero {
-    font-size: var(--text-3xl);
+  h5 {
+    font-size: var(--text-6xl);
+    margin-top: var(--gap-6);
   }
-  p {
-    margin-top: var(--gap-7);
+  :global(.hero svg) {
+    width: var(--size-5);
+    height: var(--size-5);
   }
 </style>
 
-<div class="container">
-  <p class="hero">
-    Check out the
-    <a href="#/kitchen-sink">Kitchen Sink</a>
-  </p>
-  <p>
-    or visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-  </p>
-
+<div class="hero">
+  <SunnySVG />
+  <h5>Let's Have Some Sun</h5>
 </div>
+
+<Forecasts />
