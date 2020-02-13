@@ -33,6 +33,9 @@
     {#if route}
       <a href="#/">Home</a>
     {/if}
+    {#if !route}
+      <a href="#/kitchen-sink">Kitchen Sink</a>
+    {/if}
   </nav>
   <h1>{title}</h1>
 </header>
