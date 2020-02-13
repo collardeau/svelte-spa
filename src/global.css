@@ -4,6 +4,8 @@
   --white: #fff;
   --black: #333;
   --grey: #ddd;
+  --link-color: rgb(0, 100, 200);
+  --link-visited-color: rgb(0, 80, 160);
 
   --container-width: 960px;
   --base-font-size: 16px;
@@ -89,7 +91,7 @@ ul {
 }
 
 a {
-  color: rgb(0, 100, 200);
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -98,7 +100,7 @@ a:hover {
 }
 
 a:visited {
-  color: rgb(0, 80, 160);
+  color: var(--link-visited-color);
 }
 
 label {
