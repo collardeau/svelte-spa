@@ -11,15 +11,14 @@
 <style>
   header {
     text-align: center;
-  }
-  nav {
+    padding: var(--gap-3);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: var(--size-2);
   }
   h1 {
     font-size: var(--text-5xl);
+    margin: var(--gap-7) 0;
+    order: 2;
   }
   @media (min-width: 640px) {
     h1 {
@@ -29,13 +28,13 @@
 </style>
 
 <header>
+  <h1>{title}</h1>
   <nav>
     {#if route}
       <a href="#/">Home</a>
     {/if}
-    <!-- {#if !route}
+    {#if !route}
       <a href="#/about">About</a>
-    {/if} -->
+    {/if}
   </nav>
-  <h1>{title}</h1>
 </header>

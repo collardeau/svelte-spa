@@ -1,3 +1,23 @@
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   position: relative;
@@ -27,9 +47,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--header-color);
+  color: var(--heading-color);
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 200;
+  margin-bottom: var(--gap-4);
 }
 
 ul {
