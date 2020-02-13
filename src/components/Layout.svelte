@@ -1,5 +1,6 @@
 <script>
   import Header from "./Header.svelte";
+  import CitySVG from "../svgs/City.svelte";
 </script>
 
 <style>
@@ -17,10 +18,10 @@
     flex-direction: column;
   }
   footer {
-    text-align: center;
-    padding: var(--gap-4);
-    background-color: var(--grey);
-    font-size: var(--text-sm);
+    background-color: transparent;
+    position: relative;
+    margin-top: -200px;
+    z-index: -10;
   }
 </style>
 
@@ -30,9 +31,6 @@
     <slot />
   </main>
   <footer>
-    View the github repo:
-    <a href="https://github.com/collardeau/svelte-spa">
-      https://github.com/collardeau/svelte-spa
-    </a>
+    <CitySVG />
   </footer>
 </div>
