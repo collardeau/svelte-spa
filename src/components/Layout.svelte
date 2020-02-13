@@ -1,11 +1,5 @@
 <script>
-  export let route = "home";
-  $: title =
-    route === "home"
-      ? "Svelte Spa"
-      : route === "kitchen-sink"
-      ? "Kitchen Sink"
-      : "";
+  import Header from "./Header.svelte";
 </script>
 
 <style>
@@ -22,15 +16,6 @@
     display: flex; /* so slot can flex:1 */
     flex-direction: column;
   }
-  header {
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: var(--size-2);
-  }
   footer {
     text-align: center;
     padding: var(--gap-4);
@@ -40,14 +25,7 @@
 </style>
 
 <div class="layout">
-  <header>
-    <nav>
-      {#if route !== 'home'}
-        <a href="#/">Home</a>
-      {/if}
-    </nav>
-    <h1>{title}</h1>
-  </header>
+  <Header />
   <main>
     <slot />
   </main>
