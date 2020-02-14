@@ -51,5 +51,5 @@
 <section>
   <h5>{day}</h5>
   <svelte:component this={svg} />
-  <div class="details">{max} &deg;C</div>
+  <div class="details">{max}&deg;C</div>
 </section>
