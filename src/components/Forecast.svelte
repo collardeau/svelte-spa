@@ -38,7 +38,7 @@
   .daily-forecast {
     margin: var(--gap-6) 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .more {
     /* display: flex; */

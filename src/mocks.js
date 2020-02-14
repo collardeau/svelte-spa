@@ -4,11 +4,11 @@ const forecasts = [
     country: "Portugal",
     countryCode: "PT",
     forecasts: [
-      { day: "Mon 18", weather: "sun", max: 26 },
+      { day: "Mon 18", weather: "sun", max: 28 },
       { day: "Tue 19", weather: "sun", max: 26 },
-      { day: "Wed 20", weather: "sun", max: 26 },
+      { day: "Wed 20", weather: "sun", max: 27 },
       { day: "Thu 21", weather: "sun", max: 26 },
-      { day: "Fri 22", weather: "sun", max: 26 }
+      { day: "Fri 22", weather: "sun", max: 30 }
     ]
   },
   {
