@@ -1,5 +1,5 @@
 <script context="module">
-  import { db } from "./firebase"; // see this file for setup
+  import { db } from "../../firebase"; // see this file for setup
   import createStore from "./createStore";
   // can only *read* a firestore collection (for now) with `.get()`
 

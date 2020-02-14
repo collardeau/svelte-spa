@@ -2,6 +2,7 @@
   import "./css/theme.css";
   import "./css/global.css";
   import createRouterStore from "./libs/hash-router/createStore";
+
   const router = createRouterStore("app-router");
 </script>
 

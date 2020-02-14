@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/auth";
 
 const config = {
   apiKey: "AIzaSyDLKhv_OZ1m_ILJYYlVf-_lU1mkEPSbMlo",
@@ -15,6 +16,7 @@ const config = {
 firebase.initializeApp(config);
 
 export const db = firebase.firestore();
+export const firebaseAuth = firebase.auth();
 
 /*
   steps:
@@ -30,6 +32,7 @@ export const db = firebase.firestore();
       }
     }
   }
+  5. allow anonymous login in console
   - to work with the demo:
   create a collection `my-data` of docs with a `message` key
   --- or possibly in cloud function???
