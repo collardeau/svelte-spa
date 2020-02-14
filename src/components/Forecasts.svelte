@@ -28,7 +28,7 @@
 </style>
 
 <section>
-  <h5>The Best Forecasts in Europe</h5>
+  <h5>Demo Forecasts</h5>
   {#if loading}
     <div>loading...</div>
   {:else}

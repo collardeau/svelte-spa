@@ -1,5 +1,4 @@
 <script>
-  import LogoSVG from "../svgs/LogoWhite.svelte";
   import { getStore } from "../libs/stores";
 
   const store = getStore("app-router");
