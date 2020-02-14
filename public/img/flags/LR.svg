@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>LR</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-172.000000, -556.000000)">
+            <g id="LR" transform="translate(172.000000, 556.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                </g>
+                <path d="M13.3333333,0 L28,0 L28,2.66666667 L13.3333333,2.66666667 L13.3333333,0 Z M13.3333333,5.33333333 L28,5.33333333 L28,8 L13.3333333,8 L13.3333333,5.33333333 Z M13.3333333,10.6666667 L28,10.6666667 L28,13.3333333 L13.3333333,13.3333333 L13.3333333,10.6666667 Z M0,16 L28,16 L28,18.6666667 L0,18.6666667 L0,16 Z" id="Rectangle-537" fill="#E1244A" mask="url(#mask-2)"></path>
+                <rect id="Rectangle-1568" fill="#0C3F8E" mask="url(#mask-2)" x="0" y="0" width="13.3333333" height="13.3333333"></rect>
+                <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-2)" points="6.66666667 8.22666673 4.31552566 9.90273464 5.18301844 7.1487332 2.8624406 5.43059869 5.74972164 5.40460011 6.66666667 2.66666667 7.5836117 5.40460011 10.4708927 5.43059869 8.15031489 7.1487332 9.01780768 9.90273464"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

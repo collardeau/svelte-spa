@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>KM</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-508.000000, -124.000000)">
+            <g id="KM" transform="translate(508.000000, 124.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-2" fill="#FFCB49" mask="url(#mask-2)" x="0" y="0" width="28" height="5.33333333"></rect>
+                <rect id="Rectangle-2" fill="#DC1D34" mask="url(#mask-2)" x="0" y="9.33333333" width="28" height="5.33333333"></rect>
+                <rect id="Rectangle-2" fill="#4985D4" mask="url(#mask-2)" x="0" y="14.6666667" width="28" height="5.33333333"></rect>
+                <polygon id="Rectangle-2" fill="#4BA343" mask="url(#mask-2)" points="0 20 13.3333333 10 0 0"></polygon>
+                <path d="M6.33333333,6.12601749 C6.01371341,6.043753 5.6786329,6 5.33333333,6 C3.12419433,6 1.33333333,7.790861 1.33333333,10 C1.33333333,12.209139 3.12419433,14 5.33333333,14 C5.6786329,14 6.01371341,13.956247 6.33333333,13.8739825 C4.60810612,13.4299397 3.33333333,11.8638394 3.33333333,10 C3.33333333,8.13616057 4.60810612,6.57006028 6.33333333,6.12601749 Z M7.33333333,8 C6.9651435,8 6.66666667,7.70152317 6.66666667,7.33333333 C6.66666667,6.9651435 6.9651435,6.66666667 7.33333333,6.66666667 C7.70152317,6.66666667 8,6.9651435 8,7.33333333 C8,7.70152317 7.70152317,8 7.33333333,8 Z M7.33333333,10.6666667 C6.9651435,10.6666667 6.66666667,10.3681898 6.66666667,10 C6.66666667,9.63181017 6.9651435,9.33333333 7.33333333,9.33333333 C7.70152317,9.33333333 8,9.63181017 8,10 C8,10.3681898 7.70152317,10.6666667 7.33333333,10.6666667 Z M7.33333333,13.3333333 C6.9651435,13.3333333 6.66666667,13.0348565 6.66666667,12.6666667 C6.66666667,12.2984768 6.9651435,12 7.33333333,12 C7.70152317,12 8,12.2984768 8,12.6666667 C8,13.0348565 7.70152317,13.3333333 7.33333333,13.3333333 Z" id="Oval-12" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>CV</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-556.000000, -124.000000)">
+            <g id="CV" transform="translate(556.000000, 124.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Rectangle-2" fill="#0C49AE" mask="url(#mask-2)" x="0" y="0" width="28" height="10.6666667"></rect>
+                <rect id="Rectangle-2" fill="#0C49AE" mask="url(#mask-2)" x="0" y="14.6666667" width="28" height="5.33333333"></rect>
+                <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="0" y="10.6666667" width="28" height="4"></rect>
+                <rect id="Rectangle-2-Copy-4" fill="#CD232E" mask="url(#mask-2)" x="0" y="12" width="28" height="1.33333333"></rect>
+                <circle id="Oval-73" stroke="#F7D035" stroke-width="1.33333333" stroke-linecap="round" stroke-dasharray="0.6666666666666666,2" mask="url(#mask-2)" cx="10.6666667" cy="12.6666667" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

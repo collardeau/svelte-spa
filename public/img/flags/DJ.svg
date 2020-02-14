@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>DJ</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-76.000000, -172.000000)">
+            <g id="DJ" transform="translate(76.000000, 172.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="Rectangle-2" fill="#1DC837" mask="url(#mask-2)" x="0" y="9.33333333" width="28" height="10.6666667"></rect>
+                <rect id="Rectangle-2" fill="#82C5F5" mask="url(#mask-2)" x="0" y="0" width="28" height="9.33333333"></rect>
+                <polygon id="Rectangle-83" fill="#FFFFFF" mask="url(#mask-2)" points="0 0 13.3333333 10 0 20"></polygon>
+                <polygon id="Star-8" fill="#E21C21" mask="url(#mask-2)" points="4.66666667 11.3000001 2.70738249 12.6967233 3.43029315 10.4017221 1.49647828 8.96994335 3.90254581 8.94827787 4.66666667 6.66666667 5.43078753 8.94827787 7.83685505 8.96994335 5.90304019 10.4017221 6.62595084 12.6967233"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

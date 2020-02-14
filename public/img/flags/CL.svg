@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>CL</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-220.000000, -124.000000)">
+            <g id="CL" transform="translate(220.000000, 124.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-2" fill="#EA3B2E" mask="url(#mask-2)" x="0" y="9.33333333" width="28" height="10.6666667"></rect>
+                <rect id="Rectangle-83" fill="#0B48C2" mask="url(#mask-2)" x="0" y="0" width="9.33333333" height="9.33333333"></rect>
+                <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-2)" points="4.66666667 5.70666671 3.09923933 6.82404532 3.67756785 4.98804435 2.13051596 3.84262135 4.05536998 3.82528896 4.66666667 2 5.27796335 3.82528896 7.20281738 3.84262135 5.65576548 4.98804435 6.23409401 6.82404532"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>AW</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+        <rect id="path-3" x="0" y="0" width="28" height="20"></rect>
+        <filter x="-7.1%" y="-5.0%" width="114.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-5" points="5.33509394 5.63648687 3.92088038 6.08088023 4.36527374 4.66666667 3.92088038 3.2524531 5.33509394 3.69684646 6.74930751 3.2524531 6.30491415 4.66666667 6.74930751 6.08088023"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-700.000000, -28.000000)">
+            <g id="AW" transform="translate(700.000000, 28.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <g id="Mask-Copy" mask="url(#mask-2)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#4189DD" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <g id="Star-2" mask="url(#mask-2)" transform="translate(5.335094, 4.666667) rotate(-225.000000) translate(-5.335094, -4.666667) ">
+                    <use fill="#D21034" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <path stroke="#FFFFFF" stroke-width="0.666666667" d="M5.33509394,5.98588997 L3.41137295,6.59038766 L4.01587064,4.66666667 L3.41137295,2.74294567 L5.33509394,3.34744336 L7.25881494,2.74294567 L6.65431725,4.66666667 L7.25881494,6.59038766 L5.33509394,5.98588997 Z"></path>
+                </g>
+                <rect id="Rectangle-1223" fill="#F9D616" mask="url(#mask-2)" x="0" y="14.6666667" width="28" height="1.33333333"></rect>
+                <rect id="Rectangle-1223" fill="#F9D616" mask="url(#mask-2)" x="0" y="12" width="28" height="1.33333333"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

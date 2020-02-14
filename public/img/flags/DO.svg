@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>DO</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-172.000000, -172.000000)">
+            <g id="DO" transform="translate(172.000000, 172.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-2)" x="0" y="0" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-2)" x="16" y="12" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-2)" x="0" y="12" width="12" height="8"></rect>
+                <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-2)" x="16" y="0" width="12" height="8"></rect>
+                <path d="M13.8671466,8.33855108 C13.0087849,8.40624633 12.3333333,9.12424308 12.3333333,10 C12.3333333,10.9204746 13.0795254,11.6666667 14,11.6666667 C14.8757569,11.6666667 15.5937537,10.9912151 15.6614489,10.1328534 L13.8671466,8.33855108 Z" id="Oval-85" stroke="#0F6D1A" stroke-width="0.666666667" mask="url(#mask-2)" transform="translate(14.000000, 10.000000) rotate(-45.000000) translate(-14.000000, -10.000000) "></path>
+                <circle id="Oval-85" fill="#042F60" mask="url(#mask-2)" cx="14" cy="10" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

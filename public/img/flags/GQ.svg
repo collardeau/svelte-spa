@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>GQ</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="20" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Flags" transform="translate(-268.000000, -316.000000)">
+            <g id="GQ" transform="translate(268.000000, 316.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="27.5" height="19.5" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-2" fill="#EC3938" mask="url(#mask-2)" x="0" y="13.3333333" width="28" height="6.66666667"></rect>
+                <rect id="Rectangle-2" fill="#51B422" mask="url(#mask-2)" x="0" y="0" width="28" height="6.66666667"></rect>
+                <path d="M13.420774,11.9089152 C13.5492114,11.775125 13.6542055,11.5135701 13.6551848,11.3422267 L13.6648123,9.65777334 C13.6658365,9.47859007 13.5104167,9.33333333 13.3281123,9.33333333 L13.005221,9.33333333 C12.8182426,9.33333333 12.7712911,9.2287089 12.8989156,9.10108439 L13.7677511,8.23224894 C13.8960186,8.10398139 14.1046244,8.10462443 14.2322489,8.23224894 L15.1010844,9.10108439 C15.2293519,9.22935194 15.1770833,9.33333333 14.994779,9.33333333 L14.6718877,9.33333333 C14.4849093,9.33333333 14.3333333,9.48642985 14.3333333,9.65777334 L14.3333333,11.3422267 C14.3333333,11.5214099 14.4388021,11.7721354 14.5755819,11.9089152 L14.4244181,11.7577515 C14.5582083,11.8915416 14.5239766,12 14.3302104,12 L13.6697896,12 C13.4839699,12 13.4345824,11.8945313 13.5658899,11.7577515 L13.420774,11.9089152 Z" id="Rectangle-721" fill="#159940" mask="url(#mask-2)"></path>
+                <polygon id="Rectangle-83" fill="#258DE7" mask="url(#mask-2)" points="0 0 9.33333333 10 0 20"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
