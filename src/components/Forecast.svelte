@@ -1,7 +1,9 @@
 <script>
+  import Day from "./Day.svelte";
   export let city = "";
   export let country = "";
   export let countryCode = "";
+  export let forecasts = [];
 
   const src = `img/flags/${countryCode}.svg`;
   const alt = `${country} flag`;
@@ -32,7 +34,8 @@
     top: 2px;
   }
   .daily-forecast {
-    padding: 2rem;
+    margin: var(--gap-6) 0;
+    display: flex;
   }
 </style>
 
@@ -44,6 +47,10 @@
       <div>{country}</div>
     </div>
   </header>
-  <section class="daily-forecast" />
+  <section class="daily-forecast">
+    {#each forecasts as forecast}
+      <Day {...forecast} />
+    {/each}
+  </section>
 
 </article>

@@ -2,11 +2,38 @@
   import createStore from "../libs/firebase/createStore";
 
   const mock = [
-    { city: "Lisbon", country: "Portugal", countryCode: "PT" },
-    { city: "Athens", country: "Greece", countryCode: "GR" },
-    { city: "Valencia", country: "Spain", countryCode: "ES" }
+    {
+      city: "Lisbon",
+      country: "Portugal",
+      countryCode: "PT",
+      forecasts: [
+        { day: "Mon 18", icon: "sunny", max: 26 },
+        { day: "Tue 19", icon: "sunny", max: 26 },
+        { day: "Wed 20", icon: "sunny", max: 26 },
+        { day: "Thu 21", icon: "sunny", max: 26 }
+      ]
+    },
+    {
+      city: "Athens",
+      country: "Greece",
+      countryCode: "GR",
+      forecasts: [
+        { day: "Mon 18", icon: "sunny", max: 26 },
+        { day: "Tue 19", icon: "sunny", max: 26 },
+        { day: "Wed 20", icon: "sunny", max: 26 }
+      ]
+    },
+    {
+      city: "Valencia",
+      country: "Spain",
+      countryCode: "ES",
+      forecasts: [
+        { day: "Mon 18", icon: "sunny", max: 26 },
+        { day: "Tue 19", icon: "sunny", max: 26 }
+      ]
+    }
   ];
-  createStore("forecasts", { mock, latency: 200 }).get();
+  createStore("forecasts", { mock: [...mock, ...mock], latency: 200 }).get();
 </script>
 
 <script>
