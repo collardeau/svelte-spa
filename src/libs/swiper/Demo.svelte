@@ -28,7 +28,7 @@
     background-color: var(--theme-color);
   }
   .slide-2 {
-    background-color: green;
+    background-color: #12355b;
   }
 </style>
 

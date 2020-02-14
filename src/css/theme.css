@@ -1,0 +1,46 @@
+:root {
+  --container-width: 960px;
+  --base-font-size: 16px;
+
+  --theme-color: #ff3e00;
+  --white: #fff;
+  --grey: #ddd;
+  --black: #333;
+
+  --bg-color: var(--white);
+  --text-color: var(--black);
+  --heading-color: var(--theme-color);
+  --link-color: rgb(0, 100, 200);
+  --link-visited-color: rgb(0, 80, 160);
+
+  --gap-0: 0rem;
+  --gap-1: 0.25rem;
+  --gap-2: 0.5rem;
+  --gap-3: 0.75rem;
+  --gap-4: 1rem;
+  --gap-5: 1.25rem;
+  --gap-6: 1.5rem;
+  --gap-7: 2rem;
+  --gap-8: 4rem;
+
+  --size-0: 0;
+  --size-1: 2rem;
+  --size-2: 3rem;
+  --size-3: 4rem;
+  --size-4: 6rem;
+  --size-5: 8rem;
+  --size-6: 10rem;
+  --size-7: 14rem;
+  --size-8: 20rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+}

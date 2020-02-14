@@ -54,6 +54,7 @@
 <style>
   .container {
     margin-top: var(--gap-7);
+    --second-color: beige;
   }
   h3 {
     margin: var(--gap-6) 0;
