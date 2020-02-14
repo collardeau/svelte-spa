@@ -30,7 +30,7 @@
 <section>
   <div class="hero">
     <SunnySVG />
-    <h5>Let's Have Some Sun</h5>
+    <h5>Let's Have Some Sun!</h5>
   </div>
   <Forecasts />
 </section>
