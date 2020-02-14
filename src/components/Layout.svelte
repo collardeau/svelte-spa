@@ -19,9 +19,6 @@
   }
   footer {
     background-color: transparent;
-    position: relative;
-    margin-top: -300px;
-    z-index: -10;
   }
 </style>
 
@@ -30,7 +27,5 @@
   <main>
     <slot />
   </main>
-  <footer>
-    <CitySVG />
-  </footer>
+  <footer />
 </div>
