@@ -50,6 +50,7 @@ h6 {
   color: var(--heading-color);
   text-transform: uppercase;
   font-weight: 200;
+  font-size: 1rem;
 }
 
 ul {
