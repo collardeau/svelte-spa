@@ -7,6 +7,7 @@
   import TabsDemo from "../libs/tabs/Demo.svelte";
   import SweetAlertDemo from "../libs/sweetalert2/Demo.svelte";
   import FirebaseDemo from "../libs/firebase/Demo.svelte";
+  import FirebaseAuthDemo from "../libs/firebase-auth/Demo.svelte";
 
   import { getStore } from "../libs/stores";
   const store = getStore("demo-tabs");
@@ -14,7 +15,11 @@
   const demos1 = [
     // integrations
     {
-      title: "Firebase",
+      title: "Firebase Auth",
+      comp: FirebaseAuthDemo
+    },
+    {
+      title: "Firestore",
       comp: FirebaseDemo
     },
     {
