@@ -1,14 +1,27 @@
 <style>
-  .container {
+  section {
     text-align: center;
+  }
+  h3 {
+    font-size: var(--text-2xl);
+  }
+  .content {
+    margin-top: var(--gap-4);
+    line-height: 1.5;
+  }
+
+  a {
+    color: var(--theme-color);
   }
 </style>
 
-<div class="container">
+<section>
   <h3>About</h3>
-  <p>This site runs the live svelte spa template.</p>
-  <p>
-    View the
-    <a href="#/kitchen-sink">Kitchen Sink</a>
-  </p>
-</div>
+  <div class="content">
+    <p>
+      This site is a
+      <a href="https://github.com/collardeau/svelte-spa">svelte spa</a>
+      template.
+    </p>
+  </div>
+</section>
