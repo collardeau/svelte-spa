@@ -22,4 +22,4 @@
   <h5>Let's Have Some Sun</h5>
 </div>
 
-<!-- <Forecasts /> -->
+<Forecasts />

@@ -2,10 +2,11 @@
   import createStore from "../libs/firebase/createStore";
 
   const mock = [
-    { city: "Lisbon", country: "Portugal" },
-    { city: "Athens", country: "Greece" }
+    { city: "Lisbon", country: "Portugal", countryCode: "PT" },
+    { city: "Athens", country: "Greece", countryCode: "GR" },
+    { city: "Valencia", country: "Spain", countryCode: "ES" }
   ];
-  createStore("forecasts", { mock }).get();
+  createStore("forecasts", { mock, latency: 200 }).get();
 </script>
 
 <script>
@@ -19,10 +20,11 @@
 
 <style>
   section {
-    height: 33vh;
-    background-color: var(--white);
     color: var(--black);
-    margin-top: var(--gap-8);
+    margin-top: var(--gap-6);
+  }
+  h5 {
+    padding: var(--gap-4) 0;
   }
 </style>
 
@@ -32,9 +34,11 @@
     <div>loading...</div>
   {:else}
     <ul>
-      {#each items as item}
-        <Forecast {...item} />
-      {/each}
+      <li>
+        {#each items as item}
+          <Forecast {...item} />
+        {/each}
+      </li>
     </ul>
   {/if}
 </section>
