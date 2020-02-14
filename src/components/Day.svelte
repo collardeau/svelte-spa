@@ -29,11 +29,22 @@
 <style>
   section {
     height: var(--size-5);
+    padding: 0 var(--gap-3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+  }
+  @media (max-width: 414px) {
+    section {
+      padding: var(--gap-2);
+    }
+  }
+  @media (max-width: 320px) {
+    section {
+      padding: var(--gap-0);
+    }
   }
   h5 {
     color: var(--sky-blue);

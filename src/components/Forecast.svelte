@@ -11,11 +11,12 @@
 
 <style>
   article {
-    min-width: var(--size-8);
     padding: var(--gap-3);
     margin-bottom: var(--gap-7);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
   }
   header {
     display: flex;
