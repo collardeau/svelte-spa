@@ -20,6 +20,10 @@
       font-size: var(--text-3xl);
       margin-top: var(--gap-5);
     }
+    :global(.hero svg) {
+      width: var(--size-4);
+      height: var(--size-4);
+    }
   }
 </style>
 
