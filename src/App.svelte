@@ -2,11 +2,8 @@
   import "./css/theme.css";
   import "./css/global.css";
   import createRouterStore from "./libs/hash-router/createStore";
-  import createAuthStore from "./libs/firebase-auth/createStore";
-  import { firebaseAuth } from "./firebase";
 
   const router = createRouterStore("app-router");
-  const auth = createAuthStore("auth", firebaseAuth);
 </script>
 
 <script>
