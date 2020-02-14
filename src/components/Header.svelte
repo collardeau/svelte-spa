@@ -8,12 +8,6 @@
   const store = getStore("app-router");
   $: route = $store.route;
   $: title = route === "kitchen-sink" ? "Kitchen Sink" : appTitle;
-
-  const goHome = () => {
-    if (route) {
-      window.location.hash = "/";
-    }
-  };
 </script>
 
 <style>
@@ -37,6 +31,10 @@
     justify-content: center;
   }
 
+  a {
+    display: block;
+  }
+
   :global(.svg-wrapper svg) {
     width: var(--gap-6);
     height: var(--gap-6);
@@ -49,11 +47,21 @@
 </style>
 
 <header>
-  <div class="left-side" on:click={goHome}>
-    <div class="svg-wrapper">
-      <LogoSVG />
+  {#if !route}
+    <div class="left-side">
+      <div class="svg-wrapper">
+        <LogoSVG />
+      </div>
+      <h1>{title}</h1>
     </div>
-    <h1>{title}</h1>
-  </div>
+  {:else}
+    <a href="#/" class="left-side">
+      <div class="svg-wrapper">
+        <LogoSVG />
+      </div>
+      <h1>{title}</h1>
+    </a>
+  {/if}
+
   <Nav />
 </header>
