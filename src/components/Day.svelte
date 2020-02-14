@@ -1,7 +1,29 @@
 <script>
   import SunnySVG from "../svgs/Sunny.svelte";
+  import PartlyCloudySVG from "../svgs/PartlyCloudyDay.svelte";
+  import CloudySVG from "../svgs/Cloudy.svelte";
+  import OvercastSVG from "../svgs/Overcast.svelte";
   export let day = "";
   export let max = 0;
+  export let weather = "sunny";
+
+  let svg;
+  switch (weather) {
+    case "sun":
+      svg = SunnySVG;
+      break;
+    case "cloud1":
+      svg = PartlyCloudySVG;
+      break;
+    case "cloud2":
+      svg = CloudySVG;
+      break;
+    case "cloud3":
+      svg = OvercastSVG;
+      break;
+    default:
+      console.warn("did not find weather svg for: ", weather);
+  }
 </script>
 
 <style>
@@ -29,6 +51,6 @@
 
 <section>
   <h5>{day}</h5>
-  <SunnySVG />
+  <svelte:component this={svg} />
   <div class="details">{max} &deg;C</div>
 </section>

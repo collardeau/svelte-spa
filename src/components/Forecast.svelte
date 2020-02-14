@@ -21,7 +21,8 @@
   }
   h3 {
     margin-right: var(--gap-2);
-    min-width: var(--size-4);
+    min-width: var(--size-5);
+    font-weight: 600;
   }
   img {
     margin-right: var(--gap-1);
