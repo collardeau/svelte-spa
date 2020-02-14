@@ -29,7 +29,6 @@
 <style>
   section {
     height: var(--size-5);
-    padding: var(--gap-2) var(--gap-4);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

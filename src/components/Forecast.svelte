@@ -11,10 +11,11 @@
 
 <style>
   article {
-    background-color: var(--white);
+    min-width: var(--size-8);
     padding: var(--gap-3);
     margin-bottom: var(--gap-7);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
   }
   header {
     display: flex;
@@ -37,6 +38,18 @@
   .daily-forecast {
     margin: var(--gap-6) 0;
     display: flex;
+    justify-content: space-between;
+  }
+  .more {
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    margin-top: var(--gap-6);
+  }
+  button {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    border: none;
   }
 </style>
 
@@ -53,5 +66,11 @@
       <Day {...forecast} />
     {/each}
   </section>
+  <div class="more">
+    <div class="left" />
+    <div class="right">
+      <button>Action</button>
+    </div>
+  </div>
 
 </article>

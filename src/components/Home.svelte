@@ -15,11 +15,18 @@
     width: var(--size-5);
     height: var(--size-5);
   }
+  @media (max-width: 640px) {
+    h5 {
+      font-size: var(--text-3xl);
+      margin-top: var(--gap-5);
+    }
+  }
 </style>
 
-<div class="hero">
-  <SunnySVG />
-  <h5>Let's Have Some Sun</h5>
-</div>
-
-<Forecasts />
+<section>
+  <div class="hero">
+    <SunnySVG />
+    <h5>Let's Have Some Sun</h5>
+  </div>
+  <Forecasts />
+</section>
