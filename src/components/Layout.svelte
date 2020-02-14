@@ -20,7 +20,7 @@
   footer {
     background-color: transparent;
     position: relative;
-    margin-top: -200px;
+    margin-top: -300px;
     z-index: -10;
   }
 </style>
