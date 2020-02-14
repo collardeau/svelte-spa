@@ -3,11 +3,10 @@
   import LogoSVG from "../svgs/LogoWhite.svelte";
   import { getStore } from "../libs/stores";
 
-  const appTitle = "weather app";
+  const title = "weather app";
 
   const store = getStore("app-router");
   $: route = $store.route;
-  $: title = route === "kitchen-sink" ? "Kitchen Sink" : appTitle;
 </script>
 
 <style>

@@ -26,6 +26,10 @@
   .tabs {
     min-width: var(--size-8);
   }
+  h3 {
+    font-size: var(--text-2xl);
+    padding: var(--gap-6);
+  }
   :global(.tabs ul) {
     display: flex;
     justify-content: space-evenly;
@@ -38,6 +42,7 @@
 </style>
 
 <div class="container">
+  <h3>Kitchen Sink</h3>
   <div class="tabs">
     <Tabs name="demo-tabs" {tabs} />
   </div>

@@ -9,7 +9,9 @@
     margin-top: var(--gap-4);
     line-height: 1.5;
   }
-
+  p {
+    margin-bottom: var(--gap-6);
+  }
   a {
     color: var(--theme-color);
   }
@@ -22,6 +24,11 @@
       This site is a
       <a href="https://github.com/collardeau/svelte-spa">svelte spa</a>
       template.
+    </p>
+    <p>
+      Visit the
+      <a href="#kitchen-sink">kitchen sink</a>
+      to see available libs.
     </p>
   </div>
 </section>
