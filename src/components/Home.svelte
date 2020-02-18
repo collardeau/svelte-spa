@@ -5,28 +5,26 @@
   .hero {
     font-size: var(--text-2xl);
   }
-  p {
-    margin-top: var(--gap-7);
+  h5 {
+    margin-top: var(--gap-8);
+    margin-bottom: var(--gap-2);
   }
 </style>
 
 <div class="container">
+  <h5>integrations</h5>
   <p class="hero">
-    Check out the
-    <a href="#/kitchen-sink">Kitchen Sink</a>
+    Demo the
     <br />
-    to see all
-    <strong>integrations</strong>
-    included.
+    <a href="#/kitchen-sink">kitchen sink</a>
   </p>
+  <h5>templates</h5>
+  <div>
+    <a href="https://blissful-brahmagupta-48d16e.netlify.com/">weather app</a>
+  </div>
+  <h5>More</h5>
   <p>
     visit the
-    <a href="https://blissful-brahmagupta-48d16e.netlify.com/">
-      weather app template
-    </a>
-  </p>
-  <p>
-    or visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
   </p>
 
