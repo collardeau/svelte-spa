@@ -30,7 +30,6 @@
     <slot />
   </main>
   <footer>
-    View the github repo:
     <a href="https://github.com/collardeau/svelte-spa">
       https://github.com/collardeau/svelte-spa
     </a>

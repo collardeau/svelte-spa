@@ -2,30 +2,44 @@
   .container {
     text-align: center;
   }
-  .hero {
-    font-size: var(--text-2xl);
+  section {
+    margin-bottom: var(--gap-8);
   }
   h5 {
-    margin-top: var(--gap-8);
-    margin-bottom: var(--gap-2);
+    margin-bottom: var(--gap-3);
+  }
+  p {
+    margin-bottom: var(--gap-5);
   }
 </style>
 
 <div class="container">
-  <h5>integrations</h5>
-  <p class="hero">
-    Demo the
-    <br />
-    <a href="#/kitchen-sink">kitchen sink</a>
-  </p>
-  <h5>templates</h5>
-  <div>
-    <a href="https://blissful-brahmagupta-48d16e.netlify.com/">weather app</a>
-  </div>
-  <h5>More</h5>
-  <p>
-    visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-  </p>
+  <section>
+    <h5>Integrations</h5>
+    <p>
+      demo the
+      <a href="#/kitchen-sink">kitchen sink</a>
+    </p>
+  </section>
+  <section>
+    <h5>templates</h5>
+    <p>
+      <a href="https://blissful-brahmagupta-48d16e.netlify.com/">
+        #weather-template
+      </a>
+      branch
+    </p>
+  </section>
+  <section>
+    <h5>More</h5>
+    <p>
+      check out the svelte-spa
+      <a href="https://github.com/collardeau/svelte-spa">repo</a>
+    </p>
+    <p>
+      visit the
+      <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
+    </p>
+  </section>
 
 </div>
