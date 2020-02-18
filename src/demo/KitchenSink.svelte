@@ -8,7 +8,7 @@
       id: "tab-1"
     },
     {
-      text: "Standalone",
+      text: "Stores",
       id: "tab-2"
     }
   ];

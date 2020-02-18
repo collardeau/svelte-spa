@@ -10,9 +10,5 @@
 
 <div class="container">
   <h3>About</h3>
-  <p>
-    This site is a demo of the
-    <a href="https://github.com/collardeau/svelte-spa">svelte-spa template</a>
-    .
-  </p>
+  <p>This site is a demo of the svelte-spa template.</p>
 </div>
