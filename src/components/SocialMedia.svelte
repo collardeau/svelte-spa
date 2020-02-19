@@ -1,0 +1,56 @@
+<script>
+  import GithubSVG from "../svg/social-media/Github.svelte";
+  import TwitterSVG from "../svg/social-media/Twitter.svelte";
+  import LinkedInSVG from "../svg/social-media/LinkedIn.svelte";
+  import VimeoSVG from "../svg/social-media/Vimeo.svelte";
+  // more icons at https://simpleicons.org/
+
+  const items = [
+    {
+      svg: GithubSVG,
+      href: "https://github.com"
+    },
+    {
+      svg: TwitterSVG,
+      href: "https://twitter.com"
+    },
+    {
+      svg: LinkedInSVG,
+      href: "https://linkedin.com"
+    },
+    {
+      svg: VimeoSVG,
+      href: "https://vimeo.com"
+    }
+  ];
+</script>
+
+<div class="social-media">
+  {#each items as { svg, href }}
+    <div class="icon">
+      <a {href}>
+        <svelte:component this={svg} />
+      </a>
+    </div>
+  {/each}
+</div>
+
+<style>
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .icon {
+    width: var(--gap-7);
+    padding: var(--gap-2);
+  }
+  a {
+    color: var(--black);
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+  :global(.social-media svg) {
+    fill: currentColor;
+  }
+</style>
