@@ -1,5 +1,5 @@
 <script>
-  import { integrations, customStores } from "../data";
+  import { integrations, customStores } from "./data";
   // also fetch and localStorage
   import { getStore } from "../libs/stores";
   const store = getStore("demo-tabs");

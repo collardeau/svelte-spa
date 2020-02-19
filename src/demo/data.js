@@ -1,12 +1,12 @@
-import ModalDemo from "./libs/modal/Demo.svelte";
-import RouterDemo from "./libs/hash-router/Demo.svelte";
-import SwiperDemo from "./libs/swiper/Demo.svelte";
-import FormDemo from "./libs/form/Demo.svelte";
-import RoughDemo from "./libs/roughjs/Demo.svelte";
-import TabsDemo from "./libs/tabs/Demo.svelte";
-import SweetAlertDemo from "./libs/sweetalert2/Demo.svelte";
-import FirebaseDemo from "./libs/firebase/Demo.svelte";
-import FirebaseAuthDemo from "./libs/firebase-auth/Demo.svelte";
+import ModalDemo from "../libs/modal/Demo.svelte";
+import RouterDemo from "../libs/hash-router/Demo.svelte";
+import SwiperDemo from "../libs/swiper/Demo.svelte";
+import FormDemo from "../libs/form/Demo.svelte";
+import RoughDemo from "../libs/roughjs/Demo.svelte";
+import TabsDemo from "../libs/tabs/Demo.svelte";
+import SweetAlertDemo from "../libs/sweetalert2/Demo.svelte";
+import FirebaseDemo from "../libs/firebase/Demo.svelte";
+import FirebaseAuthDemo from "../libs/firebase-auth/Demo.svelte";
 
 export const integrations = [
   {
