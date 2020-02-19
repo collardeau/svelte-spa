@@ -23,6 +23,7 @@
   }
   a {
     display: block;
+    color: var(--black);
     padding: var(--gap-2);
   }
   a,

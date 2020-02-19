@@ -1,8 +1,9 @@
 <script>
   import Nav from "./Nav.svelte";
+  import LogoSVG from "../svg/Logo.svelte";
   import { getStore } from "../libs/stores";
 
-  const title = "my new site";
+  const title = "tonton.dev";
   const store = getStore("app-router");
   $: route = $store.route;
 </script>
@@ -11,12 +12,16 @@
   <!-- left side: make a link home if not on home page -->
   {#if !route}
     <div class="left">
-      <div class="logo">&#x02202;</div>
+      <div class="logo">
+        <LogoSVG />
+      </div>
       <h1>{title}</h1>
     </div>
   {:else}
     <a href="#/" class="left">
-      <div class="logo">&#x02202;</div>
+      <div class="logo">
+        <LogoSVG />
+      </div>
       <h1>{title}</h1>
     </a>
   {/if}
@@ -40,21 +45,25 @@
       padding: var(--gap-3);
     }
   }
+  h1 {
+    font-size: var(--text-lg);
+    color: var(--black);
+  }
   a {
     display: block;
+    color: var(--black);
   }
   a:hover {
-    color: var(--theme-color);
     text-decoration: none;
   }
   .left {
     display: flex;
   }
   .logo {
-    color: var(--theme-color);
-    font-size: var(--text-4xl);
+    width: var(--size-1);
+    height: var(--size-1);
     font-weight: 200;
-    margin-right: var(--gap-2);
+    margin-right: var(--gap-1);
   }
   .logo,
   h1 {

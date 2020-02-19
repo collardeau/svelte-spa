@@ -1,27 +1,28 @@
 <script>
+  // more icons at https://simpleicons.org/
   import GithubSVG from "../svg/social-media/Github.svelte";
   import TwitterSVG from "../svg/social-media/Twitter.svelte";
   import LinkedInSVG from "../svg/social-media/LinkedIn.svelte";
   import VimeoSVG from "../svg/social-media/Vimeo.svelte";
-  // more icons at https://simpleicons.org/
+  import { social } from "../data";
 
   const items = [
     {
       svg: GithubSVG,
-      href: "https://github.com"
+      href: social.github.href
     },
     {
       svg: TwitterSVG,
-      href: "https://twitter.com"
+      href: social.twitter.href
     },
     {
       svg: LinkedInSVG,
-      href: "https://linkedin.com"
-    },
-    {
-      svg: VimeoSVG,
-      href: "https://vimeo.com"
+      href: social.linkedIn.href
     }
+    // {
+    //   svg: VimeoSVG,
+    //   href: "https://vimeo.com"
+    // }
   ];
 </script>
 
@@ -39,9 +40,11 @@
   .social-media {
     display: flex;
     justify-content: space-evenly;
+    width: var(--size-5);
+    margin: 0 auto;
   }
   .icon {
-    width: var(--gap-7);
+    width: var(--gap-6);
     padding: var(--gap-2);
   }
   a {
