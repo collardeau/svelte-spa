@@ -5,25 +5,6 @@
   const store = getStore("demo-tabs");
 </script>
 
-<style>
-  .container {
-    margin-top: var(--gap-7);
-    --second-color: beige;
-  }
-  h3 {
-    margin: var(--gap-6) 0;
-  }
-  section {
-    padding-bottom: var(--gap-6);
-    margin-bottom: var(--gap-8);
-    border-bottom: 0.01rem solid var(--grey);
-  }
-  .details {
-    margin-top: var(--gap-7);
-    font-size: var(--text-sm);
-  }
-</style>
-
 <div class="container">
   {#if $store.selected === 'tab-1'}
     {#each integrations as { title, comp, href }}
@@ -56,3 +37,22 @@
     </section>
   {/if}
 </div>
+
+<style>
+  .container {
+    margin-top: var(--gap-7);
+    --second-color: beige;
+  }
+  h3 {
+    margin: var(--gap-6) 0;
+  }
+  section {
+    padding-bottom: var(--gap-6);
+    margin-bottom: var(--gap-8);
+    border-bottom: 0.01rem solid var(--grey);
+  }
+  .details {
+    margin-top: var(--gap-7);
+    font-size: var(--text-sm);
+  }
+</style>

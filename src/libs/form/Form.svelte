@@ -15,13 +15,6 @@
   };
 </script>
 
-<style>
-  form {
-    background-color: var(--form-bg-color);
-    padding: var(--form-padding);
-  }
-</style>
-
 <form {name} on:submit={onFormSubmit}>
   {#each store.inputs as { name, type, label, ...rest }}
     <div class="input-container">
@@ -64,3 +57,10 @@
     <button type="submit" {disabled}>submit</button>
   </slot>
 </form>
+
+<style>
+  form {
+    background-color: var(--form-bg-color);
+    padding: var(--form-padding);
+  }
+</style>

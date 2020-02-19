@@ -12,12 +12,6 @@
   const openModal = getStore("my-modal").open;
 </script>
 
-<style>
-  .container {
-    --modal-width: 60%;
-  }
-</style>
-
 <div class="container">
   <Modal {name}>
     <p>Hello there</p>
@@ -25,3 +19,9 @@
 </div>
 
 <button on:click={openModal}>Open Modal</button>
+
+<style>
+  .container {
+    --modal-width: 60%;
+  }
+</style>

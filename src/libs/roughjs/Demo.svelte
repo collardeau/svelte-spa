@@ -15,6 +15,8 @@
   }
 </script>
 
+<svg use:action />
+
 <style>
   svg {
     width: 300px;
@@ -22,5 +24,3 @@
     background-color: var(--second-color);
   }
 </style>
-
-<svg use:action />
