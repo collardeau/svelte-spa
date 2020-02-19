@@ -36,9 +36,6 @@
     justify-content: space-evenly;
     line-height: 1.5;
   }
-  section {
-    margin-bottom: var(--gap-8);
-  }
   h3 {
     margin-bottom: var(--gap-3);
   }
