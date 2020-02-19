@@ -4,6 +4,16 @@
   $: route = $store.route;
 </script>
 
+<nav>
+  <ul>
+    {#if route !== 'about'}
+      <li>
+        <a href="#/about">About</a>
+      </li>
+    {/if}
+  </ul>
+</nav>
+
 <style>
   ul {
     display: flex;
@@ -22,13 +32,3 @@
     justify-content: center;
   }
 </style>
-
-<nav>
-  <ul>
-    {#if !route}
-      <li>
-        <a href="#/about">About</a>
-      </li>
-    {/if}
-  </ul>
-</nav>
