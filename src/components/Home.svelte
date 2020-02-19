@@ -36,9 +36,6 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
-  section {
-    margin-bottom: var(--gap-8);
-  }
   h3 {
     margin-bottom: var(--gap-3);
   }
