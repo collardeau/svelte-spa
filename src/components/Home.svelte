@@ -59,4 +59,10 @@
   li {
     margin-bottom: var(--gap-2);
   }
+  a {
+    color: var(--black);
+    padding-bottom: 0.125rem;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
 </style>
