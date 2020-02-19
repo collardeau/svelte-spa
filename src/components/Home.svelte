@@ -1,22 +1,3 @@
-<style>
-  .page {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  section {
-    margin-bottom: var(--gap-8);
-  }
-  h3 {
-    margin-bottom: var(--gap-3);
-  }
-  p {
-    margin-bottom: var(--gap-5);
-  }
-</style>
-
 <div class="page">
   <section>
     <h3>Integrations</h3>
@@ -45,5 +26,23 @@
       <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     </p>
   </section>
-
 </div>
+
+<style>
+  .page {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  section {
+    margin-bottom: var(--gap-8);
+  }
+  h3 {
+    margin-bottom: var(--gap-3);
+  }
+  p {
+    margin-bottom: var(--gap-5);
+  }
+</style>

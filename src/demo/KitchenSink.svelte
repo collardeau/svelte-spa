@@ -19,6 +19,13 @@
   import Demos from "./Demos.svelte";
 </script>
 
+<div class="container">
+  <div class="tabs">
+    <Tabs name="demo-tabs" {tabs} />
+  </div>
+  <Demos />
+</div>
+
 <style>
   .container {
     text-align: center;
@@ -36,10 +43,3 @@
     background-color: transparent;
   }
 </style>
-
-<div class="container">
-  <div class="tabs">
-    <Tabs name="demo-tabs" {tabs} />
-  </div>
-  <Demos />
-</div>

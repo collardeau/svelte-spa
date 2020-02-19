@@ -2,6 +2,18 @@
   import Header from "./Header.svelte";
 </script>
 
+<div class="layout">
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <footer>
+    <a href="https://github.com/collardeau/svelte-spa">
+      https://github.com/collardeau/svelte-spa
+    </a>
+  </footer>
+</div>
+
 <style>
   .layout {
     min-height: 100vh;
@@ -23,15 +35,3 @@
     font-size: var(--text-sm);
   }
 </style>
-
-<div class="layout">
-  <Header />
-  <main>
-    <slot />
-  </main>
-  <footer>
-    <a href="https://github.com/collardeau/svelte-spa">
-      https://github.com/collardeau/svelte-spa
-    </a>
-  </footer>
-</div>

@@ -7,6 +7,23 @@
   $: route = $store.route;
 </script>
 
+<header>
+  <!-- left side: make a link home if not on home page -->
+  {#if !route}
+    <div class="left">
+      <div class="logo">&#x02202;</div>
+      <h1>{title}</h1>
+    </div>
+  {:else}
+    <a href="#/" class="left">
+      <div class="logo">&#x02202;</div>
+      <h1>{title}</h1>
+    </a>
+  {/if}
+  <!-- right-side: nav component -->
+  <Nav />
+</header>
+
 <style>
   header {
     display: flex;
@@ -46,20 +63,3 @@
     justify-content: center;
   }
 </style>
-
-<header>
-  <!-- left side: make a link home if not on home page -->
-  {#if !route}
-    <div class="left">
-      <div class="logo">&#x02202;</div>
-      <h1>{title}</h1>
-    </div>
-  {:else}
-    <a href="#/" class="left">
-      <div class="logo">&#x02202;</div>
-      <h1>{title}</h1>
-    </a>
-  {/if}
-  <!-- right-side: nav component -->
-  <Nav />
-</header>
