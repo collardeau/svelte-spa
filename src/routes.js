@@ -9,7 +9,8 @@ export function match({ route }) {
       return About;
     case "kitchen-sink":
       return KitchenSink;
-    case "new-page":
+    case "work-1":
+    case "work-2":
       return Page;
     default:
       return Home;

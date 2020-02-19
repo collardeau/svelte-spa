@@ -2,7 +2,7 @@
   import Nav from "./Nav.svelte";
   import { getStore } from "../libs/stores";
 
-  const title = "svelte spa";
+  const title = "my new site";
   const store = getStore("app-router");
   $: route = $store.route;
 </script>
