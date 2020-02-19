@@ -1,39 +1,48 @@
 <script>
+  import Nav from "./Nav.svelte";
   import { getStore } from "../libs/stores";
 
-  const appTitle = "Svelte Spa";
-
+  const title = "svelte spa";
   const store = getStore("app-router");
   $: route = $store.route;
-  $: title = route === "kitchen-sink" ? "Kitchen Sink" : appTitle;
 </script>
 
 <style>
+  /* * {
+    border: 1px solid;
+  } */
   header {
-    text-align: center;
-    padding: var(--gap-3);
     display: flex;
-    flex-direction: column;
-  }
-  h1 {
-    font-size: var(--text-5xl);
-    margin: var(--gap-7) 0;
-    order: 2;
+    justify-content: space-between;
+    min-height: var(--size-1);
+    padding: var(--gap-1);
   }
   @media (min-width: 640px) {
-    h1 {
-      font-size: var(--text-6xl);
+    header {
+      padding: var(--gap-3);
     }
   }
-  li {
-    width: var(--size-3);
-    height: var(--size-1);
-    margin: 0 auto;
-    text-align: center;
+  h1 {
+    font-size: var(--text-lg);
+    margin-left: var(--gap-2);
   }
   a {
     display: block;
-    height: 100%;
+  }
+  a:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+  }
+  .left {
+    display: flex;
+  }
+  .logo {
+    font-size: var(--text-4xl);
+    color: var(--theme-color);
+    font-weight: 200;
+  }
+  .logo,
+  h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,19 +50,18 @@
 </style>
 
 <header>
-  <h1>{title}</h1>
-  <nav>
-    <ul>
-      {#if route}
-        <li>
-          <a href="#/">Home</a>
-        </li>
-      {/if}
-      {#if !route}
-        <li>
-          <a href="#/about">About</a>
-        </li>
-      {/if}
-    </ul>
-  </nav>
+  <!-- left side: make a link home if not on home page -->
+  {#if !route}
+    <div class="left">
+      <div class="logo">&#x02202;</div>
+      <h1>{title}</h1>
+    </div>
+  {:else}
+    <a href="#/" class="left">
+      <div class="logo">&#x02202;</div>
+      <h1>{title}</h1>
+    </a>
+  {/if}
+  <!-- right-side: nav component -->
+  <Nav />
 </header>
