@@ -22,12 +22,6 @@
   $: items = $store.data;
 </script>
 
-<style>
-  li {
-    margin-bottom: var(--gap-4);
-  }
-</style>
-
 {#if loading}
   <div>loading...</div>
 {:else}
@@ -37,3 +31,9 @@
     {/each}
   </ul>
 {/if}
+
+<style>
+  li {
+    margin-bottom: var(--gap-4);
+  }
+</style>

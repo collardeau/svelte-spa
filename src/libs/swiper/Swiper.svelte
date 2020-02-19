@@ -23,12 +23,6 @@
   }
 </script>
 
-<style>
-  .swiper-container {
-    max-width: var(--size-8);
-  }
-</style>
-
 <div use:action class="swiper-container">
   <div class="swiper-wrapper">
     <slot />
@@ -43,3 +37,9 @@
   <!-- If we need scrollbar -->
   <!-- <div class="swiper-scrollbar" /> -->
 </div>
+
+<style>
+  .swiper-container {
+    max-width: var(--size-8);
+  }
+</style>

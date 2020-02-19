@@ -15,6 +15,14 @@
   };
 </script>
 
+<div class="container">
+  <Swiper {params}>
+    <!-- each slide requires the class "swiper-slide" -->
+    <div class="swiper-slide slide-1">Slide 1</div>
+    <div class="swiper-slide slide-2">Slide 2</div>
+  </Swiper>
+</div>
+
 <style>
   .container {
     --swiper-theme-color: rgba(255, 255, 255, 0.8);
@@ -31,11 +39,3 @@
     background-color: #12355b;
   }
 </style>
-
-<div class="container">
-  <Swiper {params}>
-    <!-- each slide requires the class "swiper-slide" -->
-    <div class="swiper-slide slide-1">Slide 1</div>
-    <div class="swiper-slide slide-2">Slide 2</div>
-  </Swiper>
-</div>
