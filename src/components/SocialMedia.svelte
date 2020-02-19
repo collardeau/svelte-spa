@@ -19,10 +19,6 @@
       svg: LinkedInSVG,
       href: social.linkedIn.href
     }
-    // {
-    //   svg: VimeoSVG,
-    //   href: "https://vimeo.com"
-    // }
   ];
 </script>
 
@@ -39,19 +35,16 @@
 <style>
   .social-media {
     display: flex;
-    justify-content: space-evenly;
-    width: var(--size-5);
-    margin: 0 auto;
   }
   .icon {
     width: var(--gap-6);
     padding: var(--gap-2);
   }
   a {
-    color: var(--black);
+    color: #ccc;
   }
   a:hover {
-    opacity: 0.5;
+    color: var(--black);
   }
   :global(.social-media svg) {
     fill: currentColor;

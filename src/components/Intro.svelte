@@ -3,21 +3,28 @@
 </script>
 
 <div class="container">
-  <img src="img/blank-avatar.jpg" alt="avatar" />
-  <p>
-    Hi. My name is
-    <strong>Thomas Collardeau.</strong>
-  </p>
-  <p>I build stuff for the web!</p>
-  <SocialMedia />
+  <img src="img/avatar-2.jpg" alt="avatar" />
+  <div class="details">
+    <p>
+      Hi. My name is
+      <strong>Thomas Collardeau.</strong>
+    </p>
+    <p>I build stuff for the web!</p>
+    <SocialMedia />
+  </div>
 </div>
 
 <style>
   .container {
     display: flex;
-    min-height: var(--size-6);
+  }
+  .details {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    min-height: var(--size-4);
+    margin-left: var(--gap-4);
+    text-align: left;
   }
   img {
     width: var(--size-4);
