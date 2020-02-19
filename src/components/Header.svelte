@@ -8,23 +8,20 @@
 </script>
 
 <style>
-  /* * {
-    border: 1px solid;
-  } */
   header {
     display: flex;
     justify-content: space-between;
     min-height: var(--size-1);
     padding: var(--gap-1);
+    background-color: var(--grey);
+    /* max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto; */
   }
   @media (min-width: 640px) {
     header {
       padding: var(--gap-3);
     }
-  }
-  h1 {
-    font-size: var(--text-lg);
-    margin-left: var(--gap-2);
   }
   a {
     display: block;
@@ -37,9 +34,10 @@
     display: flex;
   }
   .logo {
-    font-size: var(--text-4xl);
     color: var(--theme-color);
+    font-size: var(--text-4xl);
     font-weight: 200;
+    margin-right: var(--gap-2);
   }
   .logo,
   h1 {
