@@ -16,15 +16,16 @@
 
 <style>
   .container {
-    display: flex;
+    /* display: flex; */
+    text-align: center;
   }
   .details {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     min-height: var(--size-4);
-    margin-left: var(--gap-4);
-    text-align: left;
+    margin-left: var(--gap-5);
+    /* text-align: left; */
   }
   img {
     width: var(--size-4);

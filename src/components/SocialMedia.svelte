@@ -35,6 +35,7 @@
 <style>
   .social-media {
     display: flex;
+    margin: 0 auto;
   }
   .icon {
     width: var(--gap-6);

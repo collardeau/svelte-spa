@@ -33,5 +33,6 @@
     padding: var(--gap-4);
     background-color: var(--grey);
     font-size: var(--text-sm);
+    background-color: var(--white);
   }
 </style>

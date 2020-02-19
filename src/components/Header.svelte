@@ -36,9 +36,9 @@
     min-height: var(--size-1);
     padding: var(--gap-1);
     background-color: var(--grey);
-    /* max-width: var(--container-width);
+    max-width: var(--container-width);
     width: 100%;
-    margin: 0 auto; */
+    margin: 0 auto;
   }
   @media (min-width: 640px) {
     header {

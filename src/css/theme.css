@@ -7,7 +7,7 @@
   --grey: #eee;
   --black: #333;
 
-  --bg-color: var(--white);
+  --bg-color: var(--grey);
   --text-color: var(--black);
   --heading-color: var(--theme-color);
   --link-color: rgb(0, 100, 200);
