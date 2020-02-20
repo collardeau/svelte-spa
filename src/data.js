@@ -4,7 +4,7 @@ export const works = [
     title: "Target"
   },
   {
-    href: "#/john-hong-studio",
+    href: "https://john-hong-studio.com",
     title: "John Hong Studio"
   },
   {
