@@ -8,9 +8,7 @@
     <slot />
   </main>
   <footer>
-    <a href="https://github.com/collardeau/svelte-spa">
-      https://github.com/collardeau
-    </a>
+    <a href="https://github.com/collardeau">https://github.com/collardeau</a>
   </footer>
 </div>
 

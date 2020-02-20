@@ -22,7 +22,7 @@
     margin-bottom: var(--gap-3);
   }
   li {
-    margin-bottom: var(--gap-2);
+    margin-bottom: var(--gap-3);
   }
   :global(.section a) {
     color: var(--black);
