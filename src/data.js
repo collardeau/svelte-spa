@@ -1,7 +1,7 @@
 export const works = [
   {
-    href: "#/studio-connect",
-    title: "Studio Connect"
+    href: "#/target",
+    title: "Target Innovations"
   },
   {
     href: "#/john-hong-studio",
@@ -26,11 +26,11 @@ export const projects = [
     title: "Travel Info",
     descr: "easy travel searches"
   },
-  {
-    href: "http://conceptor-app.com",
-    title: "Conceptor",
-    descr: "just a landing page"
-  },
+  // {
+  //   href: "http://conceptor-app.com",
+  //   title: "Conceptor",
+  //   descr: "just a landing page"
+  // },
   {
     href: "https://life-on-bicycles.com",
     title: "Life On Bicycles",
@@ -46,25 +46,25 @@ export const projects = [
 
 export const blogs = [
   {
-    href: "https://dev.to/collardeau/lazy-loading-images-in-svelte-1mk6",
-    title: "Lazy Loading Images in Svelte",
-    platform: "dev.to"
-  },
-  {
     href: "https://dev.to/collardeau/props-up-with-svelte-4cjk",
     title: "Props up with Svelte",
     platform: "dev.to"
   },
   {
-    href:
-      "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
-    title: "An Intro to Functional Programming Concepts",
-    platform: "medium.com"
+    href: "https://dev.to/collardeau/lazy-loading-images-in-svelte-1mk6",
+    title: "Lazy Loading Images in Svelte",
+    platform: "dev.to"
   },
   {
     href:
       "https://medium.com/@collardeau/a-committed-guide-to-reactjs-47c0371df3ab",
     title: "A Committed Intro Guide to ReactJS",
+    platform: "medium.com"
+  },
+  {
+    href:
+      "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
+    title: "An Intro to Functional Programming Concepts",
     platform: "medium.com"
   }
   // react-lil-router
