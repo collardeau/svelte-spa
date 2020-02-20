@@ -27,7 +27,7 @@
       {/each}
     </ul>
   </section>
-  <section>
+  <!-- <section>
     <h3>blogs</h3>
     <ul>
       {#each blogs as { href, title }}
@@ -36,8 +36,7 @@
         </li>
       {/each}
     </ul>
-
-  </section>
+  </section> -->
 </div>
 
 <style>
