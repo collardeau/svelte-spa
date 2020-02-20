@@ -1,30 +1,59 @@
 <script>
   import { getStore } from "../libs/stores";
   const store = getStore("app-router");
-  $: route = $store.route;
+  $: currentRoute = $store.route;
+
+  const routes = [
+    {
+      href: "#/blog",
+      name: "Blog",
+      route: "blog"
+    },
+    {
+      href: "#/about",
+      name: "About",
+      route: "about"
+    }
+  ];
+
+  $: active = route => route === currentRoute;
 </script>
 
 <nav>
   <ul>
-    {#if route !== 'about'}
-      <li>
-        <a href="#/about">About</a>
+    {#each routes as { href, name, route }}
+      <li class:active={active(route)}>
+        <a {href}>{name}</a>
       </li>
-    {/if}
+    {/each}
+
   </ul>
 </nav>
 
 <style>
+  .active a {
+    border-bottom: 0.125rem solid var(--theme-color);
+    color: #999;
+  }
+  .active a:hover {
+    border-bottom: 0.125rem solid var(--theme-color);
+    text-decoration: none;
+    cursor: default;
+  }
   ul {
     display: flex;
   }
   li {
-    margin-left: var(--gap-2);
+    margin-left: var(--gap-5);
   }
   a {
     display: block;
     color: var(--black);
     padding: var(--gap-2);
+  }
+  a:hover {
+    text-decoration: none;
+    border-bottom: 0.125rem solid var(--black);
   }
   a,
   nav {
