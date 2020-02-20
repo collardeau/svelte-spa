@@ -41,9 +41,6 @@
     margin-top: var(--gap-6);
     max-width: var(--size-8);
   }
-  strong {
-    font-weight: 600;
-  }
   .about-page {
     flex: 1;
     display: flex;

@@ -33,6 +33,10 @@ h6 {
   font-size: var(--text-lg);
 }
 
+strong {
+  font-weight: 600;
+}
+
 ul {
   list-style: none;
   padding: 0;
