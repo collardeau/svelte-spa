@@ -1,4 +1,5 @@
 <script context="module">
+  import "./css/reset.css";
   import "./css/theme.css";
   import "./css/global.css";
   import createRouterStore from "./libs/hash-router/createStore";
