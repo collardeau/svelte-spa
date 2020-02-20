@@ -8,7 +8,7 @@
     <slot />
   </main>
   <footer>
-    <a href="https://github.com/collardeau">https://github.com/collardeau</a>
+    <small>Thanks for visiting tonton.dev!</small>
   </footer>
 </div>
 

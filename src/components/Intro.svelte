@@ -5,8 +5,9 @@
 <div class="container">
   <img src="img/avatar-2.jpg" alt="avatar" />
   <div class="details">
+    <!-- <p>Hi!</p> -->
     <p>
-      Hi. My name is
+      My name is
       <strong>Thomas Collardeau.</strong>
     </p>
     <p>I build stuff for the web!</p>
