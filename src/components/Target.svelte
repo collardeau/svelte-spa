@@ -1,5 +1,8 @@
 <script>
   import ProjectPage from "./ProjectPage.svelte";
+  import Swiper from "../libs/swiper/Swiper.svelte";
+
+  const alt = "app screenshot";
 </script>
 
 <ProjectPage>
@@ -16,9 +19,22 @@
       doloribus id consequuntur aliquid beatae.
     </div>
   </section>
-  <section>
+  <section class="slideshow">
     <h5>Slides</h5>
-    <div class="slideshow" />
+    <Swiper params={{ loop: true }}>
+      <div class="swiper-slide">
+        <img src="img/projects/studio-connect-1.jpg" {alt} />
+        <img src="img/projects/studio-connect-2.jpg" {alt} />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/projects/studio-connect-4.jpg" {alt} />
+        <img src="img/projects/studio-connect-3.jpg" {alt} />
+      </div>
+      <div class="swiper-slide">
+        <img src="img/projects/studio-connect-5.jpg" {alt} />
+        <img src="img/projects/studio-connect-6.jpg" {alt} />
+      </div>
+    </Swiper>
   </section>
   <section>
     <h5>Links</h5>
@@ -47,7 +63,12 @@
     text-align: left;
   }
   .slideshow {
-    background-color: var(--theme-color);
-    min-height: var(--size-6);
+    --swiper-theme-color: var(--white);
+  }
+  .swiper-slide {
+    display: flex;
+  }
+  .swiper-slide img {
+    width: 50%;
   }
 </style>
