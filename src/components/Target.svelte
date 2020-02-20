@@ -19,7 +19,7 @@
       for the app
       <a href="https://studioconnect.live">Studio Connect</a>
       designed by the innovations team at Target. Starting from the conception
-      of the project, I was on the team for 18 months.
+      of the project, I was on the team for 15 months.
     </p>
   </section>
   <section class="slideshow">

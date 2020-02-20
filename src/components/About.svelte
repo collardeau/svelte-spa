@@ -21,7 +21,8 @@
     <h5>Toolbox</h5>
     <p>
       In my 12 years of experience, I've had the opportunity to use jQuery,
-      AngularJS, Ionic, React (a lot), Gatsby, Svelte, Sapper, and Firebase.
+      AngularJS, Ionic, React (quite a lot), Gatsby, Svelte, Sapper, and
+      Firebase.
     </p>
     <p>
       Currently,
