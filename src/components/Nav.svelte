@@ -31,15 +31,6 @@
 </nav>
 
 <style>
-  .active a {
-    border-bottom: 0.125rem solid var(--theme-color);
-    color: #999;
-  }
-  .active a:hover {
-    border-bottom: 0.125rem solid var(--theme-color);
-    text-decoration: none;
-    cursor: default;
-  }
   ul {
     display: flex;
   }
@@ -50,10 +41,21 @@
     display: block;
     color: var(--black);
     padding: var(--gap-2);
+    border-bottom: 0.125rem solid transparent;
   }
   a:hover {
     text-decoration: none;
-    border-bottom: 0.125rem solid var(--black);
+    border-bottom: 0.125rem solid var(--theme-color);
+  }
+  .active a {
+    border-bottom: 0.125rem solid var(--theme-color);
+    /* color: #999; */
+    opacity: 0.6;
+  }
+  .active a:hover {
+    border-bottom: 0.125rem solid var(--theme-color);
+    text-decoration: none;
+    cursor: default;
   }
   a,
   nav {
