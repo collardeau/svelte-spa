@@ -3,6 +3,7 @@ import Home from "./components/Home.svelte";
 import KitchenSink from "./demo/KitchenSink.svelte";
 import Page from "./components/Page.svelte";
 import BlogPage from "./components/BlogPage.svelte";
+import Target from "./components/Target.svelte";
 
 export function match({ route }) {
   switch (route) {
@@ -12,8 +13,9 @@ export function match({ route }) {
       return KitchenSink;
     case "blog":
       return BlogPage;
+    case "target":
+      return Target;
     case "john-hong-studio":
-    case "studio-connect":
     case "fade-in-films":
       return Page;
     default:
