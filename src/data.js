@@ -1,7 +1,7 @@
 export const works = [
   {
     href: "#/target",
-    title: "Target Innovations"
+    title: "Target"
   },
   {
     href: "#/john-hong-studio",
@@ -14,6 +14,27 @@ export const works = [
   // artjunk, cleverhire, oti
 ];
 
+export const targetLinks = [
+  {
+    href:
+      "https://www.fastcompany.com/90177570/target-has-a-secret-app-for-superfans-and-it-looks-like-instagram",
+    text: "Target has a secret app for superfans, and it looks like Instagram",
+    source: "fastcompany.com"
+  },
+  {
+    href:
+      "https://www.businessinsider.com/target-studio-connect-lets-shoppers-designers-collaborate2018-7?r=US&IR=T",
+    text: "A new Target app connects customers to the design team",
+    source: "businessinsider.com"
+  },
+  {
+    href:
+      "https://www.bustle.com/p/targets-app-studio-connect-invites-super-fans-of-the-store-to-collaborate-with-designers-9788159",
+    text: `Target’s App “Studio Connect” Invites Super Fans Of The Store To
+    Collaborate With Designers`,
+    source: "bustle.com"
+  }
+];
 export const projects = [
   {
     href: "https://angry-wilson-12adf3.netlify.com/",

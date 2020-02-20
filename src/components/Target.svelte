@@ -1,74 +1,88 @@
 <script>
   import ProjectPage from "./ProjectPage.svelte";
   import Swiper from "../libs/swiper/Swiper.svelte";
+  import { targetLinks } from "../data";
 
   const alt = "app screenshot";
+
+  const images = [1, 2, 5, 6, 4, 3].map(
+    x => `img/projects/studio-connect-${x}.jpg`
+  );
 </script>
 
 <ProjectPage>
-  <h3>Target Innovations</h3>
+  <h3>Target</h3>
   <section>
-    <h5>Responsabilities</h5>
-    <div>
-      <strong>Lead Developer</strong>
-      <br />
-      sit amet consectetur adipisicing elit. Fugit eligendi, recusandae placeat
-      doloremque necessitatibus
-      <strong>distinctio</strong>
-      . Commodi optio debitis fugiat aut obcaecati accusantium repellendus quas,
-      doloribus id consequuntur aliquid beatae.
-    </div>
+    <p>
+      I was the
+      <strong>lead front-end developer</strong>
+      for the app
+      <a href="https://studioconnect.live">Studio Connect</a>
+      designed by the innovations team at Target. Starting from the conception
+      of the project, I was on the team for 18 months.
+    </p>
   </section>
   <section class="slideshow">
-    <h5>Slides</h5>
-    <Swiper params={{ loop: true }}>
-      <div class="swiper-slide">
-        <img src="img/projects/studio-connect-1.jpg" {alt} />
-        <img src="img/projects/studio-connect-2.jpg" {alt} />
-      </div>
-      <div class="swiper-slide">
-        <img src="img/projects/studio-connect-4.jpg" {alt} />
-        <img src="img/projects/studio-connect-3.jpg" {alt} />
-      </div>
-      <div class="swiper-slide">
-        <img src="img/projects/studio-connect-5.jpg" {alt} />
-        <img src="img/projects/studio-connect-6.jpg" {alt} />
-      </div>
+    <h5>Slideshow</h5>
+    <Swiper>
+      {#each images as image}
+        <div class="swiper-slide">
+          <img src={image} {alt} />
+        </div>
+      {/each}
     </Swiper>
   </section>
   <section>
     <h5>Links</h5>
     <ul>
-      <li>
-        <a href="link1">link 1</a>
-      </li>
-      <li>
-        <a href="link2">link 2</a>
-      </li>
-      <li>
-        <a href="link 3">link 3</a>
-      </li>
+      {#each targetLinks as { href, text, source }}
+        <li>
+          "{text}"
+          <small>
+            <a {href}>{source}</a>
+          </small>
+        </li>
+      {/each}
     </ul>
   </section>
-
+  <section>
+    <h5>Stack</h5>
+    <p>Ionic/Angular - Firebase - React - Redux - Redux-rxjs</p>
+  </section>
 </ProjectPage>
 
 <style>
+  h3 {
+    font-size: var(--text-3xl);
+    color: #e80018; /* target red */
+  }
   h5 {
     margin-bottom: var(--gap-4);
     font-size: var(--text-base);
+    color: #e80018;
   }
   section {
     padding: var(--gap-4) 0;
+  }
+  p {
+    text-align: justify;
+  }
+  ul {
     text-align: left;
+  }
+  li {
+    margin-bottom: var(--gap-4);
   }
   .slideshow {
     --swiper-theme-color: var(--white);
+    max-width: 350px;
+    margin: 0 auto;
   }
   .swiper-slide {
     display: flex;
+    justify-content: center;
   }
   .swiper-slide img {
-    width: 50%;
+    width: 100%;
   }
 </style>
