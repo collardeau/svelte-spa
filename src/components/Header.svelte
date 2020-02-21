@@ -3,51 +3,54 @@
   import LogoSVG from "../svg/Logo.svelte";
   import { getStore } from "../libs/stores";
 
-  const title = "tonton.dev";
   const store = getStore("app-router");
+  const title = "tonton.dev";
   $: route = $store.route;
 </script>
 
-<header>
-  <!-- left side: make a link home if not on home page -->
-  {#if !route}
-    <div class="left">
-      <div class="logo">
-        <LogoSVG />
+<div class="container">
+  <header>
+    <!-- left side: make a link home if not on home page -->
+    {#if !route}
+      <div class="left">
+        <div class="logo">
+          <LogoSVG />
+        </div>
+        <h1>{title}</h1>
       </div>
-      <h1>{title}</h1>
-    </div>
-  {:else}
-    <a href="#/" class="left">
-      <div class="logo">
-        <LogoSVG />
-      </div>
-      <h1>{title}</h1>
-    </a>
-  {/if}
-  <!-- right-side: nav component -->
-  <Nav />
-</header>
+    {:else}
+      <a href="#/" class="left">
+        <div class="logo">
+          <LogoSVG />
+        </div>
+        <h1>{title}</h1>
+      </a>
+    {/if}
+    <!-- right-side: nav component -->
+    <Nav />
+  </header>
+</div>
 
 <style>
+  .container {
+    background-color: var(--white);
+  }
   header {
     display: flex;
     justify-content: space-between;
-    min-height: var(--size-1);
     padding: var(--gap-1);
-    background-color: var(--grey);
-    max-width: var(--container-width);
-    width: 100%;
+    width: var(--container-width);
     margin: 0 auto;
   }
   @media (min-width: 640px) {
     header {
-      padding: var(--gap-3);
+      padding: var(--gap-2);
     }
   }
   h1 {
-    font-size: var(--text-lg);
     color: var(--black);
+    margin: 0;
+    padding: 0;
   }
   a {
     display: block;
@@ -64,6 +67,7 @@
     height: var(--size-1);
     font-weight: 200;
     margin-right: var(--gap-1);
+    /* color: var(--theme-color); */
   }
   .logo,
   h1 {
