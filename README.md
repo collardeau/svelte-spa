@@ -1,4 +1,4 @@
-# svelte spa app
+# svelte spa template
 
 You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
 
