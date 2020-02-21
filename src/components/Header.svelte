@@ -3,7 +3,7 @@
   import { getStore } from "../libs/stores";
 
   const store = getStore("app-router");
-  const title = "my new site";
+  const title = "Svelte App";
   $: route = $store.route;
 </script>
 

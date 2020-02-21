@@ -1,8 +1,17 @@
 <script>
   import { getStore } from "../libs/stores";
-
   const store = getStore("app-router");
-  const routes = ["blog", "about"];
+
+  const routes = [
+    {
+      name: "page 1",
+      slug: "page-1"
+    },
+    {
+      name: "about",
+      slug: "about"
+    }
+  ];
 
   $: currentRoute = $store.route;
   $: active = route => route === currentRoute;
@@ -10,9 +19,9 @@
 
 <nav>
   <ul>
-    {#each routes as route}
-      <li class:active={active(route)}>
-        <a href={`#/${route}`}>{route}</a>
+    {#each routes as { name, slug }}
+      <li class:active={active(slug)}>
+        <a href={`#/${slug}`}>{name}</a>
       </li>
     {/each}
 

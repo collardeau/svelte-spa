@@ -1,9 +1,9 @@
 <div class="page">
   <section>
-    <h3>About Me</h3>
+    <h3>About</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi
-      facere? Quam quidem atque est earum adipisci dolores enim laudantium.
+      facere? Quam quidem atque est earum.
     </p>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
