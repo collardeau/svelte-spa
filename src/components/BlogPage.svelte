@@ -1,13 +1,31 @@
 <script>
-  import Section from "./Section.svelte";
   import { blogs } from "../data";
 </script>
 
 <div class="page blog-page">
-  <Section title="blog posts" items={blogs} let:item>
-    {item.title}
-    <small>
-      <a href={item.href}>{item.platform}</a>
-    </small>
-  </Section>
+  <section>
+    <h3>Blog Posts</h3>
+    <ul>
+      {#each blogs as { href, platform, title }}
+        <li>
+          {title}
+          <small>
+            <a {href}>{platform}</a>
+          </small>
+        </li>
+      {/each}
+    </ul>
+  </section>
 </div>
+
+<style>
+  li {
+    margin-bottom: var(--gap-3);
+  }
+  :global(.blog-page ul a) {
+    color: var(--black);
+    padding-bottom: 0.125rem;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+  }
+</style>
