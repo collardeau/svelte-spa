@@ -2,31 +2,19 @@
   <section>
     <h3>About Me</h3>
     <p>
-      I'm originally from France. I've lived in New York, London, Amsterdam and
-      Barcelona.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi
+      facere? Quam quidem atque est earum adipisci dolores enim laudantium.
     </p>
-    <p>I love to build cool apps, travel and stay active!</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+      architecto alias, harum reiciendis hic quidem!
+    </p>
   </section>
   <section>
     <h3>Contact</h3>
     <p>
-      Please email me at:
-      <br />
-      <strong>thomas [at] collardeau [dot] com</strong>
-      <br />
-      I'd love to hear from you!
-    </p>
-  </section>
-  <section>
-    <h3>Toolbox</h3>
-    <p>
-      In 12 years, I've used jQuery, AngularJS, Ionic, React (quite a lot),
-      Gatsby, Svelte/Sapper as well as Firebase.
-    </p>
-    <p>
-      Currently,
-      <a href="https://svelte.dev">Svelte</a>
-      is my favorite tool for developing!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      perspiciatis?
     </p>
   </section>
 </div>

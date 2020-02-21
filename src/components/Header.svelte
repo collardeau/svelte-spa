@@ -4,7 +4,7 @@
   import { getStore } from "../libs/stores";
 
   const store = getStore("app-router");
-  const title = "tonton.dev";
+  const title = "my new site";
   $: route = $store.route;
 </script>
 

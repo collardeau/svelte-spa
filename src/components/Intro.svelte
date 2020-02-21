@@ -3,13 +3,10 @@
 </script>
 
 <div class="container">
-  <img src="img/avatar-2.jpg" alt="avatar" />
+  <img src="img/blank-avatar.jpg" alt="avatar" />
   <div class="details">
-    <p>
-      My name is
-      <strong>Thomas Collardeau.</strong>
-    </p>
-    <p>I build stuff for the web!</p>
+    <p>My name is John Smith</p>
+    <p>This is what I do!</p>
     <SocialMedia />
   </div>
 </div>
