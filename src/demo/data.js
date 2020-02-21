@@ -2,9 +2,7 @@ import ModalDemo from "../libs/modal/Demo.svelte";
 import RouterDemo from "../libs/hash-router/Demo.svelte";
 import SwiperDemo from "../libs/swiper/Demo.svelte";
 import FormDemo from "../libs/form/Demo.svelte";
-import RoughDemo from "../libs/roughjs/Demo.svelte";
 import TabsDemo from "../libs/tabs/Demo.svelte";
-import SweetAlertDemo from "../libs/sweetalert2/Demo.svelte";
 import FirebaseDemo from "../libs/firebase/Demo.svelte";
 import FirebaseAuthDemo from "../libs/firebase-auth/Demo.svelte";
 
@@ -21,18 +19,6 @@ export const integrations = [
     // rename libs firestore from firebase
     href:
       "https://github.com/collardeau/svelte-spa/blob/master/src/libs/firebase/Demo.svelte"
-  },
-  {
-    title: "RoughJS",
-    comp: RoughDemo,
-    href:
-      "https://github.com/collardeau/svelte-spa/blob/master/src/libs/roughjs/Demo.svelte"
-  },
-  {
-    title: "Sweet Alert 2",
-    comp: SweetAlertDemo,
-    href:
-      "https://github.com/collardeau/svelte-spa/blob/master/src/libs/sweetalert2/Demo.svelte"
   },
   {
     title: "Swiper",

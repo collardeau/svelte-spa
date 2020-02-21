@@ -5,11 +5,11 @@ import Page from "./components/Page.svelte";
 
 export function match({ route }) {
   switch (route) {
-    case "about":
-      return About;
     case "kitchen-sink":
       return KitchenSink;
-    case "new-page":
+    case "about":
+      return About;
+    case "page-1":
       return Page;
     default:
       return Home;

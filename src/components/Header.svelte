@@ -2,64 +2,62 @@
   import Nav from "./Nav.svelte";
   import { getStore } from "../libs/stores";
 
-  const title = "svelte spa";
   const store = getStore("app-router");
+  const title = "Svelte App";
   $: route = $store.route;
 </script>
 
-<header>
-  <!-- left side: make a link home if not on home page -->
-  {#if !route}
-    <div class="left">
-      <div class="logo">&#x02202;</div>
-      <h1>{title}</h1>
-    </div>
-  {:else}
-    <a href="#/" class="left">
-      <div class="logo">&#x02202;</div>
-      <h1>{title}</h1>
-    </a>
-  {/if}
-  <!-- right-side: nav component -->
-  <Nav />
-</header>
+<div class="container">
+  <header>
+    {#if !route}
+      <div class="left">
+        <img src="favicon.png" alt="logo" />
+        <h1>{title}</h1>
+      </div>
+    {:else}
+      <a href="#/" class="left">
+        <img src="favicon.png" alt="logo" />
+        <h1>{title}</h1>
+      </a>
+    {/if}
+    <Nav />
+  </header>
+</div>
 
 <style>
+  .container {
+    background-color: var(--white);
+    border-bottom: 1px solid #ddd;
+  }
   header {
     display: flex;
     justify-content: space-between;
-    min-height: var(--size-1);
-    padding: var(--gap-1);
-    background-color: var(--grey);
-    /* max-width: var(--container-width);
-    width: 100%;
-    margin: 0 auto; */
+    padding: var(--gap-2) var(--gap-1);
+    max-width: var(--container-width);
+    margin: 0 auto;
   }
-  @media (min-width: 640px) {
-    header {
-      padding: var(--gap-3);
-    }
-  }
-  a {
-    display: block;
-  }
-  a:hover {
-    color: var(--theme-color);
-    text-decoration: none;
-  }
-  .left {
-    display: flex;
-  }
-  .logo {
-    color: var(--theme-color);
-    font-size: var(--text-4xl);
-    font-weight: 200;
-    margin-right: var(--gap-2);
-  }
-  .logo,
   h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-base);
+  }
+  a {
+    display: block;
+    color: var(--black);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: var(--gap-7);
+    margin-right: var(--gap-1);
   }
 </style>

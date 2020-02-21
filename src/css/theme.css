@@ -1,15 +1,13 @@
 :root {
   --container-width: 960px;
-  --base-font-size: 16px;
 
   --theme-color: #ff3e00;
   --white: #fff;
   --grey: #eee;
   --black: #333;
 
-  --bg-color: var(--white);
+  --bg-color: var(--grey);
   --text-color: var(--black);
-  --heading-color: var(--theme-color);
   --link-color: rgb(0, 100, 200);
   --link-visited-color: rgb(0, 80, 160);
 

@@ -1,6 +1,7 @@
 <script context="module">
-  import "./css/theme.css";
   import "./css/global.css";
+  import "./css/reset.css";
+  import "./css/theme.css";
   import createRouterStore from "./libs/hash-router/createStore";
 
   const router = createRouterStore("app-router");

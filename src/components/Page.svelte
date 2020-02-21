@@ -1,15 +1,21 @@
 <script>
-  //
+  // start working on a new page :)
 </script>
 
-<div class="page">A New Page :)</div>
+<div class="page new-page">
+  <section>
+    <h3>A new page</h3>
+    <p>
+      <small>
+        visit the
+        <a href="#/kitchen-sink">kitchen sink</a>
+      </small>
+    </p>
+  </section>
+</div>
 
 <style>
-  .page {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: var(--text-xl);
+  .new-page {
+    text-align: center;
   }
 </style>
