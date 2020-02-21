@@ -1,6 +1,6 @@
 # svelte spa template
 
-You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+### You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.
 
