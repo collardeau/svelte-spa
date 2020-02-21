@@ -1,6 +1,7 @@
 <script context="module">
   import createTabsStore from "../libs/tabs/createStore";
   const store = createTabsStore("demo-tabs", { selected: "tab-1" });
+  // add gists (or code sandbox)
 
   const tabs = [
     {

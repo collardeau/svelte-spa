@@ -28,13 +28,17 @@
   <section>
     <h3>More Links</h3>
     <p>
-      check out the
-      <a href="https://github.com/collardeau/svelte-spa">repo</a>
+      <a href="https://github.com/collardeau/svelte-spa">github repo</a>
     </p>
     <p>
-      visit the
       <a href="https://svelte.dev/tutorial">svelte tutorial</a>
     </p>
   </section>
 
 </div>
+
+<style>
+  li {
+    margin-bottom: var(--gap-2);
+  }
+</style>
