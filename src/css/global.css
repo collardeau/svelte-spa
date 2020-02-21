@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: var(--theme-color);
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 0.06rem;
