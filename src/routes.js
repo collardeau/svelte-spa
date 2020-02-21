@@ -4,19 +4,6 @@ import KitchenSink from "./demo/KitchenSink.svelte";
 import Blog from "./components/Blog.svelte";
 import Target from "./components/Target.svelte";
 
-export const routes = [
-  {
-    href: "#/blog",
-    name: "Blog",
-    route: "blog"
-  },
-  {
-    href: "#/about",
-    name: "About",
-    route: "about"
-  }
-];
-
 export function match({ route }) {
   switch (route) {
     case "about":
