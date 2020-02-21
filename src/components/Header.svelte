@@ -1,6 +1,5 @@
 <script>
   import Nav from "./Nav.svelte";
-  import LogoSVG from "../svg/Logo.svelte";
   import { getStore } from "../libs/stores";
 
   const store = getStore("app-router");
@@ -10,23 +9,17 @@
 
 <div class="container">
   <header>
-    <!-- left side: make a link home if not on home page -->
     {#if !route}
       <div class="left">
-        <div class="logo">
-          <LogoSVG />
-        </div>
+        <img src="favicon.png" alt="logo" />
         <h1>{title}</h1>
       </div>
     {:else}
       <a href="#/" class="left">
-        <div class="logo">
-          <LogoSVG />
-        </div>
+        <img src="favicon.png" alt="logo" />
         <h1>{title}</h1>
       </a>
     {/if}
-    <!-- right-side: nav component -->
     <Nav />
   </header>
 </div>
@@ -44,6 +37,9 @@
     margin: 0 auto;
   }
   h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--black);
     margin: 0;
     padding: 0;
@@ -60,17 +56,8 @@
     display: flex;
     align-items: center;
   }
-  .logo {
-    width: var(--gap-6);
-    height: var(--gap-6);
-    font-weight: 200;
+  img {
+    width: var(--gap-7);
     margin-right: var(--gap-1);
-  }
-  .logo,
-  h1,
-  :global(.logo svg) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 </style>
