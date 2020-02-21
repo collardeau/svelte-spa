@@ -8,7 +8,7 @@ export const works = [
     title: "John Hong Studio"
   },
   {
-    href: "#/fade-in-films",
+    href: "http://fadeinfilms.com",
     title: "Fade In Films"
   }
   // artjunk, cleverhire, oti
