@@ -26,14 +26,4 @@
     display: flex;
     flex-direction: column;
   }
-  :global(.page) {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: var(--gap-2);
-    padding-top: var(--gap-2);
-    padding-bottom: var(--gap-3);
-    /* more padding at bottom to life page a little */
-  }
 </style>
