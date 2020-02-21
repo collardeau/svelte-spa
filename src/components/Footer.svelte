@@ -1,9 +1,4 @@
-<script>
-  //
-</script>
-
 <footer>
-
   <small>
     this is a
     <a href="https://github.com/collardeau/svelte-spa">svelte-spa</a>
@@ -13,13 +8,10 @@
 
 <style>
   footer {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: var(--gap-3);
-    background-color: var(--grey);
-    font-size: var(--text-sm);
     background-color: var(--white);
+    text-align: center;
+    padding: var(--gap-3);
+    font-size: var(--text-sm);
     border-top: 1px solid #ddd;
   }
   footer a {
