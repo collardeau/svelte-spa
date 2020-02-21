@@ -3,6 +3,7 @@
 
   const store = getStore("app-router");
   const routes = ["blog", "about"];
+
   $: currentRoute = $store.route;
   $: active = route => route === currentRoute;
 </script>
@@ -29,23 +30,20 @@
     display: block;
     color: var(--black);
     padding: var(--gap-2);
-    border-bottom: 0.125rem solid transparent;
-    text-transform: uppercase;
-    font-weight: 200;
     font-size: var(--text-xs);
+    font-weight: 200;
+    text-transform: uppercase;
   }
   a:hover {
+    color: var(--theme-color);
     text-decoration: none;
-    border-bottom: 0.125rem solid var(--theme-color);
   }
   .active a {
-    opacity: 0.8;
     color: var(--theme-color);
   }
   .active a:hover {
-    border-bottom: 0.125rem solid transparent;
-    text-decoration: none;
     cursor: default;
+    text-decoration: none;
   }
   a,
   nav {
