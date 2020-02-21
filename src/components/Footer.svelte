@@ -29,6 +29,7 @@
     background-color: var(--grey);
     font-size: var(--text-sm);
     background-color: var(--white);
+    border-top: 1px solid #ddd;
   }
   .svg {
     width: var(--gap-5);

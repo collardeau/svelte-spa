@@ -38,7 +38,7 @@
     margin: 0 auto;
   }
   .icon {
-    width: var(--gap-6);
+    width: var(--gap-5);
     padding: var(--gap-2);
   }
   a {

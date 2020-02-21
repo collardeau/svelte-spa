@@ -1,5 +1,17 @@
 html {
-  font-size: var(--base-font-size);
+  font-size: 16px;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -25,8 +37,8 @@ h6 {
 h1,
 h2,
 h3 {
-  font-size: var(--text-2xl);
-  margin-bottom: var(--gap-3);
+  font-size: var(--text-xl);
+  margin-bottom: var(--gap-2);
 }
 
 h5,
@@ -37,8 +49,9 @@ h6 {
 }
 
 p {
+  text-align: left;
   max-width: var(--size-8);
-  margin: var(--gap-2) 0;
+  margin: var(--gap-2) auto;
 }
 
 strong {

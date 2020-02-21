@@ -17,12 +17,13 @@
 <style>
   .container {
     text-align: center;
+    margin-top: var(--gap-2);
   }
   img {
     width: var(--size-4);
     border-radius: 50%;
     margin: 0 auto;
-    margin-bottom: var(--gap-3);
+    margin-bottom: var(--gap-2);
   }
   .details {
     display: flex;
@@ -30,6 +31,7 @@
     justify-content: space-evenly;
   }
   p {
+    text-align: center;
     margin: var(--gap-1) 0;
   }
 </style>

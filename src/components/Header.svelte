@@ -34,23 +34,20 @@
 <style>
   .container {
     background-color: var(--white);
+    border-bottom: 1px solid #ddd;
   }
   header {
     display: flex;
     justify-content: space-between;
-    padding: var(--gap-1);
-    width: var(--container-width);
+    padding: var(--gap-2) var(--gap-1);
+    max-width: var(--container-width);
     margin: 0 auto;
-  }
-  @media (min-width: 640px) {
-    header {
-      padding: var(--gap-2);
-    }
   }
   h1 {
     color: var(--black);
     margin: 0;
     padding: 0;
+    font-size: var(--text-base);
   }
   a {
     display: block;
@@ -61,16 +58,17 @@
   }
   .left {
     display: flex;
+    align-items: center;
   }
   .logo {
-    width: var(--size-1);
-    height: var(--size-1);
+    width: var(--gap-6);
+    height: var(--gap-6);
     font-weight: 200;
     margin-right: var(--gap-1);
-    /* color: var(--theme-color); */
   }
   .logo,
-  h1 {
+  h1,
+  :global(.logo svg) {
     display: flex;
     flex-direction: column;
     justify-content: center;

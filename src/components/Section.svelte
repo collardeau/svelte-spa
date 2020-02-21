@@ -16,7 +16,7 @@
 
 <style>
   section {
-    margin: var(--gap-4) 0;
+    margin: var(--gap-5) 0;
   }
   li {
     margin-bottom: var(--gap-3);

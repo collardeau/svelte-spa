@@ -14,6 +14,7 @@
 <style>
   .layout {
     min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
   }
@@ -30,8 +31,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-top: var(--gap-3);
-    padding-bottom: var(--gap-5);
+    padding: var(--gap-2);
+    padding-top: var(--gap-2);
+    padding-bottom: var(--gap-3);
     /* more padding at bottom to life page a little */
   }
 </style>

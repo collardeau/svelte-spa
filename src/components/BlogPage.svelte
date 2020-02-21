@@ -11,9 +11,3 @@
     </small>
   </Section>
 </div>
-
-<style>
-  .blog-page {
-    font-size: var(--text-lg);
-  }
-</style>

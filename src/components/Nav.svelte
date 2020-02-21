@@ -35,25 +35,27 @@
     display: flex;
   }
   li {
-    margin-left: var(--gap-5);
+    margin-left: var(--gap-2);
   }
   a {
     display: block;
     color: var(--black);
     padding: var(--gap-2);
     border-bottom: 0.125rem solid transparent;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: var(--text-xs);
   }
   a:hover {
     text-decoration: none;
     border-bottom: 0.125rem solid var(--theme-color);
   }
   .active a {
-    border-bottom: 0.125rem solid var(--theme-color);
-    /* color: #999; */
-    opacity: 0.6;
+    opacity: 0.8;
+    color: var(--theme-color);
   }
   .active a:hover {
-    border-bottom: 0.125rem solid var(--theme-color);
+    border-bottom: 0.125rem solid transparent;
     text-decoration: none;
     cursor: default;
   }
