@@ -41,9 +41,9 @@ export const blogs = [
   },
   {
     href:
-      "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
-    title: "An Intro to Functional Programming Concepts",
-    source: "medium.com"
+      "https://dev.to/collardeau/building-a-headroom-style-header-in-svelte-e12",
+    title: "Building a Headroom-Style Header in Svelte",
+    source: "dev.to"
   }
 ];
 
