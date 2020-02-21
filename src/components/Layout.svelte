@@ -1,5 +1,6 @@
 <script>
   import Header from "./Header.svelte";
+  import Footer from "./Footer.svelte";
 </script>
 
 <div class="layout">
@@ -7,9 +8,7 @@
   <main>
     <slot />
   </main>
-  <footer>
-    <small>Thanks for visiting tonton.dev!</small>
-  </footer>
+  <Footer />
 </div>
 
 <style>
@@ -25,12 +24,5 @@
     flex: 1;
     display: flex; /* so slot can flex:1 */
     flex-direction: column;
-  }
-  footer {
-    text-align: center;
-    padding: var(--gap-4);
-    background-color: var(--grey);
-    font-size: var(--text-sm);
-    background-color: var(--white);
   }
 </style>
