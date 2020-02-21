@@ -7,12 +7,6 @@
   $: selected = $store.selected;
 </script>
 
-<style>
-  .selected button {
-    border-bottom: 2px solid var(--theme-color);
-  }
-</style>
-
 <ul>
   {#each tabs as { id, text }}
     <li class:selected={selected === id}>
@@ -27,3 +21,9 @@
     </li>
   {/each}
 </ul>
+
+<style>
+  .selected button {
+    border-bottom: 2px solid var(--theme-color);
+  }
+</style>

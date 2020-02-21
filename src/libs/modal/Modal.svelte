@@ -6,6 +6,24 @@
   $: isOpen = $store.isOpen;
 </script>
 
+{#if isOpen}
+  <div class="container">
+    <div class="bg">
+      <button on:click={close}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414
+            1.414L10 11.414l7.071 7.071 1.414-1.414L11.414
+            10l7.071-7.071-1.414-1.414L10 8.586z" />
+        </svg>
+      </button>
+    </div>
+    <div class="modal">
+      <slot />
+    </div>
+  </div>
+{/if}
+
 <style>
   .container {
     position: fixed;
@@ -48,21 +66,3 @@
     fill: currentColor;
   }
 </style>
-
-{#if isOpen}
-  <div class="container">
-    <div class="bg">
-      <button on:click={close}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path
-            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414
-            1.414L10 11.414l7.071 7.071 1.414-1.414L11.414
-            10l7.071-7.071-1.414-1.414L10 8.586z" />
-        </svg>
-      </button>
-    </div>
-    <div class="modal">
-      <slot />
-    </div>
-  </div>
-{/if}

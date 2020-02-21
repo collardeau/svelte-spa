@@ -1,59 +1,63 @@
 <script>
+  import Nav from "./Nav.svelte";
   import { getStore } from "../libs/stores";
 
-  const appTitle = "Svelte Spa";
-
   const store = getStore("app-router");
+  const title = "Svelte App";
   $: route = $store.route;
-  $: title = route === "kitchen-sink" ? "Kitchen Sink" : appTitle;
 </script>
 
+<div class="container">
+  <header>
+    {#if !route}
+      <div class="left">
+        <img src="favicon.png" alt="logo" />
+        <h1>{title}</h1>
+      </div>
+    {:else}
+      <a href="#/" class="left">
+        <img src="favicon.png" alt="logo" />
+        <h1>{title}</h1>
+      </a>
+    {/if}
+    <Nav />
+  </header>
+</div>
+
 <style>
+  .container {
+    background-color: var(--white);
+    border-bottom: 1px solid #ddd;
+  }
   header {
-    text-align: center;
-    padding: var(--gap-3);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--gap-2) var(--gap-1);
+    max-width: var(--container-width);
+    margin: 0 auto;
   }
   h1 {
-    font-size: var(--text-5xl);
-    margin: var(--gap-7) 0;
-    order: 2;
-  }
-  @media (min-width: 640px) {
-    h1 {
-      font-size: var(--text-6xl);
-    }
-  }
-  li {
-    width: var(--size-3);
-    height: var(--size-1);
-    margin: 0 auto;
-    text-align: center;
-  }
-  a {
-    display: block;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    font-size: var(--text-base);
+  }
+  a {
+    display: block;
+    color: var(--black);
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: var(--gap-7);
+    margin-right: var(--gap-1);
   }
 </style>
-
-<header>
-  <h1>{title}</h1>
-  <nav>
-    <ul>
-      {#if route}
-        <li>
-          <a href="#/">Home</a>
-        </li>
-      {/if}
-      {#if !route}
-        <li>
-          <a href="#/about">About</a>
-        </li>
-      {/if}
-    </ul>
-  </nav>
-</header>

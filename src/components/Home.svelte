@@ -1,45 +1,44 @@
-<style>
-  .container {
-    text-align: center;
-  }
-  section {
-    margin-bottom: var(--gap-8);
-  }
-  h5 {
-    margin-bottom: var(--gap-3);
-  }
-  p {
-    margin-bottom: var(--gap-5);
-  }
-</style>
+<script>
+  //
+</script>
 
-<div class="container">
+<div class="page">
   <section>
-    <h5>Integrations</h5>
+    <h3>Integrations</h3>
     <p>
-      demo the
+      try out the
       <a href="#/kitchen-sink">kitchen sink</a>
     </p>
   </section>
   <section>
-    <h5>templates</h5>
-    <p>
-      <a href="https://blissful-brahmagupta-48d16e.netlify.com/">
-        #weather-template
-      </a>
-      branch
-    </p>
+    <h3>templates</h3>
+    <ul>
+      <li>
+        <a href="https://optimistic-hodgkin-832d69.netlify.com">
+          #portfolio-template
+        </a>
+      </li>
+      <li>
+        <a href="https://blissful-brahmagupta-48d16e.netlify.com/">
+          #weather-template
+        </a>
+      </li>
+    </ul>
   </section>
   <section>
-    <h5>More</h5>
+    <h3>More Links</h3>
     <p>
-      check out the svelte-spa
-      <a href="https://github.com/collardeau/svelte-spa">repo</a>
+      <a href="https://github.com/collardeau/svelte-spa">github repo</a>
     </p>
     <p>
-      visit the
-      <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
+      <a href="https://svelte.dev/tutorial">svelte tutorial</a>
     </p>
   </section>
 
 </div>
+
+<style>
+  li {
+    margin-bottom: var(--gap-2);
+  }
+</style>

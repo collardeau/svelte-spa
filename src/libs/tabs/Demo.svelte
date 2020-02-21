@@ -21,6 +21,18 @@
   $: selected = $store.selected;
 </script>
 
+<section class="tabs-demo">
+
+  <Tabs name="my-tabs" {tabs} />
+
+  {#if selected === 'tab-1'}
+    <div class="content">Content of Tab 1</div>
+  {/if}
+  {#if selected === 'tab-2'}
+    <div class="content">Content of Tab 2</div>
+  {/if}
+</section>
+
 <style>
   :global(.tabs-demo ul) {
     display: flex;
@@ -33,15 +45,3 @@
     margin-top: var(--gap-2);
   }
 </style>
-
-<section class="tabs-demo">
-
-  <Tabs name="my-tabs" {tabs} />
-
-  {#if selected === 'tab-1'}
-    <div class="content">Content of Tab 1</div>
-  {/if}
-  {#if selected === 'tab-2'}
-    <div class="content">Content of Tab 2</div>
-  {/if}
-</section>
