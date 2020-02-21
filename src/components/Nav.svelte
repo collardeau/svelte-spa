@@ -1,20 +1,8 @@
 <script>
   import { getStore } from "../libs/stores";
+  import { routes } from "../routes";
   const store = getStore("app-router");
   $: currentRoute = $store.route;
-
-  const routes = [
-    {
-      href: "#/blog",
-      name: "Blog",
-      route: "blog"
-    },
-    {
-      href: "#/about",
-      name: "About",
-      route: "about"
-    }
-  ];
 
   $: active = route => route === currentRoute;
 </script>
