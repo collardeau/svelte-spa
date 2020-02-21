@@ -6,11 +6,11 @@
   <section>
     <h3>Blog Posts</h3>
     <ul>
-      {#each blogs as { href, platform, title }}
+      {#each blogs as { href, source, title }}
         <li>
           {title}
           <small>
-            <a {href}>{platform}</a>
+            <a {href}>{source}</a>
           </small>
         </li>
       {/each}

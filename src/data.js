@@ -69,24 +69,24 @@ export const blogs = [
   {
     href: "https://dev.to/collardeau/props-up-with-svelte-4cjk",
     title: "Props up with Svelte",
-    platform: "dev.to"
+    source: "dev.to"
   },
   {
     href: "https://dev.to/collardeau/lazy-loading-images-in-svelte-1mk6",
     title: "Lazy Loading Images in Svelte",
-    platform: "dev.to"
+    source: "dev.to"
   },
   {
     href:
       "https://medium.com/@collardeau/a-committed-guide-to-reactjs-47c0371df3ab",
     title: "A Committed Intro Guide to ReactJS",
-    platform: "medium.com"
+    source: "medium.com"
   },
   {
     href:
       "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
     title: "An Intro to Functional Programming Concepts",
-    platform: "medium.com"
+    source: "medium.com"
   }
   // react-lil-router
 ];
