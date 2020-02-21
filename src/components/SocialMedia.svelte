@@ -1,23 +1,23 @@
 <script>
   // more icons at https://simpleicons.org/
-  import GithubSVG from "../svg/social-media/Github.svelte";
-  import TwitterSVG from "../svg/social-media/Twitter.svelte";
-  import LinkedInSVG from "../svg/social-media/LinkedIn.svelte";
-  import VimeoSVG from "../svg/social-media/Vimeo.svelte";
+  import GithubSVG from "../svg/Github.svelte";
+  import TwitterSVG from "../svg/Twitter.svelte";
+  import LinkedInSVG from "../svg/LinkedIn.svelte";
   import { social } from "../data";
 
+  const { github, twitter, linkedIn } = social;
   const items = [
     {
-      svg: GithubSVG,
-      href: social.github.href
+      href: github.href,
+      svg: GithubSVG
     },
     {
-      svg: TwitterSVG,
-      href: social.twitter.href
+      href: twitter.href,
+      svg: TwitterSVG
     },
     {
-      svg: LinkedInSVG,
-      href: social.linkedIn.href
+      href: linkedIn.href,
+      svg: LinkedInSVG
     }
   ];
 </script>
