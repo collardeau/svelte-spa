@@ -41,12 +41,6 @@ export const blogs = [
   },
   {
     href:
-      "https://medium.com/@collardeau/a-committed-guide-to-reactjs-47c0371df3ab",
-    title: "A Committed Intro Guide to ReactJS",
-    source: "medium.com"
-  },
-  {
-    href:
       "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
     title: "An Intro to Functional Programming Concepts",
     source: "medium.com"
