@@ -1,5 +1,4 @@
 <script>
-  import ProjectPage from "./ProjectPage.svelte";
   import Swiper from "../libs/swiper/Swiper.svelte";
   import { targetLinks } from "../data";
 
@@ -10,7 +9,7 @@
   );
 </script>
 
-<ProjectPage>
+<div class="page target-page">
   <h3>Target</h3>
   <section>
     <p>
@@ -49,15 +48,18 @@
     <h5>Stack</h5>
     <p>Ionic/Angular - Firebase - React - Redux - Redux-rxjs</p>
   </section>
-</ProjectPage>
+</div>
 
 <style>
+  .target-page {
+    text-align: center;
+    max-width: var(--size-8);
+  }
   h3 {
     font-size: var(--text-3xl);
     color: #e80018; /* target red */
   }
   h5 {
-    margin-bottom: var(--gap-4);
     font-size: var(--text-base);
     color: #e80018;
   }

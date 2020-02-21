@@ -1,11 +1,11 @@
-<div class="about-page">
+<div class="page">
   <section>
-    <h5>Me</h5>
+    <h5>About Me</h5>
     <p>
       I'm originally from France and have lived in New York, London, Amsterdam
       and Barcelona.
     </p>
-    <p>I love to build cool apps, travel and stay active.</p>
+    <p>I love to build cool apps, travel and stay active!</p>
   </section>
   <section>
     <h5>Contact</h5>
@@ -30,26 +30,10 @@
       is my favorite front-end tool.
     </p>
   </section>
-  <!-- <p>
-    check out the
-    <a href="#/kitchen-sink">kitchen sink</a>
-  </p> -->
 </div>
 
 <style>
-  p {
-    line-height: 1.5;
-    margin-top: var(--gap-6);
-    max-width: var(--size-8);
-  }
-  .about-page {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: var(--text-lg);
-  }
-  :global(.about-page h3) {
-    font-size: var(--text-3xl);
+  section {
+    margin: var(--gap-4) 0;
   }
 </style>

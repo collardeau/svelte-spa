@@ -22,7 +22,16 @@
     margin: 0 auto;
     padding: 0 var(--gap-2);
     flex: 1;
-    display: flex; /* so slot can flex:1 */
+    display: flex;
     flex-direction: column;
+  }
+  :global(.page) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: var(--gap-3);
+    padding-bottom: var(--gap-5);
+    /* more padding at bottom to life page a little */
   }
 </style>

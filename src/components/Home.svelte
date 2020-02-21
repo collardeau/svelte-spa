@@ -4,7 +4,7 @@
   import Section from "./Section.svelte";
 </script>
 
-<div class="page">
+<div class="page home-page">
   <section>
     <Intro />
   </section>
@@ -17,12 +17,7 @@
 </div>
 
 <style>
-  .page {
-    flex: 1;
+  .home-page {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    line-height: 1.4;
   }
 </style>

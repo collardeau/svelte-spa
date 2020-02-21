@@ -5,7 +5,6 @@
 <div class="container">
   <img src="img/avatar-2.jpg" alt="avatar" />
   <div class="details">
-    <!-- <p>Hi!</p> -->
     <p>
       My name is
       <strong>Thomas Collardeau.</strong>
@@ -17,21 +16,20 @@
 
 <style>
   .container {
-    /* display: flex; */
     text-align: center;
-  }
-  .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: var(--size-4);
-    margin-left: var(--gap-5);
-    /* text-align: left; */
   }
   img {
     width: var(--size-4);
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: var(--gap-3);
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  p {
+    margin: var(--gap-1) 0;
   }
 </style>

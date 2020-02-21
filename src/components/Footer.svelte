@@ -9,12 +9,12 @@
   <div class="svg">
     <BracketLeft />
   </div>
-  <p>
+  <div class="content">
     <small>
       thanks for visiting
       <a href="https://tonton.dev">tonton.dev</a>
     </small>
-  </p>
+  </div>
   <div class="svg right">
     <BracketRight />
   </div>
@@ -30,10 +30,6 @@
     font-size: var(--text-sm);
     background-color: var(--white);
   }
-  p {
-    position: relative;
-    top: -1px;
-  }
   .svg {
     width: var(--gap-5);
     height: var(--gap-5);
@@ -44,7 +40,7 @@
   footer a {
     color: var(--black);
   }
-  p,
+  .content,
   .svg {
     display: flex;
     flex-direction: column;

@@ -18,9 +18,6 @@
   section {
     margin: var(--gap-4) 0;
   }
-  h3 {
-    margin-bottom: var(--gap-3);
-  }
   li {
     margin-bottom: var(--gap-3);
   }
