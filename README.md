@@ -1,13 +1,13 @@
 # svelte spa app
 
-You can view this template at: [https://optimistic-hodgkin-832d69.netlify.com](https://optimistic-hodgkin-832d69.netlify.com)
+You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit collardeau/svelte-spa#portfolio-template my-svelte-app
+npx degit collardeau/svelte-spa my-svelte-app
 cd my-svelte-app
 ```
 
