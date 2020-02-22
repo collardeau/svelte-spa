@@ -2,11 +2,11 @@
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.
 
+Svelte Spa is here to get you started writing single-page applications using Svelte. It's built from the official [svelte rollup template](https://github.com/sveltejs/template).
+
+Svelte Spa includes some store creaters for integrations with routing, firebase, localStorage and more. A lot of stuff that you might think of as inside `node_modules` is inside a `src/libs` folder which you can edit yourself. The files are meant to get you going and they are kept as simple as possible, so you can dive into the code and start building and customizing. Included is also a `theme.css` that makes use of css variables, that you can customize as well. Svelte Spa also provides some basic layout components (such as Header and Nav). 
+
 ### You can view the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
-
-Svelte Spa is here to get you started writing single-page applications using Svelte.
-
-Svelte Spa includes some store creaters for quick integrations such as routing, firebase and localStorage. A lot of stuff that you might think of as inside `node_modules` is inside a `src/libs` folder which you can edit yourself. The files are meant to get you going and they are kept as simple as possible, so you can dive into the code and start building and customizing. There is also a `theme.css` using css variables, that you can customize as well. Svelte Spa also provides some basic layout components (such as Header and Nav). 
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
