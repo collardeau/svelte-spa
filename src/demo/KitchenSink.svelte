@@ -1,48 +1,53 @@
-<script context="module">
-  import createTabsStore from "../libs/tabs/createStore";
-  const store = createTabsStore("demo-tabs", { selected: "tab-1" });
-  // add gists (or code sandbox)
-
-  const tabs = [
-    {
-      text: "Integrations",
-      id: "tab-1"
-    },
-    {
-      text: "Stores",
-      id: "tab-2"
-    }
-  ];
-</script>
-
 <script>
-  import Tabs from "../libs/tabs/Tabs.svelte";
-  import Demos from "./Demos.svelte";
+  import { demos } from "./demo-data";
 </script>
 
-<div class="page">
-  <div class="tabs">
-    <Tabs name="demo-tabs" {tabs} />
+<div class="page kitchen-sink-page">
+  <h3>Kitchen Sink</h3>
+  <div class="demos">
+    {#each demos as { title, comp, href }}
+      <section>
+        <h5>{title}</h5>
+        <svelte:component this={comp} />
+        <div class="details">
+          <a {href}>code</a>
+        </div>
+      </section>
+    {/each}
+    <!-- <section>
+      <h5>Fetch</h5>
+      coming soon
+    </section> -->
+    <section>
+      <h5>Local Storage</h5>
+      coming Soon
+    </section>
   </div>
-  <Demos />
+
 </div>
 
 <style>
-  .page {
+  .kitchen-sink-page {
     text-align: center;
-    flex: 1;
-    margin-top: var(--size-1);
+    justify-content: flex-start;
+    max-width: var(--size-8);
   }
-  .tabs {
-    min-width: var(--size-8);
+  .demos {
+    padding: var(--gap-4) 0;
   }
-  :global(.tabs ul) {
-    display: flex;
-    justify-content: space-evenly;
+  h3 {
+    margin: var(--gap-4);
   }
-  :global(.tabs button) {
-    padding: var(--gap-3);
-    width: var(--size-5);
-    background-color: transparent;
+  h5 {
+    font-size: var(--text-base);
+  }
+  section {
+    margin-bottom: var(--gap-6);
+    padding-bottom: var(--gap-8);
+    border-bottom: 0.01rem solid var(--white);
+  }
+  .details {
+    margin-top: var(--gap-7);
+    font-size: var(--text-sm);
   }
 </style>

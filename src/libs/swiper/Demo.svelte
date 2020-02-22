@@ -26,6 +26,8 @@
 <style>
   .container {
     --swiper-theme-color: rgba(255, 255, 255, 0.8);
+    width: var(--size-7);
+    margin: 0 auto;
   }
   .swiper-slide {
     height: var(--size-6);
