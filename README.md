@@ -8,7 +8,9 @@ Svelte Spa includes **store creaters** for things such as routing, firebase, loc
 
 Included is also a **`theme.css`** that makes use of css variables. Svelte Spa also provides some basic **layout components** (such as Header and Nav) that you can delete if you want to.
 
-### You can view the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+#### You can view the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+
+## Get started
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
@@ -19,7 +21,7 @@ cd my-svelte-app
 
 _Note that you will need to have [Node.js](https://nodejs.org) installed._
 
-## Get started
+
 
 Install the dependencies...
 
