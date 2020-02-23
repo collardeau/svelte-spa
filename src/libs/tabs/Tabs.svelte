@@ -1,11 +1,7 @@
 <script>
-  import { getStore } from "../stores";
-  export let name = "";
   export let tabs = [];
-
-  // todo: move to layout components? (demo with using a regular store)
-  const store = getStore(name);
-  $: selected = $store.selected;
+  export let selected = "tab-1";
+  // todo: flesh this out as a layout comp with the bool store creator
 </script>
 
 <ul>
@@ -15,7 +11,7 @@
         type="button"
         role="tab"
         on:click={() => {
-          store.set({ selected: id });
+          console.log({ selected: id });
         }}>
         {text}
       </button>
