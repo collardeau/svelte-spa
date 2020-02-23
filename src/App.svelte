@@ -4,8 +4,8 @@
   import "./css/theme.css";
 
   import { setContext } from "svelte";
-  import createRouter from "./libs/hash-router/createStore";
   import Layout from "./components/Layout.svelte";
+  import createRouter from "./libs/hash-router/createStore";
   import { match } from "./routes";
 
   let router = createRouter();

@@ -1,7 +1,7 @@
 import About from "./components/About.svelte";
 import Home from "./components/Home.svelte";
-import Stores from "./demo/Stores.svelte";
 import Page from "./components/Page.svelte";
+import Stores from "./demo/Stores.svelte";
 
 export function match({ route }) {
   switch (route) {

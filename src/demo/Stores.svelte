@@ -2,7 +2,7 @@
   import { demos } from "./demo-data";
 </script>
 
-<div class="page kitchen-sink-page">
+<div class="page stores-demo-page">
   <h3>
     Custom
     <br />
@@ -23,7 +23,7 @@
 </div>
 
 <style>
-  .kitchen-sink-page {
+  .stores-demo-page {
     width: var(--size-8);
   }
   .demos {
@@ -32,7 +32,7 @@
   h3 {
     margin: var(--gap-4);
     text-align: center;
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
   }
   h5 {
     margin-bottom: var(--gap-4);

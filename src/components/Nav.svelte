@@ -3,7 +3,7 @@
 
   const store = getContext("app-router");
 
-  const routes = [
+  const links = [
     {
       name: "page 1",
       slug: "page-1"
@@ -20,7 +20,7 @@
 
 <nav>
   <ul>
-    {#each routes as { name, slug }}
+    {#each links as { name, slug }}
       <li class:active={active(slug)}>
         <a href={`#/${slug}`}>{name}</a>
       </li>
