@@ -8,7 +8,7 @@
     <p>
       check out the
       <br />
-      <a href="#/kitchen-sink">custom stores</a>
+      <a href="#/stores-demo">custom stores</a>
     </p>
   </section>
 </div>
