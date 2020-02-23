@@ -4,6 +4,7 @@
 
 <div class="page stores-demo-page">
   <h3>Store Creators</h3>
+  <p>* this page is a work in progress</p>
   <div class="demos">
     {#each demos as { title, comp, href }}
       <section>
@@ -26,7 +27,7 @@
     padding: var(--gap-4) 0;
   }
   h3 {
-    margin: var(--gap-4);
+    margin: var(--gap-5) 0;
     text-align: center;
     font-size: var(--text-2xl);
   }
