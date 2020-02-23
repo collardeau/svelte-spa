@@ -1,19 +1,20 @@
-<script context="module">
+<script>
   import "./css/global.css";
   import "./css/reset.css";
   import "./css/theme.css";
-  import createRouterStore from "./libs/hash-router/createStore";
 
-  const router = createRouterStore("app-router");
-</script>
-
-<script>
+  import { setContext } from "svelte";
+  import createRouter from "./libs/hash-router/createStore";
   import Layout from "./components/Layout.svelte";
   import { match } from "./routes";
 
-  $: content = match($router);
+  let router = createRouter();
+  router.start();
+  setContext("app-router", router);
+
+  $: component = match($router);
 </script>
 
 <Layout>
-  <svelte:component this={content} />
+  <svelte:component this={component} />
 </Layout>
