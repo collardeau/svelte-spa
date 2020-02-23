@@ -14,10 +14,10 @@
   <p>Try some internal links, and see the latest state:</p>
   <ul>
     <li>
-      <a href="#/kitchen-sink">#kitchen-sink</a>
+      <a href="#/stores-demo">#kitchen-sink</a>
     </li>
     <li>
-      <a href="#/kitchen-sink/param1">#kitchen-sink/param1</a>
+      <a href="#/stores-demo/param1">#kitchen-sink/param1</a>
     </li>
   </ul>
   {#if !$store.connected}
