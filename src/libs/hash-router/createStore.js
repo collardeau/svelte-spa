@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 
 const initialState = {
-  on: false,
+  connected: false,
   route: "",
   params: []
 };
@@ -20,14 +20,14 @@ export default () => {
   return {
     subscribe,
     start: () => {
-      set({ ...createState(), on: true });
+      set({ ...createState(), connected: true });
       window.onhashchange = () => {
         update(st => ({ ...st, ...createState() }));
       };
     },
     stop: () => {
       window.onhashchange = () => {};
-      update(st => ({ ...st, on: false }));
+      update(st => ({ ...st, connected: false }));
     }
   };
 };

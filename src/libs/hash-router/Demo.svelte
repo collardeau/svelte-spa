@@ -10,18 +10,29 @@
 <Store {store} />
 
 <div>
-  try some internal links:
-  <br />
-  <a href="#/kitchen-sink">#kitchen-sink</a>
-  <br />
-  <a href="#/kitchen-sink/param1">#kitchen-sink/param1</a>
-  <br />
-  {#if !$store.on}
-    <small class="warn">Note that the routing of the app is broken!</small>
+  <p>This store reacts to the hash route (look at at the url).</p>
+  <p>Try some internal links, and see the latest state:</p>
+  <ul>
+    <li>
+      <a href="#/kitchen-sink">#kitchen-sink</a>
+    </li>
+    <li>
+      <a href="#/kitchen-sink/param1">#kitchen-sink/param1</a>
+    </li>
+  </ul>
+  {#if !$store.connected}
+    <small class="warn">
+      Note that the routing of the app is now broken!
+      <br />
+      You need to start the router again when you're done testing this store.
+    </small>
   {/if}
 </div>
 
 <style>
+  li {
+    margin: var(--gap-2) 0;
+  }
   .warn {
     color: red;
   }

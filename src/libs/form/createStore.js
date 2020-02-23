@@ -1,6 +1,6 @@
-import { initStore } from "../stores";
+import { writable } from "svelte/store";
 
-export default (name = "", inputs = []) => {
+export default (inputs = []) => {
   if (!inputs.length) {
     return console.warn(
       `please pass in a inputs array to create a form store, for example:
@@ -17,27 +17,22 @@ export default (name = "", inputs = []) => {
     {}
   );
 
-  const customizeStore = ({ subscribe, set, update, merge }) => {
-    return {
-      inputs,
-      subscribe,
-      set,
-      merge,
-      reset: () => set(defaultValues),
-      sanitize: () =>
-        update(state => {
-          const newState = { ...state };
-          for (const prop in newState) {
-            const val = newState[prop];
-            if (typeof val === "string") {
-              newState[prop] = val.trim();
-            }
-            // todo: if it's a number +val
+  const { subscribe, set, update } = writable(defaultValues);
+  return {
+    subscribe,
+    update,
+    reset: () => set(defaultValues),
+    sanitize: () =>
+      update(state => {
+        const newState = { ...state };
+        for (const prop in newState) {
+          const val = newState[prop];
+          if (typeof val === "string") {
+            newState[prop] = val.trim();
           }
-          return newState;
-        })
-    };
+          // todo: if it's a number +val
+        }
+        return newState;
+      })
   };
-
-  initStore(name, defaultValues, customizeStore);
 };

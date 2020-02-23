@@ -1,22 +1,44 @@
-import { initStore } from "../stores";
+import { writable } from "svelte/store";
 
-const initialState = { uid: "" };
+const initialState = { user: null, loading: false, connected: false };
 
-export default (name = "", firebaseAuth) => {
-  const customize = ({ subscribe, set }) => {
-    firebaseAuth &&
-      firebaseAuth.onAuthStateChanged(response => {
-        if (!response) {
-          set({ uid: "" });
-          firebaseAuth.signInAnonymously().catch(console.warn);
-        } else {
-          set({ uid: response.uid });
-        }
+export default auth => {
+  check(auth);
+  const { subscribe, set, update } = writable(initialState);
+  let unsub = () => {};
+  return {
+    subscribe,
+    start: () => {
+      update(st => ({ ...st, loading: true }));
+      unsub = auth.onAuthStateChanged(authData => {
+        const user = !authData
+          ? authData
+          : {
+              uid: authData.uid,
+              isAnonymous: authData.isAnonymous
+            };
+        set({ user, loading: false, connected: true });
       });
-
-    return {
-      subscribe
-    };
+    },
+    stop: () => {
+      unsub();
+      update(st => ({ ...st, connected: false }));
+    },
+    login: () => {
+      auth.signInAnonymously().catch(console.warn);
+    },
+    logout: () => {
+      auth.signOut().catch(console.warn);
+    }
   };
-  return initStore(name, initialState, customize);
 };
+
+function check(auth) {
+  if (!auth) {
+    throw new Error(
+      `Invalid firebase auth parameter:
+      ${auth}
+      `
+    );
+  }
+}

@@ -3,6 +3,7 @@
   export let name = "";
   export let tabs = [];
 
+  // todo: move to layout components? (demo with using a regular store)
   const store = getStore(name);
   $: selected = $store.selected;
 </script>

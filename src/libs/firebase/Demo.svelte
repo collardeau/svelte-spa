@@ -3,7 +3,7 @@
   import { db } from "../../firebase"; // see this file for setup
   import createStore from "./createStore";
 
-  const store = createStore(db.collection("my-collection-name"));
+  const store = createStore(db.collection("my-data"));
 </script>
 
 <Store {store} />
