@@ -1,8 +1,7 @@
 <footer>
   <small>
-    this is a
+    code for this site at
     <a href="https://github.com/collardeau/svelte-spa">svelte-spa</a>
-    template
   </small>
 </footer>
 

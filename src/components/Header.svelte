@@ -1,9 +1,10 @@
 <script>
+  import { getContext } from "svelte";
   import Nav from "./Nav.svelte";
-  import { getStore } from "../libs/stores";
 
-  const store = getStore("app-router");
   const title = "Svelte App";
+
+  const store = getContext("app-router");
   $: route = $store.route;
 </script>
 

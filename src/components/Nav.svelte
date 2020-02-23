@@ -1,8 +1,9 @@
 <script>
-  import { getStore } from "../libs/stores";
-  const store = getStore("app-router");
+  import { getContext } from "svelte";
 
-  const routes = [
+  const store = getContext("app-router");
+
+  const links = [
     {
       name: "page 1",
       slug: "page-1"
@@ -19,7 +20,7 @@
 
 <nav>
   <ul>
-    {#each routes as { name, slug }}
+    {#each links as { name, slug }}
       <li class:active={active(slug)}>
         <a href={`#/${slug}`}>{name}</a>
       </li>

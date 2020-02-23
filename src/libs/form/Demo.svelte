@@ -1,32 +1,25 @@
 <script context="module">
   import createStore from "./createStore";
+  import Store from "../../demo/Store.svelte";
 
   const inputs = [
     {
       name: "name", // required
       type: "text", // any input type
-      defaultValue: "", // needed to enable store.reset
-      label: "Name", // optional label
-      placeholder: "your name" // pass any html attribute
-    },
-    {
-      name: "message",
-      type: "textarea",
-      defaultValue: "",
-      label: "Message",
-      required: true,
-      placeholder: "your message"
+      defaultValue: " some name    ", // needed to enable store.reset
+      label: "Label", // optional label
+      placeholder: "placeholder" // pass any html attribute
     }
-    // select inputs not yet available
+    // type select is not yet available
   ];
 
-  createStore("my-form", inputs);
+  const store = createStore(inputs);
 </script>
 
 <script>
-  import Form from "./Form.svelte";
-
   let disableForm;
+
+  // store.update(st => ({ ...st, name: "   some name      " }));
 
   const onSubmit = (values, store) => {
     disableForm(true);
@@ -39,13 +32,4 @@
   };
 </script>
 
-<div class="container">
-  <Form name="my-form" {onSubmit} bind:disable={disableForm} />
-</div>
-
-<style>
-  .container {
-    --form-bg-color: var(--second-color);
-    --form-padding: var(--gap-4);
-  }
-</style>
+<Store {store} />

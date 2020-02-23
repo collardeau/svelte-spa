@@ -1,12 +1,10 @@
 <script>
-  import { getStore } from "../stores";
-
+  // todo: as a layout comp
+  const store = {};
   export let name = "";
   export let onSubmit = x => x;
   export let disabled = false;
   export const disable = bool => (disabled = bool);
-
-  const store = getStore(name);
 
   const onFormSubmit = e => {
     e.preventDefault();

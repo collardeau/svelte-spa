@@ -10,6 +10,7 @@
 
 <style>
   .new-page {
+    justify-content: space-evenly;
     text-align: center;
   }
 </style>

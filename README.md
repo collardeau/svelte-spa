@@ -1,8 +1,16 @@
 # svelte spa template
 
-### You can view this template at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+Svelte Spa is here to get you started writing **single-page applications** with Svelte.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.
+It's built from the official [svelte rollup template](https://github.com/sveltejs/template) and adds postcss so we can import css files.
+
+Svelte Spa includes **store creaters** such as for routing, a **`theme.css`** that uses css variables, and some basic **layout components** (such as Header and Nav) that you can delete if you want to.
+
+The files are meant to get you going and they are kept as simple as possible, so you can dive into the code and start building pages.
+
+#### View the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+
+## Get started
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
@@ -13,7 +21,7 @@ cd my-svelte-app
 
 _Note that you will need to have [Node.js](https://nodejs.org) installed._
 
-## Get started
+
 
 Install the dependencies...
 
@@ -85,3 +93,5 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/collardeau/svelte-spa.

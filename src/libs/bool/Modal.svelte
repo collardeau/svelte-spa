@@ -1,9 +1,7 @@
 <script>
-  import { getStore } from "../stores";
-  export let name = "";
-  const store = getStore(name);
-  const { close } = store;
-  $: isOpen = $store.isOpen;
+  export let isOpen = $store.isOpen;
+  export let close = () => {};
+  // todo: flesh this out as a layout comp with a regular old store
 </script>
 
 {#if isOpen}
