@@ -1,6 +1,6 @@
 <footer>
   <small>
-    this site is the live demo of
+    code for this site at
     <a href="https://github.com/collardeau/svelte-spa">svelte-spa</a>
   </small>
 </footer>
