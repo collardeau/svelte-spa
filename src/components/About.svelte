@@ -1,4 +1,4 @@
-<div class="page">
+<div class="page about-page">
   <section>
     <h3>About</h3>
     <p>
@@ -35,6 +35,9 @@
 </div>
 
 <style>
+  .about-page {
+    justify-content: space-evenly;
+  }
   section {
     margin: var(--gap-4) 0;
   }

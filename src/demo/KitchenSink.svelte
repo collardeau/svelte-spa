@@ -9,7 +9,6 @@
     Store Creators
   </h3>
   <div class="demos">
-    <!-- <p>You can create custom stores!</p> -->
     {#each demos as { title, comp, href }}
       <section>
         <h5>{title}</h5>
@@ -25,12 +24,7 @@
 
 <style>
   .kitchen-sink-page {
-    /* text-align: center; */
-    justify-content: flex-start;
     width: var(--size-8);
-  }
-  p {
-    text-align: left;
   }
   .demos {
     padding: var(--gap-4) 0;
@@ -41,7 +35,7 @@
     font-size: var(--text-3xl);
   }
   h5 {
-    font-size: var(--text-sm);
+    margin-bottom: var(--gap-4);
   }
   section {
     margin-bottom: var(--gap-6);
@@ -56,6 +50,5 @@
     background-color: var(--white);
     padding: var(--gap-2);
     min-width: var(--size-8);
-    /* min-height: var(--size-4); */
   }
 </style>
