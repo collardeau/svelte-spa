@@ -4,11 +4,10 @@
 
 <div class="page home-page">
   <section>
-    <h3>Stores</h3>
+    <h3>Custom Stores</h3>
     <p>
       check out the
-      <br />
-      <a href="#/stores-demo">custom stores</a>
+      <a href="#/stores-demo">store creators</a>
     </p>
   </section>
 </div>

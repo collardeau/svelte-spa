@@ -3,11 +3,7 @@
 </script>
 
 <div class="page stores-demo-page">
-  <h3>
-    Custom
-    <br />
-    Store Creators
-  </h3>
+  <h3>Store Creators</h3>
   <div class="demos">
     {#each demos as { title, comp, href }}
       <section>
