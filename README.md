@@ -4,11 +4,11 @@ Svelte Spa is here to get you started writing **single-page applications** with 
 
 It's built from the official [svelte rollup template](https://github.com/sveltejs/template) and adds postcss so we can import css files.
 
-Svelte Spa includes **store creaters** for integrations such as routing, firebase, localStorage and more. A lot of code that you might think of as inside `node_modules` is inside a `src/libs` folder which you can edit yourself. The files are meant to get you going and they are kept as simple as possible, so you can dive into the code and start building and customizing your app. 
+Svelte Spa includes **store creaters** such as for routing, a **`theme.css`** that uses css variables, and some basic **layout components** (such as Header and Nav) that you can delete if you want to.
 
-Included is also a **`theme.css`** that makes use of css variables. Svelte Spa also provides some basic **layout components** (such as Header and Nav) that you can delete if you want to.
+The files are meant to get you going and they are kept as simple as possible, so you can dive into the code and start building pages.
 
-#### You can view the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
+#### View the live demo at: [https://pensive-bell-06d902.netlify.com](https://pensive-bell-06d902.netlify.com)
 
 ## Get started
 
