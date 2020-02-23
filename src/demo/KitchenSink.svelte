@@ -3,7 +3,11 @@
 </script>
 
 <div class="page kitchen-sink-page">
-  <h3>Stores</h3>
+  <h3>
+    Custom
+    <br />
+    Store Creators
+  </h3>
   <div class="demos">
     <!-- <p>You can create custom stores!</p> -->
     {#each demos as { title, comp, href }}

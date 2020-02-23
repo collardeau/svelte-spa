@@ -8,6 +8,6 @@ export function stringify(obj) {
 export function getActions(store = {}) {
   // console.log("get actions");
   return Object.keys(store)
-    .filter(key => key !== "subscribe")
+    .filter(key => key !== "subscribe" && key !== "set" && key !== "update")
     .map(key => store[key]);
 }
