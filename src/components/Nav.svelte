@@ -1,6 +1,7 @@
 <script>
-  import { getStore } from "../libs/stores";
-  const store = getStore("app-router");
+  import { getContext } from "svelte";
+
+  const store = getContext("app-router");
 
   const routes = [
     {
