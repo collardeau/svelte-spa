@@ -1,4 +1,4 @@
-import BoolDemo from "../libs/modal/Demo.svelte";
+import BoolDemo from "../libs/bool/Demo.svelte";
 import RouterDemo from "../libs/hash-router/Demo.svelte";
 import FirebaseDemo from "../libs/firebase/Demo.svelte";
 // import SwiperDemo from "../libs/swiper/Demo.svelte";
