@@ -1,6 +1,7 @@
 import Bool from "../libs/bool/Demo.svelte";
 import Router from "../libs/hash-router/Demo.svelte";
 import FetchDemo from "../libs/fetch/Demo.svelte";
+import Cycle from "../libs/cycle/Demo.svelte";
 // import Firestore from "../libs/firebase/firestore/Demo.svelte";
 // import FirebaseAuth from "../libs/firebase/firebase-auth/Demo.svelte";
 // import FormDemo from "../libs/form/Demo.svelte";
@@ -11,6 +12,12 @@ export const demos = [
     comp: Bool,
     href:
       "https://github.com/collardeau/svelte-spa/blob/master/src/libs/bool/Demo.svelte"
+  },
+  {
+    title: "Cycle",
+    comp: Cycle,
+    href:
+      "https://github.com/collardeau/svelte-spa/blob/master/src/libs/cycle/Demo.svelte"
   },
   {
     title: "Route",

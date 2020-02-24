@@ -1,7 +1,10 @@
 <script>
   import Modal from "./Modal.svelte";
+  import YouTube from "./YouTube.svelte";
   import createBoolStore from "../libs/Bool/createStore";
   const bool = createBoolStore();
+  let player;
+  // todo: separate demos into own comps
 </script>
 
 <div class="page comps-demo">
@@ -10,6 +13,14 @@
     <h5>Modal</h5>
     <Modal isOpen={$bool} close={bool.off}>Hi! I'm a modal!</Modal>
     <button on:click={bool.on}>open modal</button>
+  </section>
+  <section>
+    <h5>YouTube</h5>
+    <YouTube videoId="AdNJ3fydeao" bind:player />
+    <div>
+      <button on:click={() => player.playVideo()}>play</button>
+      <button on:click={() => player.pauseVideo()}>stop</button>
+    </div>
   </section>
 </div>
 
@@ -23,5 +34,8 @@
   }
   h5 {
     margin-bottom: var(--gap-4);
+  }
+  section {
+    margin-bottom: var(--gap-8);
   }
 </style>
