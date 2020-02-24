@@ -9,8 +9,7 @@ export default (uri = "") => {
     subscribe,
     get: async () => {
       update(st => ({ ...st, loading: true }));
-      let effect = async () => await fetchJson(uri);
-      const data = (await effect()) || {};
+      const data = (await fetchJson(uri)) || {};
       const state = { data, loading: false, ts: Date.now() };
       set(state);
       return state;

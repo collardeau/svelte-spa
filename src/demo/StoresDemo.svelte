@@ -4,7 +4,6 @@
 
 <div class="page stores-demo-page">
   <h3>Store Creators</h3>
-  <p>* this page is a work in progress</p>
   <div class="demos">
     {#each demos as { title, comp, href }}
       <section>

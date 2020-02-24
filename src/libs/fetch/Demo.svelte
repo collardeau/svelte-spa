@@ -9,11 +9,7 @@
   $: console.log($store);
 </script>
 
-<p>
-  const url = "https://api.github.com/users/collardeau";
-  <br />
-  const store = createFetchStore(url);
-</p>
+<p>passing in https://api.github.com/users/collardeau</p>
 
 <Store {store} />
 
