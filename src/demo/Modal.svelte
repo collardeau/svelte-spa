@@ -1,7 +1,6 @@
 <script>
-  export let isOpen = $store.isOpen;
+  export let isOpen = false;
   export let close = () => {};
-  // todo: flesh this out as a layout comp with a bool store
 </script>
 
 {#if isOpen}
