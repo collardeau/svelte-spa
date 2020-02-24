@@ -1,21 +1,21 @@
-import BoolDemo from "../libs/bool/Demo.svelte";
-import RouterDemo from "../libs/hash-router/Demo.svelte";
-// import FirebaseDemo from "../libs/firebase/Demo.svelte";
+import Bool from "../libs/bool/Demo.svelte";
+import Router from "../libs/hash-router/Demo.svelte";
+// import Firestore from "../libs/firebase/firestore/Demo.svelte";
+// import FirebaseAuth from "../libs/firebase/firebase-auth/Demo.svelte";
 // import FetchDemo from "../libs/fetch/Demo.svelte";
-// import FirebaseAuthDemo from "../libs/firebase-auth/Demo.svelte";
 // import FormDemo from "../libs/form/Demo.svelte";
 // import LocalStorageDemo from "../libs/local-storage/Demo.svelte";
 
 export const demos = [
   {
     title: "Boolean",
-    comp: BoolDemo,
+    comp: Bool,
     href:
       "https://github.com/collardeau/svelte-spa/blob/master/src/libs/bool/Demo.svelte"
   },
   {
     title: "Route",
-    comp: RouterDemo,
+    comp: Router,
     href:
       "https://github.com/collardeau/svelte-spa/blob/master/src/libs/hash-router/Demo.svelte"
   }
@@ -33,15 +33,15 @@ export const demos = [
   // }
   // {
   //   title: "Firestore",
-  //   comp: FirebaseDemo,
+  //   comp: Firestore,
   //   href:
-  //     "https://github.com/collardeau/svelte-spa/blob/master/src/libs/firebase/Demo.svelte"
-  // }
+  //     "https://github.com/collardeau/svelte-spa/blob/master/src/libs/firebase/firestore/Demo.svelte"
+  // },
   // {
   //   title: "Firebase Auth",
-  //   comp: FirebaseAuthDemo,
+  //   comp: FirebaseAuth,
   //   href:
-  //     "https://github.com/collardeau/svelte-spa/blob/master/src/libs/firebase-auth/Demo.svelte"
+  //     "https://github.com/collardeau/svelte-spa/blob/master/src/libs/firebase/firebase-auth/Demo.svelte"
   // }
   // {
   //   title: "Form",
