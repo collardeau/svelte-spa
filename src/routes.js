@@ -1,6 +1,6 @@
-import About from "./components/About.svelte";
-import Home from "./components/Home.svelte";
-import Page from "./components/Page.svelte";
+import About from "./components/pages/About.svelte";
+import Home from "./components/pages/Home.svelte";
+import Page from "./components/pages/Page.svelte";
 import Stores from "./demo/Stores.svelte";
 
 export function match({ route }) {
