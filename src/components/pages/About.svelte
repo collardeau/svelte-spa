@@ -1,3 +1,7 @@
+<script>
+  //
+</script>
+
 <div class="page about-page">
   <section>
     <h3>About</h3>

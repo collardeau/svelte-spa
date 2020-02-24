@@ -4,7 +4,6 @@ import Router from "../libs/hash-router/Demo.svelte";
 // import FirebaseAuth from "../libs/firebase/firebase-auth/Demo.svelte";
 // import FetchDemo from "../libs/fetch/Demo.svelte";
 // import FormDemo from "../libs/form/Demo.svelte";
-// import LocalStorageDemo from "../libs/local-storage/Demo.svelte";
 
 export const demos = [
   {
@@ -19,12 +18,6 @@ export const demos = [
     href:
       "https://github.com/collardeau/svelte-spa/blob/master/src/libs/hash-router/Demo.svelte"
   }
-  // {
-  //   title: "localStorage",
-  //   comp: LocalStorageDemo,
-  //   href:
-  //     "https://github.com/collardeau/svelte-spa/blob/master/src/libs/local-storage/Demo.svelte"
-  // },
   // {
   //   title: "Fetch",
   //   comp: FetchDemo,
