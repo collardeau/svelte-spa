@@ -10,9 +10,6 @@ export default (uri = "") => {
     get: async () => {
       update(st => ({ ...st, loading: true }));
       let effect = async () => await fetchJson(uri);
-      // if (uri.mock) {
-      //   effect = async () => await delay(() => uri.mock, uri.mock.latency);
-      // }
       const data = (await effect()) || {};
       const state = { data, loading: false, ts: Date.now() };
       set(state);
@@ -34,11 +31,3 @@ async function fetchJson(uri = "") {
   }
   return data;
 }
-
-// function delay(fn, duration = 1000) {
-//   return new Promise(resolve => {
-//     setTimeout(() => {
-//       resolve(fn());
-//     }, duration);
-//   });
-// }
