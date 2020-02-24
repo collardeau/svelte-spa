@@ -1,9 +1,14 @@
+<script>
+  //
+</script>
+
 <div class="page about-page">
   <section>
     <h3>About</h3>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi
-      facere? Quam quidem atque est earum.
+      This is a live demo of the
+      <br />
+      Svelte Spa master template.
     </p>
   </section>
   <section>
@@ -37,6 +42,7 @@
 <style>
   .about-page {
     justify-content: space-evenly;
+    max-width: var(--size-8);
   }
   section {
     margin: var(--gap-4) 0;

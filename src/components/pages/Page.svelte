@@ -1,5 +1,5 @@
 <script>
-  // start working on a new page :)
+  // template for a new page
 </script>
 
 <div class="page new-page">
@@ -10,7 +10,7 @@
 
 <style>
   .new-page {
-    justify-content: space-evenly;
     text-align: center;
+    justify-content: space-evenly;
   }
 </style>

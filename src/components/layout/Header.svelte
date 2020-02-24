@@ -12,12 +12,12 @@
   <header>
     {#if !route}
       <div class="left">
-        <img src="favicon.png" alt="logo" />
+        <img src="logo.png" alt="logo" />
         <h1>{title}</h1>
       </div>
     {:else}
       <a href="#/" class="left">
-        <img src="favicon.png" alt="logo" />
+        <img src="logo.png" alt="logo" />
         <h1>{title}</h1>
       </a>
     {/if}

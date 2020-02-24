@@ -1,7 +1,7 @@
 <script>
   export let isOpen = $store.isOpen;
   export let close = () => {};
-  // todo: flesh this out as a layout comp with a regular old store
+  // todo: flesh this out as a layout comp with a bool store
 </script>
 
 {#if isOpen}
