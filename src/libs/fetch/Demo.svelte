@@ -9,7 +9,7 @@
   $: console.log($store);
 </script>
 
-<p>passing in https://api.github.com/users/collardeau</p>
+<p>passing in: https://api.github.com/users/collardeau.</p>
 
 <Store {store} />
 
