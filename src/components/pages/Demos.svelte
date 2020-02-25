@@ -1,6 +1,6 @@
 <script>
-  import DemoModal from "./DemoModal.svelte";
-  import DemoTY from "./DemoYT.svelte";
+  import ModalDemo from "../lib/ModalDemo.svelte";
+  import YouTubeDemo from "../lib/YouTubeDemo.svelte";
 
   const getHref = comp =>
     `https://github.com/collardeau/svelte-spa/blob/master/src/components/demo/${comp}.svelte`;
@@ -10,16 +10,16 @@
   <h3>Components</h3>
   <section>
     <h5>Modal</h5>
-    <DemoModal />
+    <ModalDemo />
     <div>
-      <a href={getHref('DemoModal')}>code</a>
+      <a href={getHref('ModalDemo')}>code</a>
     </div>
   </section>
   <section>
     <h5>YouTube Player</h5>
-    <DemoTY />
+    <YouTubeDemo />
     <div>
-      <a href={getHref('DemoTY')}>code</a>
+      <a href={getHref('YouTubeDemo')}>code</a>
     </div>
   </section>
 </div>
