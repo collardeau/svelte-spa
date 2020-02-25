@@ -1,5 +1,12 @@
 import { writable } from "svelte/store";
 
+// createStore([
+//   {
+//     name: "name",
+//     defaultValue: " some name    "
+//   }
+// ]);
+
 export default (inputs = []) => {
   if (!inputs.length) {
     return console.warn(
