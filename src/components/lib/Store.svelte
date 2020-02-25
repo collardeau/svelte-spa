@@ -20,7 +20,7 @@
 <div>
   <pre>{state}</pre>
   {#each actions as action}
-    <button on:click={action}>{action.name}</button>
+    <button on:click={e => action()}>{action.name}</button>
   {/each}
 </div>
 
