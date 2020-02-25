@@ -1,8 +1,6 @@
-<script>
+<script context="module">
   import createCycleStore from "../../stores/cycle";
-  import YouTube from "../demo/YouTube.svelte";
-
-  export const videos = [
+  const videos = [
     {
       id: "BOYdZ0GyQFQ",
       title: "Superblood Wolfmoon"
@@ -13,11 +11,22 @@
     }
   ];
   const store = createCycleStore(videos);
+</script>
+
+<script>
+  import YouTube from "../demo/YouTube.svelte";
+
   let player;
 
   function playNext() {
     store.next();
     player.loadVideoById($store.item.id);
+  }
+
+  function onChange(e) {
+    if (e.data === 0) {
+      playNext();
+    }
   }
 </script>
 
@@ -25,7 +34,11 @@
   <section>
     <h3>YouTube Videos</h3>
   </section>
-  <YouTube videoId={$store.item.id} bind:player on:end={playNext} />
+  <YouTube
+    videoId={$store.item.id}
+    id="video-player"
+    bind:player
+    on:change={onChange} />
   <div>{$store.item.title}</div>
   <button on:click={playNext}>Next</button>
 </div>
