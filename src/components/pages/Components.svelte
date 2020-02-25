@@ -2,7 +2,7 @@
   import Modal from "../demo/Modal.svelte";
   import YouTube from "../demo/YouTube.svelte";
   import createBoolStore from "../../stores/bool";
-  const bool = createBoolStore();
+  const bool = createBoolStore(); // for modal
   let player;
 </script>
 
@@ -15,7 +15,7 @@
   </section>
   <section>
     <h5>YouTube</h5>
-    <YouTube videoId="AdNJ3fydeao" bind:player />
+    <YouTube videoId="AdNJ3fydeao" id="svelte-video" bind:player />
     <div>
       <button on:click={() => player.playVideo()}>play</button>
       <button on:click={() => player.pauseVideo()}>stop</button>

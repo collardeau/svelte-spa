@@ -1,26 +1,39 @@
+<script context="module">
+  let isReady = false;
+  function createYTPlayer(id, opts) {
+    return new YT.Player(id, {
+      height: "390",
+      width: "640",
+      ...opts
+    });
+  }
+</script>
+
 <script>
   import { createEventDispatcher, onMount } from "svelte";
+
   export let videoId = "";
+  export let id = "";
   export let player = {};
-  // todo: domId as prop
+
   const dispatch = createEventDispatcher();
 
-  onMount(() => {
-    window.onYouTubeIframeAPIReady = () => {
-      player = new YT.Player("player", {
-        height: "390",
-        width: "640",
-        videoId,
-        events: {
-          // onReady: onPlayerReady,
-          onStateChange: e => {
-            // dispatch("change", e);
-            if (e.data === 0) {
-              dispatch("end", e);
-            }
-          }
+  const createPlayer = () => {
+    player = createYTPlayer(id, {
+      videoId,
+      events: {
+        onStateChange: e => {
+          dispatch("change", e);
         }
-      });
+      }
+    });
+  };
+
+  onMount(() => {
+    if (isReady) createPlayer();
+    window.onYouTubeIframeAPIReady = () => {
+      createPlayer();
+      isReady = true;
     };
   });
 </script>
@@ -31,4 +44,4 @@
   </script>
 </svelte:head>
 
-<div id="player" />
+<div {id} />
