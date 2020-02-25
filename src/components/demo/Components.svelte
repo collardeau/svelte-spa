@@ -1,24 +1,25 @@
-<script context="module">
-  import Modal from "../demo/Modal.svelte";
-  import YouTube from "../demo/YouTube.svelte";
-  import createBoolStore from "../../stores/bool";
-  const bool = createBoolStore(); // for modal
-  let player;
+<script>
+  import YTDemo from "./YTDemo.svelte";
+  import ModalDemo from "./ModalDemo.svelte";
+
+  const getHref = comp =>
+    `https://github.com/collardeau/svelte-spa/blob/master/src/components/demo/${comp}.svelte`;
 </script>
 
 <div class="page comps-demo">
   <h3>Components</h3>
   <section>
     <h5>Modal</h5>
-    <Modal isOpen={$bool} close={bool.off}>Hi! I'm a modal!</Modal>
-    <button on:click={bool.on}>open modal</button>
+    <ModalDemo />
+    <div>
+      <a href={getHref('ModalDemo')}>code</a>
+    </div>
   </section>
   <section>
-    <h5>YouTube</h5>
-    <YouTube videoId="AdNJ3fydeao" id="svelte-video" bind:player />
+    <h5>YouTube Player</h5>
+    <YTDemo />
     <div>
-      <button on:click={() => player.playVideo()}>play</button>
-      <button on:click={() => player.pauseVideo()}>stop</button>
+      <a href={getHref('YTDemo')}>code</a>
     </div>
   </section>
 </div>
@@ -36,5 +37,7 @@
   }
   section {
     margin-bottom: var(--gap-8);
+    padding-bottom: var(--gap-6);
+    border-bottom: 0.01rem solid var(--white);
   }
 </style>
