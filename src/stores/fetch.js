@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-const initialState = { loading: false, data: {} };
+const initialState = { loading: false, data: {}, ts: 0 };
 
 export default (uri = "", shape = x => x) => {
   if (!uri) throw new Error("missing url paramater to create a fetch store");

@@ -39,6 +39,7 @@
   </section>
   <section>
     <h5>Hash Router</h5>
+    <p>createStore().start()</p>
     <Store store={router} />
     <div>
       <p>This store reacts to the hash route (look at at the url).</p>
