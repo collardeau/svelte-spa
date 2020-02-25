@@ -1,10 +1,13 @@
 <script>
   import { getContext } from "svelte";
+  import Store from "../demo/Store.svelte";
   import createBoolStore from "../../stores/bool";
   import createCycleStore from "../../stores/cycle";
   // import createRouterStore from "../../stores/hash-router";
   import createFetchStore from "../../stores/fetch";
-  import Store from "../demo/Store.svelte";
+  // import createFirestore from "../../stores/firebase/firestore";
+  // import createAuthStore from "../../stores/firebase/auth";
+  // import { db, firebaseAuth } from "../../stores/firebase/config"; // see this file for setup
 
   const bool = createBoolStore();
   const cycle = createCycleStore(["item 1", "item 2", "item 3"]);
@@ -18,7 +21,8 @@
       stargazers_count
     })
   );
-  // const fetch = createFetchStore("https://swapi.co/api/planets/4/");
+  // const firestore = createFirestore(db.collection("my-data"));
+  // const auth = createAuthStore(firebaseAuth);
 </script>
 
 <div class="page stores-page">
@@ -37,6 +41,16 @@
     <p>createStore("https://api.github.com/repos/sveltejs/svelte")</p>
     <Store store={fetch} />
   </section>
+  <!-- <section>
+    <h5>Firebase Auth</h5>
+    <p>createStore(firebaseAuth)</p>
+    <Store store={auth} />
+  </section> -->
+  <!-- <section>
+    <h5>Firebase Firestore</h5>
+    <p>createStore(firestore.collection("my-collection"))</p>
+    <Store store={firestore} />
+  </section> -->
   <section>
     <h5>Hash Router</h5>
     <p>createStore().start()</p>
