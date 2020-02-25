@@ -45,10 +45,10 @@
       <p>Try some internal links, and see the latest state:</p>
       <ul>
         <li>
-          <a href="/#/stores-demo/param1">#/stores-demo/param1</a>
+          <a href="/#/stores/param1">#/stores/param1</a>
         </li>
         <li>
-          <a href="/#/stores-demo">#/stores-demo</a>
+          <a href="/#/stores">#/stores</a>
         </li>
       </ul>
       {#if !$router.connected}
