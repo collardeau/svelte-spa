@@ -1,10 +1,20 @@
 <script>
-  import { stringify, getActions } from "../demo/utils";
-
   export let store;
 
-  $: state = stringify($store);
+  function stringify(obj) {
+    const string = JSON.stringify(obj, null, 2);
+    return string;
+  }
+
+  function getActions(store = {}) {
+    return Object.keys(store)
+      .filter(key => key !== "subscribe" && key !== "set" && key !== "update")
+      .map(key => store[key]);
+  }
+
   const actions = getActions(store);
+
+  $: state = stringify($store);
 </script>
 
 <div>

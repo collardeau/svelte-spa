@@ -2,7 +2,7 @@
   import { createEventDispatcher, onMount } from "svelte";
   export let videoId = "";
   export let player = {};
-
+  // todo: domId as prop
   const dispatch = createEventDispatcher();
 
   onMount(() => {

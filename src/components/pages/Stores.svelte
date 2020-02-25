@@ -1,10 +1,10 @@
 <script>
-  import Store from "./Store.svelte";
   import { getContext } from "svelte";
-  import createBoolStore from "../stores/bool";
-  import createCycleStore from "../stores/cycle";
-  // import createRouterStore from "../stores/hash-router";
-  import createFetchStore from "../stores/fetch";
+  import createBoolStore from "../../stores/bool";
+  import createCycleStore from "../../stores/cycle";
+  // import createRouterStore from "../../stores/hash-router";
+  import createFetchStore from "../../stores/fetch";
+  import Store from "../demo/Store.svelte";
 
   const bool = createBoolStore();
   const cycle = createCycleStore(["item 1", "item 2", "item 3"]);
@@ -21,6 +21,10 @@
   <section>
     <h5>Cycle</h5>
     <Store store={cycle} />
+  </section>
+  <section>
+    <h5>Fetch</h5>
+    <Store store={fetch} />
   </section>
   <section>
     <h5>Hash Router</h5>
@@ -46,10 +50,7 @@
       {/if}
     </div>
   </section>
-  <section>
-    <h5>Fetch</h5>
-    <Store store={fetch} />
-  </section>
+
 </div>
 
 <style>
