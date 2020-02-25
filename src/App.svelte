@@ -5,7 +5,7 @@
 
   import { setContext } from "svelte";
   import Layout from "./components/layout/Layout.svelte";
-  import createRouter from "./stores/hash-router";
+  import createRouter from "./stores/hash-router/createStore";
   import { match } from "./routes";
 
   let router = createRouter();

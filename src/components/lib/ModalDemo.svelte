@@ -1,6 +1,6 @@
 <script context="module">
   import Modal from "../lib/Modal.svelte";
-  import createBoolStore from "../../stores/bool";
+  import createBoolStore from "../../stores/bool/createStore";
   const bool = createBoolStore();
 </script>
 

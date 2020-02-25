@@ -1,5 +1,5 @@
 <script context="module">
-  import createCycleStore from "../../stores/cycle";
+  import createCycleStore from "../../stores/cycle/createStore";
   const videos = ["AdNJ3fydeao", "BzX4aTRPzno", "ogXETl_I0Dg"]; // rich harris talks
   const videoStore = createCycleStore(videos);
 </script>
