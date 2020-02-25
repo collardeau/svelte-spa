@@ -3,7 +3,7 @@
   import YouTubeDemo from "../../lib/YouTubeDemo.svelte";
 
   const getHref = comp =>
-    `https://github.com/collardeau/svelte-spa/blob/master/src/components/demo/${comp}.svelte`;
+    `https://github.com/collardeau/svelte-spa/blob/master/src/components/lib/${comp}.svelte`;
 </script>
 
 <div class="page comps-demo">
