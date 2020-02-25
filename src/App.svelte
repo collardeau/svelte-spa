@@ -1,11 +1,11 @@
 <script>
-  import "./css/global.css";
-  import "./css/reset.css";
-  import "./css/theme.css";
+  import "./styles/global.css";
+  import "./styles/reset.css";
+  import "./styles/theme.css";
 
   import { setContext } from "svelte";
   import Layout from "./components/layout/Layout.svelte";
-  import createRouter from "./libs/hash-router/createStore";
+  import createRouter from "./stores/hash-router/createStore";
   import { match } from "./routes";
 
   let router = createRouter();

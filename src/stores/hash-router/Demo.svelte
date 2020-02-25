@@ -1,12 +1,14 @@
 <script>
   import { getContext } from "svelte";
-  import Store from "../../demo/Store.svelte";
+  import Store from "../../components/lib/Store.svelte";
+  // import createStore from "./createStore";
 
-  // note that this app uses the hash router already
-  // so we just get it from context
+  // we already run the router for the app
+  // so we get it from context:
   const store = getContext("app-router");
 </script>
 
+<p>createStore().start()</p>
 <Store {store} />
 
 <div>
@@ -14,10 +16,10 @@
   <p>Try some internal links, and see the latest state:</p>
   <ul>
     <li>
-      <a href="/#/stores-demo/param1">#/stores-demo/param1</a>
+      <a href="/#/stores/param1">#/stores/param1</a>
     </li>
     <li>
-      <a href="/#/stores-demo">#/stores-demo</a>
+      <a href="/#/stores">#/stores</a>
     </li>
   </ul>
   {#if !$store.connected}
@@ -30,9 +32,6 @@
 </div>
 
 <style>
-  li {
-    margin: var(--gap-2) 0;
-  }
   .warn {
     color: red;
   }

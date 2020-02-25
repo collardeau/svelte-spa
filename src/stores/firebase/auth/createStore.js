@@ -2,6 +2,7 @@ import { writable } from "svelte/store";
 
 const initialState = { user: null, loading: false, connected: false };
 
+// createAuthStore(firebaseAuth);
 export default auth => {
   check(auth);
   const { subscribe, set, update } = writable(initialState);

@@ -2,6 +2,7 @@ import { writable } from "svelte/store";
 
 const initialState = { data: [], loading: false, ts: 0 };
 
+// createFirestore(db.collection("my-data"));
 export default collection => {
   check(collection);
   const { subscribe, set, update } = writable(initialState);

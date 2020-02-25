@@ -2,7 +2,7 @@
   import { getContext } from "svelte";
   import Nav from "./Nav.svelte";
 
-  const title = "Svelte App";
+  const title = "Svelte Spa";
 
   const store = getContext("app-router");
   $: route = $store.route;
