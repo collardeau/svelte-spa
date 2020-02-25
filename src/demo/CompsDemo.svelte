@@ -1,7 +1,7 @@
 <script>
   import Modal from "./Modal.svelte";
   import YouTube from "./YouTube.svelte";
-  import createBoolStore from "../libs/Bool/createStore";
+  import createBoolStore from "../stores/bool";
   const bool = createBoolStore();
   let player;
   // todo: separate demos into own comps

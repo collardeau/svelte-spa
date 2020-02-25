@@ -1,5 +1,5 @@
 <script>
-  import createCycleStore from "../../libs/cycle/createStore";
+  import createCycleStore from "../../stores/cycle";
   import YouTube from "../../demo/YouTube.svelte";
 
   export const videos = [
