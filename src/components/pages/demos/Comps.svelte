@@ -1,6 +1,6 @@
 <script>
-  import ModalDemo from "../lib/ModalDemo.svelte";
-  import YouTubeDemo from "../lib/YouTubeDemo.svelte";
+  import ModalDemo from "../../lib/ModalDemo.svelte";
+  import YouTubeDemo from "../../lib/YouTubeDemo.svelte";
 
   const getHref = comp =>
     `https://github.com/collardeau/svelte-spa/blob/master/src/components/demo/${comp}.svelte`;

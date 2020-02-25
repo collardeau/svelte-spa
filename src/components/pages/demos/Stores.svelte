@@ -1,8 +1,8 @@
 <script>
-  import BoolDemo from "../../stores/bool/Demo.svelte";
-  import CycleDemo from "../../stores/cycle/Demo.svelte";
-  import FetchDemo from "../../stores/fetch/Demo.svelte";
-  import RouterDemo from "../../stores/hash-router/Demo.svelte";
+  import BoolDemo from "../../../stores/bool/Demo.svelte";
+  import CycleDemo from "../../../stores/cycle/Demo.svelte";
+  import FetchDemo from "../../../stores/fetch/Demo.svelte";
+  import RouterDemo from "../../../stores/hash-router/Demo.svelte";
 </script>
 
 <div class="page stores-demo">
