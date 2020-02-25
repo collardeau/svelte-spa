@@ -2,14 +2,15 @@ import { writable } from "svelte/store";
 
 const initialState = { loading: false, data: {} };
 
-export default (uri = "") => {
+export default (uri = "", shape = x => x) => {
   if (!uri) throw new Error("missing url paramater to create a fetch store");
   const { subscribe, set, update } = writable(initialState);
   return {
     subscribe,
     get: async () => {
       update(st => ({ ...st, loading: true }));
-      const data = (await fetchJson(uri)) || {};
+      const res = await fetchJson(uri);
+      const data = res ? shape(res) : {};
       const state = { data, loading: false, ts: Date.now() };
       set(state);
       return state;

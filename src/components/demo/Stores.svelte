@@ -9,7 +9,16 @@
   const bool = createBoolStore();
   const cycle = createCycleStore(["item 1", "item 2", "item 3"]);
   const router = getContext("app-router"); // we already have a router for the app
-  const fetch = createFetchStore("https://api.github.com/users/collardeau");
+  const fetch = createFetchStore(
+    "https://api.github.com/repos/sveltejs/svelte",
+    ({ full_name, url, homepage, stargazers_count }) => ({
+      full_name,
+      url,
+      homepage,
+      stargazers_count
+    })
+  );
+  // const fetch = createFetchStore("https://swapi.co/api/planets/4/");
 </script>
 
 <div class="page stores-page">
@@ -20,10 +29,12 @@
   </section>
   <section>
     <h5>Cycle</h5>
+    <p>createStore(["item 1", "item 2", "item 3"])</p>
     <Store store={cycle} />
   </section>
   <section>
     <h5>Fetch</h5>
+    <p>createStore("https://api.github.com/repos/sveltejs/svelte")</p>
     <Store store={fetch} />
   </section>
   <section>
@@ -69,6 +80,9 @@
   }
   h5 {
     margin-bottom: var(--gap-4);
+  }
+  p {
+    margin-bottom: var(--gap-3);
   }
   .warn {
     color: red;
