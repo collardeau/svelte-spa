@@ -4,7 +4,7 @@ export default (inputs = []) => {
   if (!inputs.length) {
     return console.warn(
       `please pass in a inputs array to create a form store, for example:
-      createStore("my-form", [{ name: "name", type: "text", defaultValue: ""}]);
+      createStore("[{ key: "value", defaultValue: ""}]);
       `
     );
   }

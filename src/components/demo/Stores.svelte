@@ -5,6 +5,7 @@
   import createCycleStore from "../../stores/cycle";
   // import createRouterStore from "../../stores/hash-router";
   import createFetchStore from "../../stores/fetch";
+  // import createFormStore from "../../stores/form";
   // import createFirestore from "../../stores/firebase/firestore";
   // import createAuthStore from "../../stores/firebase/auth";
   // import { db, firebaseAuth } from "../../stores/firebase/config"; // see this file for setup
@@ -21,6 +22,12 @@
       stargazers_count
     })
   );
+  // const form = createFormStore([
+  //   {
+  //     name: "name",
+  //     defaultValue: " some name    "
+  //   }
+  // ]);
   // const firestore = createFirestore(db.collection("my-data"));
   // const auth = createAuthStore(firebaseAuth);
 </script>
@@ -41,6 +48,10 @@
     <p>createStore("https://api.github.com/repos/sveltejs/svelte")</p>
     <Store store={fetch} />
   </section>
+  <!-- <section>
+    <h5>Form</h5>
+    <Store store={form} />
+  </section> -->
   <!-- <section>
     <h5>Firebase Auth</h5>
     <p>createStore(firebaseAuth)</p>

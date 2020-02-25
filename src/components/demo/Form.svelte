@@ -1,5 +1,5 @@
 <script>
-  // todo: as a layout comp with form store creator
+  // todo:
   const store = {};
   export let name = "";
   export let onSubmit = x => x;
