@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import Store from "../demo/Store.svelte";
+  import Store from "../lib/Store.svelte";
   import createBoolStore from "../../stores/bool";
   import createCycleStore from "../../stores/cycle";
   // import createRouterStore from "../../stores/hash-router";
