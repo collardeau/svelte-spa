@@ -1,7 +1,7 @@
 <script>
-  import "./css/global.css";
-  import "./css/reset.css";
-  import "./css/theme.css";
+  import "./styles/global.css";
+  import "./styles/reset.css";
+  import "./styles/theme.css";
 
   import { setContext } from "svelte";
   import Layout from "./components/layout/Layout.svelte";
