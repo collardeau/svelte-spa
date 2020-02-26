@@ -3,24 +3,14 @@
   import Nav from "./Nav.svelte";
 
   const title = "Svelte Spa";
-
-  const store = getContext("app-router");
-  $: route = $store.route;
 </script>
 
 <div class="container">
   <header>
-    {#if !route}
-      <div class="left">
-        <img src="logo.png" alt="logo" />
-        <h1>{title}</h1>
-      </div>
-    {:else}
-      <a href="#/" class="left">
-        <img src="logo.png" alt="logo" />
-        <h1>{title}</h1>
-      </a>
-    {/if}
+    <a href="#/" class="left">
+      <img src="logo.png" alt="logo" />
+      <h1>{title}</h1>
+    </a>
     <Nav />
   </header>
 </div>
