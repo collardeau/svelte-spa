@@ -11,7 +11,6 @@
       <img src="logo.png" alt="logo" />
       <h1>{title}</h1>
     </a>
-    <div />
     <Nav />
   </header>
 </div>
@@ -23,7 +22,7 @@
   }
   header {
     display: grid;
-    grid-template-columns: 1fr min-content 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: center;
     padding: var(--gap-2) var(--gap-1);
     max-width: var(--container-width);
@@ -37,7 +36,7 @@
   }
   a {
     display: grid;
-    grid-template-columns: minmax(var(--gap-6), var(--gap-7)) max-content;
+    grid-template-columns: var(--gap-7) max-content;
     align-items: center;
     grid-gap: var(--gap-2);
     color: var(--black);

@@ -33,11 +33,10 @@
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(max-content, var(--size-2)));
-    grid-auto-rows: var(--gap-6);
+    grid-gap: var(--gap-2);
     align-items: center;
     justify-content: end;
     text-align: center;
-    grid-gap: var(--gap-2);
   }
   a {
     display: block;
