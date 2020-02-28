@@ -2,8 +2,7 @@
   let isReady = false;
   function createYTPlayer(id, opts) {
     return new YT.Player(id, {
-      height: "390",
-      width: "640",
+      width: "100%",
       ...opts
     });
   }
