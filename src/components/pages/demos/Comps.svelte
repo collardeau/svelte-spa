@@ -27,7 +27,7 @@
 <style>
   .comps-demo {
     text-align: center;
-    min-width: var(--size-8);
+    width: var(--size-7);
   }
   h3 {
     margin: var(--gap-5) 0;

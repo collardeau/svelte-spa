@@ -43,8 +43,8 @@
 
 <style>
   .about-page {
-    display: grid;
     height: 100%;
+    display: grid;
     align-items: center;
   }
   section {

@@ -31,15 +31,18 @@
 
 <style>
   ul {
-    display: flex;
-  }
-  li {
-    margin-left: var(--gap-2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, var(--size-2)));
+    grid-auto-rows: var(--gap-6);
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    grid-gap: var(--gap-2);
   }
   a {
     display: block;
     color: var(--black);
-    padding: var(--gap-2);
+    padding: var(--gap-2) 0;
     font-size: var(--text-xs);
     font-weight: 200;
     text-transform: uppercase;
@@ -54,11 +57,5 @@
   .active a:hover {
     cursor: default;
     text-decoration: none;
-  }
-  a,
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 </style>

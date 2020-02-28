@@ -7,10 +7,11 @@
 
 <div class="container">
   <header>
-    <a href="#/" class="left">
+    <a href="#/">
       <img src="logo.png" alt="logo" />
       <h1>{title}</h1>
     </a>
+    <div />
     <Nav />
   </header>
 </div>
@@ -21,34 +22,30 @@
     border-bottom: 1px solid #ddd;
   }
   header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
     padding: var(--gap-2) var(--gap-1);
     max-width: var(--container-width);
     margin: 0 auto;
   }
   h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: var(--black);
     margin: 0;
     padding: 0;
     font-size: var(--text-base);
   }
   a {
-    display: block;
+    display: grid;
+    grid-template-columns: minmax(var(--gap-6), var(--gap-7)) max-content;
+    align-items: center;
+    grid-gap: var(--gap-2);
     color: var(--black);
   }
   a:hover {
     text-decoration: none;
   }
-  .left {
-    display: flex;
-    align-items: center;
-  }
   img {
-    width: var(--gap-7);
-    margin-right: var(--gap-1);
+    width: 100%;
   }
 </style>
