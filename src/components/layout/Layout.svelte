@@ -22,7 +22,5 @@
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--gap-2);
-    display: flex;
-    flex-direction: column;
   }
 </style>

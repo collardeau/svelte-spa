@@ -6,7 +6,7 @@
     `https://github.com/collardeau/svelte-spa/blob/master/src/components/lib/${comp}.svelte`;
 </script>
 
-<div class="page comps-demo">
+<div class="comps-demo">
   <h3>Components</h3>
   <section>
     <h5>Modal</h5>
@@ -27,6 +27,7 @@
 <style>
   .comps-demo {
     text-align: center;
+    min-width: var(--size-8);
   }
   h3 {
     margin: var(--gap-5) 0;

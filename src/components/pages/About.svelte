@@ -2,7 +2,8 @@
   //
 </script>
 
-<div class="page about-page">
+<div class="about-page">
+  <div />
   <section>
     <h3>About</h3>
     <p>
@@ -37,12 +38,14 @@
       </li>
     </ul>
   </section>
+  <div />
 </div>
 
 <style>
   .about-page {
-    justify-content: space-evenly;
-    max-width: var(--size-8);
+    display: grid;
+    height: 100%;
+    align-items: center;
   }
   section {
     margin: var(--gap-4) 0;

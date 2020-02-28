@@ -2,7 +2,8 @@
   //
 </script>
 
-<div class="page home-page">
+<div class="home-page">
+  <div />
   <section>
     <h3>Custom Stores</h3>
     <p>
@@ -17,10 +18,13 @@
       <a href="#/components">components</a>
     </p>
   </section>
+  <div />
 </div>
 
 <style>
   .home-page {
-    justify-content: space-evenly;
+    height: 100%;
+    display: grid;
+    align-items: center;
   }
 </style>

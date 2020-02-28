@@ -5,7 +5,7 @@
   import RouterDemo from "../../../stores/hash-router/Demo.svelte";
 </script>
 
-<div class="page stores-demo">
+<div>
   <h3>Store Creators</h3>
   <section>
     <h5>Boolean</h5>
@@ -27,9 +27,6 @@
 </div>
 
 <style>
-  .stores-demo {
-    width: var(--size-8);
-  }
   section {
     margin-bottom: var(--gap-6);
     padding-bottom: var(--gap-8);
