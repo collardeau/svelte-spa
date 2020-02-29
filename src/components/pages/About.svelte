@@ -46,6 +46,8 @@
     height: 100%;
     display: grid;
     align-items: center;
+    max-width: var(--size-8);
+    margin: 0 auto;
   }
   section {
     margin: var(--gap-4) 0;

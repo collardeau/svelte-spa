@@ -10,72 +10,64 @@
   $: active = route => route === $store.route;
 </script>
 
-<header>
-  <div />
-  <Bar>
-    <a href="#/" slot="left">
-      <img src="logo.png" alt="logo" />
-      <h1>{title}</h1>
-    </a>
-    <nav slot="right">
-      {#each navLinks as link}
-        <a href={`#/${link.slug}`} class:active={active(link.slug)}>
-          {link.name}
-        </a>
-      {/each}
-    </nav>
-  </Bar>
-  <div />
-</header>
+<Bar>
+  <a href="#/" slot="left" class="left">
+    <img src="logo.png" alt="logo" />
+    <h1>{title}</h1>
+  </a>
+  <nav slot="right" class="right">
+    {#each navLinks as link}
+      <a href={`#/${link.slug}`} class:active={active(link.slug)}>
+        {link.name}
+      </a>
+    {/each}
+  </nav>
+</Bar>
 
 <style>
-  header {
+  .left,
+  .right {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, var(--container-width)) 1fr;
-    background-color: var(--white);
-    padding: var(--gap-2) var(--gap-1);
-    border-bottom: 1px solid #ddd;
-  }
-  nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(max-content, var(--size-2)));
     grid-gap: var(--gap-2);
     align-items: center;
+  }
+  .left {
+    grid-template-columns: var(--gap-7) auto;
+  }
+  .right {
+    grid-template-columns: repeat(auto-fit, var(--size-2));
     justify-content: end;
     text-align: center;
   }
-  nav a {
+  a {
     display: block;
+    text-decoration: none;
     color: var(--black);
+  }
+  .right a {
     font-size: var(--text-xs);
     font-weight: 200;
     text-transform: uppercase;
   }
-  nav a:hover {
-    color: var(--theme-color);
-    text-decoration: none;
-  }
-  .active {
+  .right a:hover {
     color: var(--theme-color);
   }
-  .active:hover {
+  .right .active {
+    color: var(--theme-color);
+  }
+  .right .active:hover {
     cursor: default;
     text-decoration: none;
   }
-  h1 {
+  .left h1 {
     color: var(--black);
     margin: 0;
     padding: 0;
     font-size: var(--text-base);
   }
-  a {
-    display: grid;
-    grid-template-columns: var(--gap-7) max-content;
-    align-items: center;
-    grid-gap: var(--gap-2);
-    color: var(--black);
-  }
-  img {
+
+  .left img {
     width: 100%;
+    display: block;
   }
 </style>

@@ -26,15 +26,18 @@
 
 <style>
   .comps-demo {
-    text-align: center;
-    width: var(--size-7);
+    min-width: var(--size-7);
+    max-width: var(--size-8);
+    margin: 0 auto;
   }
   h3 {
-    margin: var(--gap-5) 0;
+    margin: var(--gap-4) 0;
     font-size: var(--text-2xl);
+    text-align: center;
   }
   h5 {
     margin-bottom: var(--gap-4);
+    font-size: var(--text-base);
   }
   section {
     margin-bottom: var(--gap-8);
