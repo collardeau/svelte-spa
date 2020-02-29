@@ -19,3 +19,14 @@ export function match({ route }) {
       return Home;
   }
 }
+
+export const navLinks = [
+  {
+    name: "page 1",
+    slug: "page-1"
+  },
+  {
+    name: "about",
+    slug: "about"
+  }
+];
