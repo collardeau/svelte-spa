@@ -2,25 +2,31 @@
   //
 </script>
 
-<div class="page home-page">
+<div class="home-page">
+  <div />
   <section>
     <h3>Custom Stores</h3>
     <p>
-      check out the
-      <a href="#/stores">store creators</a>
+      demo the
+      <a href="#/stores">custom store creators</a>
     </p>
   </section>
   <section>
     <h3>Components</h3>
     <p>
-      check out the
+      demo
       <a href="#/components">components</a>
     </p>
   </section>
+  <div />
 </div>
 
 <style>
   .home-page {
-    justify-content: space-evenly;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    max-width: var(--size-8);
+    margin: 0 auto;
   }
 </style>

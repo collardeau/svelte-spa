@@ -2,7 +2,7 @@
   // template for a new page
 </script>
 
-<div class="page new-page">
+<div class="new-page">
   <section>
     <h3>A new page</h3>
   </section>
@@ -10,7 +10,9 @@
 
 <style>
   .new-page {
+    height: 100%;
+    display: grid;
+    align-items: center;
     text-align: center;
-    justify-content: space-evenly;
   }
 </style>
