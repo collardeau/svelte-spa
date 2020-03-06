@@ -1,6 +1,5 @@
 <script>
   import { getContext } from "svelte";
-  // import Nav from "./Nav.svelte";
   import Bar from "../lib/Bar.svelte";
   import { navLinks } from "../../routes";
 
