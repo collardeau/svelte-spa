@@ -27,8 +27,8 @@
 
   .cell {
     display: grid;
-    place-items: center;
-    border: 1px solid grey;
+    /* place-items: center; */
+    /* border: 1px solid grey; */
   }
 
   .col {
