@@ -3,10 +3,15 @@
   import CycleDemo from "../../../stores/cycle/Demo.svelte";
   // import FetchDemo from "../../../stores/fetch/Demo.svelte";
   import RouterDemo from "../../../stores/hash-router/Demo.svelte";
+  // import IntersectObsDemo from "../../../stores/intersection-observer/Demo.svelte";
 </script>
 
 <div class="container">
   <h3>Store Creators</h3>
+  <!-- <section>
+    <h5>Intersection Observable</h5>
+    <IntersectObsDemo />
+  </section> -->
   <section>
     <h5>Boolean</h5>
     <BoolDemo />
