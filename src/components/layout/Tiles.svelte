@@ -2,18 +2,17 @@
   export let children = [];
   export let comp;
   // export let data;
+  export let row = true;
 </script>
 
-<div class="col">
+<div class={row ? 'row' : 'col'}>
   <div>
     <svelte:component this={comp} />
   </div>
   {#if children.length}
-    <div class="row">
-      {#each children as item}
-        <svelte:self {...item} />
-      {/each}
-    </div>
+    {#each children as item}
+      <svelte:self {...item} row={!row} />
+    {/each}
   {/if}
 </div>
 
