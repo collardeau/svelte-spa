@@ -1,26 +1,36 @@
-<script>
-  //
+<script context="module">
+  import Tiles from "../layout/Tiles.svelte";
+  import Intro from "./demos/Intro.svelte";
+  import Stores from "./demos/Stores.svelte";
+  import Comps from "./demos/Comps.svelte";
+  import Bool from "../../stores/bool/Demo.svelte";
+  import Cycle from "../../stores/cycle/Demo.svelte";
+  import ModalDemo from "../lib/ModalDemo.svelte";
+
+  const data = {
+    comp: Intro,
+    children: [
+      {
+        comp: Stores,
+        children: [
+          {
+            comp: Bool
+          },
+          {
+            comp: Cycle
+          }
+        ]
+      },
+      {
+        comp: Comps,
+        children: [
+          {
+            comp: ModalDemo
+          }
+        ]
+      }
+    ]
+  };
 </script>
 
-<div class="page home-page">
-  <section>
-    <h3>Custom Stores</h3>
-    <p>
-      check out the
-      <a href="#/stores">store creators</a>
-    </p>
-  </section>
-  <section>
-    <h3>Components</h3>
-    <p>
-      check out the
-      <a href="#/components">components</a>
-    </p>
-  </section>
-</div>
-
-<style>
-  .home-page {
-    justify-content: space-evenly;
-  }
-</style>
+<Tiles {...data} />

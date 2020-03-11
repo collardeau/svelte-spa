@@ -4,26 +4,46 @@
 </script>
 
 <div class="layout">
-  <Header />
-  <main>
+  <header class="row">
+    <div />
+    <Header />
+    <div />
+  </header>
+  <main class="row">
+    <div />
     <slot />
+    <div />
   </main>
-  <Footer />
+  <footer class="row">
+    <div />
+    <Footer />
+    <div />
+  </footer>
 </div>
 
 <style>
+  .layout,
+  .row {
+    display: grid;
+  }
   .layout {
     min-height: 100vh;
     max-width: 100vw;
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: auto 1fr auto;
   }
-  main {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 var(--gap-2);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  .row {
+    grid-template-columns: 1fr minmax(auto, var(--container-width)) 1fr;
+  }
+  header,
+  footer {
+    background-color: var(--white);
+    min-height: var(--size-1);
+    align-items: center;
+  }
+  header {
+    border-bottom: 1px solid #ddd;
+  }
+  footer {
+    border-top: 1px solid #ddd;
   }
 </style>

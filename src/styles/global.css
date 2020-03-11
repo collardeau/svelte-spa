@@ -22,13 +22,6 @@ body {
   line-height: 1.4;
 }
 
-.page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: var(--gap-2);
-}
-
 h1,
 h2,
 h3,
@@ -41,6 +34,11 @@ h6 {
   letter-spacing: 0.06rem;
   margin-bottom: var(--gap-2);
 }
+
+/* https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+/* ::-webkit-scrollbar {
+  display: none;
+} */
 
 h1,
 h2,

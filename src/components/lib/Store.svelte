@@ -20,7 +20,7 @@
 <div>
   <pre>{state}</pre>
   {#each actions as action}
-    <button on:click={action}>{action.name}</button>
+    <button on:click={e => action()}>{action.name}</button>
   {/each}
 </div>
 
@@ -29,6 +29,7 @@
     background-color: var(--white);
     color: var(--black);
     padding: var(--gap-2);
+    margin-bottom: var(--gap-3);
     /* min-width: var(--size-8); */
   }
 </style>

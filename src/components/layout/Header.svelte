@@ -1,64 +1,72 @@
 <script>
   import { getContext } from "svelte";
-  import Nav from "./Nav.svelte";
+  import Bar from "../lib/Bar.svelte";
+  import { navLinks } from "../../routes";
 
   const title = "Svelte Spa";
 
   const store = getContext("app-router");
-  $: route = $store.route;
+  $: active = route => route === $store.route;
 </script>
 
-<div class="container">
-  <header>
-    {#if !route}
-      <div class="left">
-        <img src="logo.png" alt="logo" />
-        <h1>{title}</h1>
-      </div>
-    {:else}
-      <a href="#/" class="left">
-        <img src="logo.png" alt="logo" />
-        <h1>{title}</h1>
+<Bar>
+  <a href="#/" slot="left" class="left">
+    <img src="logo.png" alt="logo" />
+    <h1>{title}</h1>
+  </a>
+  <nav slot="right" class="right">
+    {#each navLinks as link}
+      <a href={`#/${link.slug}`} class:active={active(link.slug)}>
+        {link.name}
       </a>
-    {/if}
-    <Nav />
-  </header>
-</div>
+    {/each}
+  </nav>
+</Bar>
 
 <style>
-  .container {
-    background-color: var(--white);
-    border-bottom: 1px solid #ddd;
+  .left,
+  .right {
+    display: grid;
+    grid-gap: var(--gap-2);
+    align-items: center;
   }
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--gap-2) var(--gap-1);
-    max-width: var(--container-width);
-    margin: 0 auto;
+  .left {
+    grid-template-columns: var(--gap-7) auto;
   }
-  h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .right {
+    grid-template-columns: repeat(auto-fit, var(--size-2));
+    justify-content: end;
+    text-align: center;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .right a {
+    font-size: var(--text-xs);
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  .right a:hover {
+    color: var(--theme-color);
+  }
+  .right .active {
+    color: var(--theme-color);
+  }
+  .right .active:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+  .left h1 {
     color: var(--black);
     margin: 0;
     padding: 0;
     font-size: var(--text-base);
   }
-  a {
+
+  .left img {
+    width: 100%;
     display: block;
-    color: var(--black);
-  }
-  a:hover {
-    text-decoration: none;
-  }
-  .left {
-    display: flex;
-    align-items: center;
-  }
-  img {
-    width: var(--gap-7);
-    margin-right: var(--gap-1);
   }
 </style>
