@@ -25,7 +25,6 @@
   .layout,
   .row {
     display: grid;
-    grid-gap: var(--gap-2);
   }
   .layout {
     min-height: 100vh;
