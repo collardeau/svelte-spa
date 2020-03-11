@@ -4,6 +4,7 @@
   import Stores from "./demos/Stores.svelte";
   import Comps from "./demos/Comps.svelte";
   import Bool from "../../stores/bool/Demo.svelte";
+  import Cycle from "../../stores/cycle/Demo.svelte";
   import ModalDemo from "../lib/ModalDemo.svelte";
 
   const data = {
@@ -11,10 +12,12 @@
     children: [
       {
         comp: Stores,
-        data: "Custom stores",
         children: [
           {
             comp: Bool
+          },
+          {
+            comp: Cycle
           }
         ]
       },
