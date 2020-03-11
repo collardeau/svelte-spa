@@ -16,10 +16,6 @@
 </div>
 
 <style>
-  div {
-    margin: 0;
-    padding: 0;
-  }
   .container {
     display: grid;
     place-items: center;

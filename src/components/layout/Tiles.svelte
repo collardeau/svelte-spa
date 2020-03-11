@@ -2,7 +2,7 @@
   export let children = [];
   export let comp;
   // export let data;
-  export let row = true;
+  export let row = false;
 </script>
 
 <div class={row ? 'row' : 'col'}>
