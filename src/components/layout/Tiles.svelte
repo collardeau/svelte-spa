@@ -1,9 +1,11 @@
 <script>
   export let children = [];
+  // export let comp;
   export let content = "";
 </script>
 
 <div class="col">
+  <!-- <svelte:component this={comp} /> -->
   <div class="cell">{content}</div>
   {#if children.length}
     <div class="row">
@@ -25,11 +27,9 @@
     overflow: scroll;
   }
 
-  .cell {
+  /* .cell {
     display: grid;
-    /* place-items: center; */
-    /* border: 1px solid grey; */
-  }
+  } */
 
   .col {
     scroll-snap-type: y mandatory;
