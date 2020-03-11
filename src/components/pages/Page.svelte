@@ -12,7 +12,6 @@
   .new-page {
     height: 100%;
     display: grid;
-    align-items: center;
-    text-align: center;
+    place-items: center;
   }
 </style>

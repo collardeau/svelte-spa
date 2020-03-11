@@ -3,7 +3,6 @@
 </script>
 
 <div class="about-page">
-  <div />
   <section>
     <h3>About</h3>
     <p>
@@ -38,7 +37,6 @@
       </li>
     </ul>
   </section>
-  <div />
 </div>
 
 <style>

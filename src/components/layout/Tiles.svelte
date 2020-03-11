@@ -1,6 +1,7 @@
 <script>
   export let children = [];
   export let comp;
+  // export let data;
 </script>
 
 <div class="col">
@@ -20,10 +21,10 @@
   .col,
   .row {
     display: grid;
-    grid-auto-rows: 100vh;
-    grid-auto-columns: 100vw;
-    height: 100vh;
-    width: 100vw;
+    grid-auto-rows: 100%;
+    grid-auto-columns: 100%;
+    height: 100%;
+    width: 100%;
     overflow: scroll;
   }
 
