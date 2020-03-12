@@ -2,6 +2,7 @@
   import createStore from "./createStore";
   import Store from "../../components/lib/Store.svelte";
 
+  // todo: update
   let store = createStore();
 
   function action(node) {
