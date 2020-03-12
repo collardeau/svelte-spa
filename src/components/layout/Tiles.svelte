@@ -1,12 +1,19 @@
 <script>
+  import { getContext } from "svelte";
   export let children = [];
   export let comp;
+  export let id;
   // export let data;
-  export let row = false;
+  export let row = true;
+
+  const obs$ = getContext("intersection-observer");
+  const action = node => {
+    obs$.observe(node);
+  };
 </script>
 
 <div class={row ? 'row' : 'col'}>
-  <div>
+  <div {id} use:action>
     <svelte:component this={comp} />
   </div>
   {#if children.length}

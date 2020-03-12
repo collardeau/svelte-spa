@@ -1,6 +1,7 @@
 <script>
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
+  import Home from "../pages/Home.svelte";
 </script>
 
 <div class="layout">
@@ -11,7 +12,7 @@
   </header>
   <main class="row">
     <div />
-    <slot />
+    <Home />
     <div />
   </main>
   <footer class="row">

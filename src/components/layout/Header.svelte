@@ -1,25 +1,22 @@
 <script>
   import { getContext } from "svelte";
   import Bar from "../lib/Bar.svelte";
-  import { navLinks } from "../../routes";
 
   const title = "Svelte Spa";
 
-  const store = getContext("app-router");
-  $: active = route => route === $store.route;
+  const store = getContext("intersection-observer");
+  $: active = id => id === $store.intersecting[0];
 </script>
 
 <Bar>
+
   <a href="#/" slot="left" class="left">
     <img src="logo.png" alt="logo" />
     <h1>{title}</h1>
   </a>
   <nav slot="right" class="right">
-    {#each navLinks as link}
-      <a href={`#/${link.slug}`} class:active={active(link.slug)}>
-        {link.name}
-      </a>
-    {/each}
+    <a href="#stores" class:active={active('stores')}>stores</a>
+    <a href="#components" class:active={active('components')}>comps</a>
   </nav>
 </Bar>
 

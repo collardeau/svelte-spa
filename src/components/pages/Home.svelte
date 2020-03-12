@@ -9,22 +9,28 @@
 
   const data = {
     comp: Intro,
+    id: "intro", // should be unique
     children: [
       {
         comp: Stores,
+        id: "stores",
         children: [
           {
+            id: "bool",
             comp: Bool
           },
           {
+            id: "cycle",
             comp: Cycle
           }
         ]
       },
       {
         comp: Comps,
+        id: "components",
         children: [
           {
+            id: "modal",
             comp: ModalDemo
           }
         ]
