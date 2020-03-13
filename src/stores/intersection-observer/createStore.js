@@ -1,21 +1,30 @@
 import { writable } from "svelte/store";
 
 const initialState = {
-  entries: []
+  intersecting: []
 };
 
-export default (options = {}) => {
+export default (
+  options = {
+    threshold: 0.5
+  }
+) => {
   const { subscribe, set } = writable(initialState);
-  const observer = new IntersectionObserver(x => {
-    let entries = [];
-    x.forEach(y => {
-      console.log(y.target);
-      const z = { isIntersecting: y.isIntersecting };
-      entries.push(z);
-    }, options);
-    // console.log({ entries });
-    set(entries);
-  });
+
+  const onIntersect = entries => {
+    let intersecting = [];
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        intersecting.push(e.target.id);
+        location.hash = e.target.id;
+      }
+    });
+    set({ intersecting });
+  };
+
+  const observer = new IntersectionObserver(onIntersect, options);
+  // todo: unobserve
+
   return {
     subscribe,
     observe: node => {

@@ -36,9 +36,9 @@ h6 {
 }
 
 /* https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 h1,
 h2,
@@ -50,11 +50,6 @@ h5,
 h4,
 h6 {
   font-size: var(--text-lg);
-}
-
-p {
-  max-width: var(--size-8);
-  margin: var(--gap-2) auto;
 }
 
 strong {
