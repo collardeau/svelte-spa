@@ -5,18 +5,34 @@
   const title = "Svelte Spa";
 
   const store = getContext("intersection-observer");
-  $: active = id => id === $store.intersecting[0];
+  $: active = slug => slug === $store.intersecting[0];
+
+  const links = [
+    {
+      slug: "stores",
+      txt: "stores"
+    },
+    {
+      slug: "components",
+      txt: "comps"
+    },
+    {
+      slug: "about",
+      txt: "about"
+    }
+  ];
 </script>
 
 <Bar>
 
-  <a href="#/" slot="left" class="left">
+  <a href="/" slot="left" class="left">
     <img src="logo.png" alt="logo" />
     <h1>{title}</h1>
   </a>
   <nav slot="right" class="right">
-    <a href="#stores" class:active={active('stores')}>stores</a>
-    <a href="#components" class:active={active('components')}>comps</a>
+    {#each links as { slug, txt }}
+      <a href={`#${slug}`} class:active={active(slug)}>{txt}</a>
+    {/each}
   </nav>
 </Bar>
 

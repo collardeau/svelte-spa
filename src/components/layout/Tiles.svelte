@@ -2,9 +2,23 @@
   import { getContext } from "svelte";
   export let children = [];
   export let comp;
-  export let id;
-  // export let data;
+  export let slug;
+  export let crumbs = [];
   export let row = true;
+
+  let id, newCrumbs;
+  if (!slug) {
+    id = "home";
+    newCrumbs = [];
+  } else {
+    if (!crumbs.length) {
+      // make top level links '#stores' not '#home/stores'
+      id = slug;
+    } else {
+      id = crumbs.join("/") + "/" + slug;
+    }
+    newCrumbs = [...crumbs, slug];
+  }
 
   const obs$ = getContext("intersection-observer");
   const action = node => {
@@ -18,7 +32,7 @@
   </div>
   {#if children.length}
     {#each children as item}
-      <svelte:self {...item} row={!row} />
+      <svelte:self {...item} row={!row} crumbs={newCrumbs} />
     {/each}
   {/if}
 </div>

@@ -1,5 +1,6 @@
 <script context="module">
   import Tiles from "../layout/Tiles.svelte";
+  import About from "./About.svelte";
   import Intro from "./demos/Intro.svelte";
   import Stores from "./demos/Stores.svelte";
   import Comps from "./demos/Comps.svelte";
@@ -9,31 +10,35 @@
 
   const data = {
     comp: Intro,
-    id: "intro", // should be unique
+    slug: "",
     children: [
       {
         comp: Stores,
-        id: "stores",
+        slug: "stores",
         children: [
           {
-            id: "bool",
+            slug: "bool",
             comp: Bool
           },
           {
-            id: "cycle",
+            slug: "cycle",
             comp: Cycle
           }
         ]
       },
       {
         comp: Comps,
-        id: "components",
+        slug: "components",
         children: [
           {
-            id: "modal",
+            slug: "modal",
             comp: ModalDemo
           }
         ]
+      },
+      {
+        comp: About,
+        slug: "about"
       }
     ]
   };
