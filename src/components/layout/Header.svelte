@@ -5,7 +5,11 @@
   const title = "Svelte Spa";
 
   const store = getContext("intersection-observer");
-  $: active = slug => slug === $store.intersecting[0];
+  $: active = slug => {
+    if (!$store.intersecting.length) return false;
+    const first = $store.intersecting[0];
+    return first.startsWith(slug);
+  };
 
   const links = [
     {

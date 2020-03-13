@@ -6,7 +6,7 @@ const initialState = {
 
 export default (
   options = {
-    threshold: 0.8
+    threshold: 0.5
   }
 ) => {
   const { subscribe, set } = writable(initialState);
@@ -16,6 +16,7 @@ export default (
     entries.forEach(e => {
       if (e.isIntersecting) {
         intersecting.push(e.target.id);
+        location.hash = e.target.id;
       }
     });
     set({ intersecting });
