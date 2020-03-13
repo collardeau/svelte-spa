@@ -1,5 +1,6 @@
 <script>
   import { getContext } from "svelte";
+
   export let children = [];
   export let comp;
   export let slug;
@@ -7,6 +8,7 @@
   export let row = true;
 
   let id, newCrumbs;
+  // id is used as hash route
   if (!slug) {
     id = "home";
     newCrumbs = [];
@@ -21,8 +23,14 @@
   }
 
   const obs$ = getContext("intersection-observer");
+
   const action = node => {
     obs$.observe(node);
+    return {
+      destroy() {
+        console.log("todo: unobserve");
+      }
+    };
   };
 </script>
 
