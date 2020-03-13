@@ -7,23 +7,25 @@ const initialState = {
 export default (
   options = {
     threshold: 0.5
+  },
+  onIntersect = entry => {
+    location.hash = entry.target.id;
   }
 ) => {
   const { subscribe, set } = writable(initialState);
 
-  const onIntersect = entries => {
+  const onChange = entries => {
     let intersecting = [];
     entries.forEach(e => {
       if (e.isIntersecting) {
         intersecting.push(e.target.id);
-        location.hash = e.target.id;
+        onIntersect(e);
       }
     });
     set({ intersecting });
   };
 
-  const observer = new IntersectionObserver(onIntersect, options);
-  // todo: unobserve
+  const observer = new IntersectionObserver(onChange, options);
 
   return {
     subscribe,

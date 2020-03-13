@@ -1,5 +1,5 @@
 <script>
-  import Tile from "./Tile.svelte";
+  import Tile from "../components/Tile.svelte";
 </script>
 
 <Tile>

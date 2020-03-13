@@ -1,6 +1,6 @@
 <script>
   import createStore from "./createStore";
-  import Store from "../../components/lib/Store.svelte";
+  import Store from "../../components/Store.svelte";
 
   const bool = createStore();
 </script>

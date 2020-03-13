@@ -1,7 +1,8 @@
 <script>
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import Home from "../pages/Home.svelte";
+  import Tiles from "../lib/components/Tiles.svelte";
+  import { data } from "../data";
 </script>
 
 <div class="layout">
@@ -12,7 +13,7 @@
   </header>
   <main class="row">
     <div />
-    <Home />
+    <Tiles {...data} />
     <div />
   </main>
   <footer class="row">
