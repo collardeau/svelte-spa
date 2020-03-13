@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import Bar from "../lib/Bar.svelte";
+  import Bar from "../lib/components/Bar.svelte";
 
   const title = "Svelte Spa";
 

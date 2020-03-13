@@ -4,11 +4,11 @@
   import "./styles/theme.css";
 
   import { setContext } from "svelte";
-  import Layout from "./components/layout/Layout.svelte";
-  import createObserver from "./stores/intersection-observer/createStore";
+  import Layout from "./components/Layout.svelte";
+  import createObserver from "./lib/custom-stores/intersection-observer/createStore";
 
-  let observer$ = createObserver();
-  setContext("intersection-observer", observer$);
+  let observer = createObserver();
+  setContext("intersection-observer", observer);
 </script>
 
 <Layout />

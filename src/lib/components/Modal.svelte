@@ -55,7 +55,4 @@
     border: none;
     background-color: transparent;
   }
-  svg {
-    fill: currentColor;
-  }
 </style>
