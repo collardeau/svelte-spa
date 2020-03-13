@@ -41,18 +41,14 @@
 
 <style>
   .about-page {
-    height: 100%;
     display: grid;
-    align-items: center;
-    max-width: var(--size-8);
+    place-items: center;
+    text-align: center;
+    width: 80%;
     margin: 0 auto;
+    height: 100%;
   }
-  section {
-    margin: var(--gap-4) 0;
-  }
-  h3 {
-    margin-bottom: var(--gap-3);
-  }
+  h3,
   li {
     margin-bottom: var(--gap-2);
   }

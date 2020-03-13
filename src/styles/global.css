@@ -52,11 +52,6 @@ h6 {
   font-size: var(--text-lg);
 }
 
-p {
-  max-width: var(--size-8);
-  margin: var(--gap-2) auto;
-}
-
 strong {
   font-weight: 600;
 }
