@@ -23,5 +23,6 @@
     display: grid;
     place-items: center;
     height: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
   }
 </style>
