@@ -31,7 +31,7 @@
     <div />
   </div>
   {#each images as { src, id, color }}
-    <div class="cell" style={`grid-area: ${id}; background: ${color}`}>
+    <div class="cell" style={`grid-area: ${id};`}>
       {#if src}
         <img {id} {src} alt="abstract image" />
       {/if}
