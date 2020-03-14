@@ -1,4 +1,6 @@
 <script>
+  import Modal from "../lib/components/Modal.svelte";
+
   export let images = [
     {
       id: "kitten-1",
@@ -21,6 +23,16 @@
       src: "https://placekitten.com/g/200/200?image=5"
     }
   ];
+
+  let open = false; // modal
+  let clicked = {};
+
+  const onImgClick = index => {
+    clicked = images[index];
+    open = true;
+  };
+
+  const closeModal = () => (open = false);
 </script>
 
 <section>
@@ -30,14 +42,23 @@
     <h5>A Gallery</h5>
     <div />
   </div>
-  {#each images as { src, id, color }}
-    <div class="cell" style={`grid-area: ${id};`}>
+  {#each images as { src, id, color }, i}
+    <div
+      class="cell"
+      on:click={() => onImgClick(i)}
+      style={`grid-area: ${id};`}>
       {#if src}
-        <img {id} {src} alt="abstract image" />
+        <img {id} {src} alt="kitten" />
       {/if}
     </div>
   {/each}
 </section>
+
+<Modal isOpen={open} close={closeModal}>
+  <div class="modal">
+    <img src={clicked.src} alt="kitten" />
+  </div>
+</Modal>
 
 <style>
   section {
