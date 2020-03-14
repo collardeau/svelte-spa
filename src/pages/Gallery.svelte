@@ -10,11 +10,11 @@
     },
     {
       id: "kitten-3",
-      src: "https://placekitten.com/g/300/200?image=3"
+      src: "https://placekitten.com/g/300/200?image=6"
     },
     {
       id: "kitten-4",
-      src: "https://placekitten.com/g/200/200?image=7"
+      src: "https://placekitten.com/g/200/200?image=8"
     },
     {
       id: "kitten-5",
@@ -41,6 +41,7 @@
 
 <style>
   section {
+    padding: var(--gap-2);
     display: grid;
     height: 100%;
     width: 100%;
