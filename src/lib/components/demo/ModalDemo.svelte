@@ -4,17 +4,17 @@
   const bool = createBoolStore();
 </script>
 
-<div class="container">
+<section>
   <h3>Modal Component</h3>
   <button on:click={bool.on}>open modal</button>
-</div>
+</section>
 
 <Modal isOpen={$bool} close={bool.off}>
   <div class="modal">Hi! I'm a modal!</div>
 </Modal>
 
 <style>
-  .container {
+  section {
     display: grid;
     height: 100%;
     place-items: center;

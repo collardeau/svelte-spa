@@ -1,11 +1,13 @@
 <script>
   import { getContext } from "svelte";
+  import Tile from "./Tile.svelte";
 
   export let children = [];
   export let comp;
   export let slug;
   export let crumbs = [];
   export let row = true;
+  export let defer = 0;
 
   let id, newCrumbs;
   // id is used as hash route
@@ -36,7 +38,9 @@
 
 <div class={row ? 'row' : 'col'}>
   <div {id} use:action>
-    <svelte:component this={comp} />
+    <Tile {id} {defer}>
+      <svelte:component this={comp} />
+    </Tile>
   </div>
   {#if children.length}
     {#each children as item}

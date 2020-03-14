@@ -6,15 +6,14 @@
 
 {#if isOpen}
   <div class="container">
-    <div class="bg">
-      <button on:click={close}>
-        <CloseSVG />
-      </button>
-    </div>
+    <div class="bg" />
     <div class="modal">
       <slot />
     </div>
   </div>
+  <button on:click={close}>
+    <CloseSVG />
+  </button>
 {/if}
 
 <style>
@@ -24,10 +23,8 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 10;
+    display: grid;
+    place-items: center;
   }
   .bg {
     position: absolute;
@@ -35,8 +32,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
-    background-color: var(--overlay-color, rgba(0, 0, 0, 0.67));
+    background-color: var(--overlay-color, rgba(0, 0, 0, 0.9));
   }
   .modal {
     width: var(--modal-width, 50%);
@@ -44,13 +40,16 @@
     min-height: var(--modal-min-height, 0);
     margin: 0 auto;
     background-color: var(--white);
+    z-index: 100;
   }
 
   button {
-    float: right;
-    height: var(--size-2);
-    width: var(--size-2);
-    margin: var(--gap-5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: var(--size-1);
+    width: var(--size-1);
+    margin: var(--gap-4);
     color: var(--white);
     border: none;
     background-color: transparent;

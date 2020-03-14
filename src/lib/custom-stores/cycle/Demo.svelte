@@ -5,19 +5,20 @@
   const store = createStore(["item 1", "item 2", "item 3"]);
 </script>
 
-<div class="container">
+<section>
   <h3>Cycle Store</h3>
   <div>
     <p>createStore(["item 1", "item 2", "item 3"])</p>
     <Store {store} />
   </div>
-</div>
+</section>
 
 <style>
-  .container {
+  section {
     display: grid;
     place-items: center;
     height: 100%;
+    text-align: left;
   }
   h3 {
     margin-bottom: var(--gap-4);
