@@ -37,10 +37,11 @@
 
 <section>
   <div id="intro" class="cell">
-    <div />
-    <h3>Kittens</h3>
-    <h5>A Gallery</h5>
-    <div />
+    <h3>
+      Grid
+      <br />
+      Gallery
+    </h3>
   </div>
   {#each images as { src, id, color }, i}
     <div
@@ -62,17 +63,24 @@
 
 <style>
   section {
-    padding: var(--gap-2);
+    padding: var(--gap-1);
     display: grid;
     height: 100%;
     width: 100%;
-    grid-gap: var(--gap-2);
+    grid-gap: var(--gap-1);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "kitten-1 intro     kitten-5"
       "kitten-1 kitten-4  kitten-2"
       "kitten-3 kitten-3  kitten-2";
+  }
+
+  @media (min-width: 640px) {
+    section {
+      padding: var(--gap-2);
+      grid-gap: var(--gap-2);
+    }
   }
 
   .cell {
@@ -83,13 +91,10 @@
     display: grid;
     height: 100%;
     place-items: center;
+    text-align: center;
   }
-  h3,
-  h5 {
+  h3 {
     color: var(--black);
-    font-weight: 400;
-  }
-  h5 {
     font-size: 1rem;
   }
   img {
