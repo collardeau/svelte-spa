@@ -6,6 +6,7 @@ import Gallery from "./pages/Gallery.svelte";
 import Bool from "./lib/custom-stores/bool/Demo.svelte";
 import Cycle from "./lib/custom-stores/cycle/Demo.svelte";
 import ModalDemo from "./lib/components/demo/ModalDemo.svelte";
+import YouTubeDemo from "./lib/components/demo/YouTubeDemo.svelte";
 
 export const data = {
   comp: Intro,
@@ -32,6 +33,11 @@ export const data = {
         {
           slug: "modal",
           comp: ModalDemo
+        },
+        {
+          slug: "youtube",
+          comp: YouTubeDemo,
+          defer: true
         },
         {
           slug: "gallery",
