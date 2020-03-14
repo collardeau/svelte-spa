@@ -2,7 +2,7 @@
   //
 </script>
 
-<div class="about-page">
+<div class="container">
   <section>
     <h3>About</h3>
     <p>
@@ -40,7 +40,7 @@
 </div>
 
 <style>
-  .about-page {
+  .container {
     display: grid;
     place-items: center;
     text-align: center;

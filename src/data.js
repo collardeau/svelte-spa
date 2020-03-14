@@ -35,7 +35,8 @@ export const data = {
         },
         {
           slug: "gallery",
-          comp: Gallery
+          comp: Gallery,
+          defer: true
         }
       ]
     },
