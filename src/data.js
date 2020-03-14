@@ -2,6 +2,7 @@ import About from "./pages/About.svelte";
 import Intro from "./pages/Intro.svelte";
 import Stores from "./pages/Stores.svelte";
 import Comps from "./pages/Comps.svelte";
+import Gallery from "./pages/Gallery.svelte";
 import Bool from "./lib/custom-stores/bool/Demo.svelte";
 import Cycle from "./lib/custom-stores/cycle/Demo.svelte";
 import ModalDemo from "./lib/components/demo/ModalDemo.svelte";
@@ -31,6 +32,10 @@ export const data = {
         {
           slug: "modal",
           comp: ModalDemo
+        },
+        {
+          slug: "gallery",
+          comp: Gallery
         }
       ]
     },
