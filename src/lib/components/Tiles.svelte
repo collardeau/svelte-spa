@@ -5,6 +5,7 @@
   export let children = [];
   export let comp;
   export let slug;
+  export let data = {};
   export let crumbs = [];
   export let row = true;
   export let defer = 0;
@@ -39,7 +40,7 @@
 <div class={row ? 'row' : 'col'}>
   <div {id} use:action>
     <Tile {id} {defer}>
-      <svelte:component this={comp} />
+      <svelte:component this={comp} {...data} />
     </Tile>
   </div>
   {#if children.length}
