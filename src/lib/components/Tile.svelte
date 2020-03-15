@@ -12,17 +12,14 @@
   }
 </script>
 
-{#if !hide}
-  <div class="tile">
+<div class="tile">
+  {#if !hide}
     <slot />
-  </div>
-{/if}
+  {/if}
+</div>
 
 <style>
   .tile {
-    display: grid;
-    place-items: center;
     height: 100%;
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
   }
 </style>

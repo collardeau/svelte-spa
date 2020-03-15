@@ -8,6 +8,9 @@
 
 <style>
   section {
+    display: grid;
+    height: 100%;
+    place-items: center;
     text-align: center;
   }
 </style>
