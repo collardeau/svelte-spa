@@ -4,6 +4,7 @@
   export let year;
   export let quarters = [];
   export let semis = [];
+  export let final = {};
 
   let activeTab = "quarters";
 
@@ -14,11 +15,11 @@
 
 <section>
 
-  <h3>{name} {year}</h3>
+  <h3>ATP > A0 2020</h3>
   <div class="tabs">
     <div class="tab" on:click={() => onTabClick('quarters')}>1/4</div>
     <div class="tab" on:click={() => onTabClick('semis')}>1/2</div>
-    <div class="tab">Final</div>
+    <div class="tab" on:click={() => onTabClick('final')}>Final</div>
   </div>
   <div class="round">
     {#if activeTab === 'quarters'}
@@ -30,6 +31,9 @@
       {#each semis as match, i (`s${i}`)}
         <Match {...match} />
       {/each}
+    {/if}
+    {#if activeTab === 'final'}
+      <Match {...final} />
     {/if}
 
   </div>
