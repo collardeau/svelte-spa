@@ -6,7 +6,6 @@
   const update = () => {
     const hash = window.location.hash;
     parts = hash.replace(/^#\/?|\/$/g, "").split("/");
-    console.log({ parts });
   };
 
   onMount(() => {
@@ -18,7 +17,7 @@
 <div class="container">
   {#each parts as part, i}
     <div class="crumb">
-      <a href={`something`}>{part}</a>
+      <a href={`#${parts.slice(0, i + 1).join('/')}`}>{part}</a>
     </div>
   {/each}
 </div>
@@ -32,7 +31,7 @@
   }
   .crumb::after {
     content: "/";
-    margin: 0 var(--gap-2);
+    margin: 0 var(--gap-1);
   }
   .crumb:last-child:after {
     content: "";
