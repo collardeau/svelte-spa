@@ -10,18 +10,13 @@
   export let row = true;
   export let defer = 0;
 
-  let id, newCrumbs;
-  // id is used as hash route
-  if (!slug) {
-    id = "home";
-    newCrumbs = [];
+  let id; // id is used as hash route
+  let newCrumbs = [];
+  if (!crumbs.length) {
+    id = slug;
+    newCrumbs = [id];
   } else {
-    if (!crumbs.length) {
-      // make top level links '#stores' not '#home/stores'
-      id = slug;
-    } else {
-      id = crumbs.join("/") + "/" + slug;
-    }
+    id = crumbs.join("/") + "/" + slug;
     newCrumbs = [...crumbs, slug];
   }
 

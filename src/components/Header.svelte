@@ -13,15 +13,15 @@
 
   const links = [
     {
-      slug: "stores",
+      slug: "home/stores",
       txt: "stores"
     },
     {
-      slug: "components",
+      slug: "home/components",
       txt: "comps"
     },
     {
-      slug: "about",
+      slug: "home/about",
       txt: "about"
     }
   ];
