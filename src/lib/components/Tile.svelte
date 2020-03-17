@@ -1,5 +1,6 @@
 <script>
   import { getContext } from "svelte";
+
   export let id;
   export let defer = false;
 
