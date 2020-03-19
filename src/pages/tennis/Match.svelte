@@ -3,15 +3,16 @@
 
   export let p1;
   export let p2;
+  export let win;
   export let sets = [];
 
   let numSets = sets.length;
-  sets[3] = sets[3] || ["", ""];
-  sets[4] = sets[4] || ["", ""];
+  sets[3] = sets[3] || { p1: "", p2: "" };
+  sets[4] = sets[4] || { p1: "", p2: "" };
 
   let showWinner = false;
-  $: p1Wins = showWinner && p1.win;
-  $: p2Wins = showWinner && p2.win;
+  $: p1Wins = showWinner && win === "p1";
+  $: p2Wins = showWinner && win === "p2";
 
   let play = false;
   const duration = 500; // set duration
@@ -20,19 +21,19 @@
 </script>
 
 <div class="container" on:click={onClick}>
-  <div class="player" class:bold={p1Wins}>{p1.name}</div>
-  <div class="player" class:bold={p2Wins}>{p2.name}</div>
+  <div class="player" class:bold={p1Wins}>{p1}</div>
+  <div class="player" class:bold={p2Wins}>{p2}</div>
   {#each sets as set, i}
-    <div class="games" class:bold={set[0] > set[1]}>
+    <div class="games" class:bold={set.p1 > set.p2}>
       {#if play}
         <div
           in:fade={{ duration, delay: i * duration * 2 }}
           out:fade={{ duration: 0 }}>
-          {set[0]}
+          {set.p1}
         </div>
       {/if}
     </div>
-    <div class="games" class:bold={set[0] < set[1]}>
+    <div class="games" class:bold={set.p1 < set.p2}>
       {#if play}
         <div
           on:introend={() => {
@@ -42,7 +43,7 @@
           }}
           out:fade={{ duration: 0 }}
           in:fade={{ duration, delay: i * duration * 2 }}>
-          {set[1]}
+          {set.p2}
         </div>
       {/if}
     </div>
