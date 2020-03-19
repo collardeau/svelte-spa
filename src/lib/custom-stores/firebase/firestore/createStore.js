@@ -1,5 +1,4 @@
 import { writable } from "svelte/store";
-
 const initialState = { data: {}, loading: false, ts: 0 };
 
 // example: createFirestore(db.collection("my-data"));
@@ -22,6 +21,12 @@ export default ref => {
       }
       set(state);
       return state;
+    },
+    mock: (data = null, latency = 500) => {
+      update(st => ({ ...st, loading: true }));
+      setTimeout(() => {
+        set({ data, loading: false, ts: Date.now() });
+      }, latency);
     }
   };
 };
