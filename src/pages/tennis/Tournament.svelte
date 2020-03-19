@@ -1,13 +1,19 @@
 <script>
+  import createFirestore from "../../lib/custom-stores/firebase/firestore/createStore";
+  import { db } from "../../lib/custom-stores/firebase/config";
   import Match from "./Match.svelte";
-  export let name;
-  export let year;
-  export let quarters = [];
-  export let semis = [];
-  export let final = {};
+  import { tournament } from "./mock-data";
+
+  export let docRef; // firestore reference
+
+  const store = createFirestore(db.doc(docRef));
+
+  store.mock(tournament);
+  // store.get();
+
+  $: quarters = !$store.loading && $store.data.quarters;
 
   let activeTab = "quarters";
-
   const onTabClick = (tabName = "") => {
     activeTab = tabName;
   };
@@ -15,7 +21,6 @@
 
 <section>
 
-  <h3>ATP > A0 2020</h3>
   <div class="tabs">
     <div class="tab" on:click={() => onTabClick('quarters')}>1/4</div>
     <div class="tab" on:click={() => onTabClick('semis')}>1/2</div>
