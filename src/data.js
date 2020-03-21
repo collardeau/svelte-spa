@@ -10,7 +10,7 @@ import YouTubeDemo from "./lib/components/demo/YouTubeDemo.svelte";
 
 export const data = {
   comp: Intro,
-  slug: "",
+  slug: "home",
   children: [
     {
       comp: Stores,

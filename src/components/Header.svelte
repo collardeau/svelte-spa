@@ -1,8 +1,9 @@
 <script>
   import { getContext } from "svelte";
   import Bar from "../lib/components/Bar.svelte";
+  import Crumbs from "../lib/components/Crumbs.svelte";
 
-  const title = "Svelte Spa";
+  // const title = "Svelte Spa";
 
   const store = getContext("intersection-observer");
   $: active = slug => {
@@ -13,15 +14,15 @@
 
   const links = [
     {
-      slug: "stores",
+      slug: "home/stores",
       txt: "stores"
     },
     {
-      slug: "components",
+      slug: "home/components",
       txt: "comps"
     },
     {
-      slug: "about",
+      slug: "home/about",
       txt: "about"
     }
   ];
@@ -31,7 +32,8 @@
 
   <a href="/" slot="left" class="left">
     <img src="logo.png" alt="logo" />
-    <h1>{title}</h1>
+    <!-- <h1>{title}</h1> -->
+    <Crumbs />
   </a>
   <nav slot="right" class="right">
     {#each links as { slug, txt }}

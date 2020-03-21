@@ -5,22 +5,19 @@
   export let children = [];
   export let comp;
   export let slug;
+  export let data = {};
+  export let docRef = null;
   export let crumbs = [];
   export let row = true;
   export let defer = 0;
 
-  let id, newCrumbs;
-  // id is used as hash route
-  if (!slug) {
-    id = "home";
-    newCrumbs = [];
+  let id; // id is used as hash route
+  let newCrumbs = [];
+  if (!crumbs.length) {
+    id = slug;
+    newCrumbs = [id];
   } else {
-    if (!crumbs.length) {
-      // make top level links '#stores' not '#home/stores'
-      id = slug;
-    } else {
-      id = crumbs.join("/") + "/" + slug;
-    }
+    id = crumbs.join("/") + "/" + slug;
     newCrumbs = [...crumbs, slug];
   }
 
@@ -39,7 +36,7 @@
 <div class={row ? 'row' : 'col'}>
   <div {id} use:action>
     <Tile {id} {defer}>
-      <svelte:component this={comp} />
+      <svelte:component this={comp} {...data} {docRef} />
     </Tile>
   </div>
   {#if children.length}
@@ -58,6 +55,7 @@
     height: 100%;
     width: 100%;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .col {

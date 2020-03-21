@@ -72,3 +72,10 @@ a:hover {
 a:visited {
   color: var(--link-visited-color);
 }
+
+.center {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}

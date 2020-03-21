@@ -1,7 +1,7 @@
 <script>
-  import Tile from "../components/Tile.svelte";
+  //
 </script>
 
-<section>
+<section class="center">
   <h3>Svelte Spa Template</h3>
 </section>
