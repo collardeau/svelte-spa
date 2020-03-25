@@ -10,7 +10,7 @@
 
   onMount(() => {
     update();
-    window.onhashchange = () => update();
+    // window.onhashchange = () => update();
   });
 </script>
 

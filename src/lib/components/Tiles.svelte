@@ -27,7 +27,7 @@
     obs$.observe(node);
     return {
       destroy() {
-        console.log("todo: unobserve");
+        obs$.unobserve(node);
       }
     };
   };
