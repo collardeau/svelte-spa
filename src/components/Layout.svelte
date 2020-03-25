@@ -1,19 +1,42 @@
 <script>
+  import createRouter from "../lib/custom-stores/hash-router/createStore";
   import Header from "./Header.svelte";
   import Footer from "./Footer.svelte";
-  import Tiles from "../lib/components/Tiles.svelte";
-  import { data } from "../data";
+  import About from "../pages/About.svelte";
+  import Home from "../pages/Intro.svelte";
+  import Stores from "../pages/Stores.svelte";
+  import Comps from "../pages/Comps.svelte";
+
+  const router = createRouter();
+  router.start();
+
+  $: route = $router.route;
+
+  let comp;
+  $: switch (route) {
+    case "about":
+      comp = About;
+      break;
+    case "components":
+      comp = Comps;
+      break;
+    case "stores":
+      comp = Stores;
+      break;
+    default:
+      comp = Home;
+  }
 </script>
 
 <div class="layout">
   <header class="row">
     <div />
-    <Header />
+    <Header {route} />
     <div />
   </header>
   <main class="row">
     <div />
-    <Tiles {...data} />
+    <svelte:component this={comp} />
     <div />
   </main>
   <footer class="row">

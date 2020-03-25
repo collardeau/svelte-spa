@@ -1,39 +1,29 @@
 <script>
-  import { getContext } from "svelte";
   import Bar from "../lib/components/Bar.svelte";
-  import Crumbs from "../lib/components/Crumbs.svelte";
+  export let route = "";
 
-  // const title = "Svelte Spa";
-
-  const store = getContext("intersection-observer");
-  $: active = slug => {
-    if (!$store.intersecting.length) return false;
-    const first = $store.intersecting[0];
-    return first.startsWith(slug);
-  };
-
+  const title = "Svelte Spa";
   const links = [
     {
-      slug: "home/stores",
+      slug: "stores",
       txt: "stores"
     },
     {
-      slug: "home/components",
+      slug: "components",
       txt: "comps"
     },
     {
-      slug: "home/about",
+      slug: "about",
       txt: "about"
     }
   ];
+  $: active = slug => route === slug;
 </script>
 
 <Bar>
-
   <a href="/" slot="left" class="left">
     <img src="logo.png" alt="logo" />
-    <!-- <h1>{title}</h1> -->
-    <Crumbs />
+    <h1>{title}</h1>
   </a>
   <nav slot="right" class="right">
     {#each links as { slug, txt }}
