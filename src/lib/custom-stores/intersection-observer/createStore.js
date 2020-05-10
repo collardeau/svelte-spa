@@ -9,7 +9,7 @@ export default (
     threshold: 0.5
   },
   onIntersect = entry => {
-    location.hash = entry.target.id;
+    // location.hash = entry.target.id;
   }
 ) => {
   const { subscribe, set } = writable(initialState);
@@ -31,6 +31,9 @@ export default (
     subscribe,
     observe: node => {
       observer.observe(node);
+    },
+    unobserve: node => {
+      observer.unobserve(node);
     }
   };
 };
