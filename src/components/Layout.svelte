@@ -6,6 +6,7 @@
   import Home from "../pages/Intro.svelte";
   import Stores from "../pages/Stores.svelte";
   import Comps from "../pages/Comps.svelte";
+  import Books from "../pages/Books/Books.svelte";
 
   const router = createRouter();
   router.start();
@@ -23,6 +24,9 @@
     case "stores":
       comp = Stores;
       break;
+    case "books":
+      comp = Books;
+      break;
     default:
       comp = Home;
   }
@@ -36,14 +40,14 @@
   </header>
   <main class="row">
     <div />
-    <svelte:component this={comp} />
+    <svelte:component this={comp} params={$router.params} />
     <div />
   </main>
-  <footer class="row">
+  <!-- <footer class="row">
     <div />
     <Footer />
     <div />
-  </footer>
+  </footer> -->
 </div>
 
 <style>
