@@ -20,13 +20,13 @@ export const books = [
     wiki: "https://en.wikipedia.org/wiki/Economics_in_One_Lesson",
     slug: "economics-in-one-lesson",
   },
-  {
-    title: "On Freedom",
-    author: "John Stuart Mill",
-    date: 1859,
-    wiki: "https://en.wikipedia.org/wiki/On_Liberty",
-    slug: "on-freedom",
-  },
+  // {
+  //   title: "On Freedom",
+  //   author: "John Stuart Mill",
+  //   date: 1859,
+  //   wiki: "https://en.wikipedia.org/wiki/On_Liberty",
+  //   slug: "on-freedom",
+  // },
   {
     title: "The Gulag Archipelago",
     author: "Aleksandr Solzhenitsyn",
@@ -34,13 +34,13 @@ export const books = [
     wiki: "https://en.wikipedia.org/wiki/The_Gulag_Archipelago",
     slug: "the-gulag-archipelago",
   },
-  {
-    title: "The Prince",
-    author: "Niccolò Machiavelli",
-    date: 1532,
-    wiki: "https://en.wikipedia.org/wiki/The_Prince",
-    slug: "the-prince",
-  },
+  // {
+  //   title: "The Prince",
+  //   author: "Niccolò Machiavelli",
+  //   date: 1532,
+  //   wiki: "https://en.wikipedia.org/wiki/The_Prince",
+  //   slug: "the-prince",
+  // },
 ];
 
 export const bookDetails = {
@@ -48,21 +48,122 @@ export const bookDetails = {
     title: "The Road to Serfdom",
     author: "Friedrich Hayek",
     date: 1944,
+    chapters: [
+      "The Abandoned Road",
+      "The Great Utopia",
+      "Individualism and Collectivism",
+      `The "Inevitability" of Planning`,
+      "Planning and Democracy",
+      "Planning and the Rule of Law",
+      "Economic Control and Totalitarianism",
+      "Who, Whom?",
+      "Security and Freedom",
+      "Why The Worst Get on Top",
+      "The End of Truth",
+      "The Socialist Roots of Nazism",
+      "The Totalitarians in our Midst",
+    ],
     quotes: [
+      // intro chapter
+      // {
+      //   txt:
+      //     "[M]any who think themselves infinitely superior to the aberrations of Nazism and sincerely hate all its manifestations, work at the same time for ideals whose realisation would lead straight to the abhorred tyranny",
+      //   chapter: 1,
+      // },
+      // {
+      //   txt:
+      //     "It seems almost as if we did not want to understand the development which has produced totalitarianism because such an understanding might destroy some of the dearest illusions to which we are determined to cling.",
+      //   chapter: 1,
+      // },
+      // {
+      //   txt:
+      //     "it would be a mistake to believe that the specific German rather than the socialist element produced totalitarianism.",
+      //   chapter: 1,
+      //   p: 9,
+      // },
       {
         txt:
-          "many who think themselves infinitely superior to the aberrations of Nazism and sincerely hate all its manifestations, work at the same time for ideals whose realisation would lead straight to the abhorred tyranny",
+          "[T]he pursuit of some our most cherished ideals have apparently produced results utterly different from those which we expected.",
         chapter: 1,
+        p: 11,
       },
       {
         txt:
-          "It seems almost as if we did not want to understand the development which has produced totalitarianism because such an understanding might destroy some of the dearest illusions to which we are determined to cling.",
+          "We have progressively abandoned that freedom in economic affairs without which personal and political freedom has never existed in the past.",
         chapter: 1,
+        p: 13,
       },
       {
         txt:
-          "it would be a mistake to believe that the specific German rather than the socialist element produced totalitarianism.",
-        chapter: 1,
+          "Socialism was embraced by the greater part of the intelligentsia as the apparent heir of the liberal tradition: therefore it is not surprising that to them the idea should appear inconceivable of socialism leading to the opposite of liberty.",
+        chapter: 2,
+        p: 27,
+      },
+      // {
+      //   txt: `While "progressives" in this country and elsewhere were still deluding themselves that communism and fascism represented opposite poles, more and more people began to ask themselves whether these new tyrannies were not the outcome of the same tendencies.`,
+      //   chapter: 2,
+      //   p: 27,
+      // },
+      {
+        txt:
+          "The holder of coercive power should confine himself in general to creating conditions under which the knowledge and initiative of individuals is given the best scope so that *they* can plan most successfully",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt:
+          "[W]here effective competition can be created, it is a better way of guiding individual efforts than any other.",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt:
+          "It is only as the factors which have to be taken into account become so numerous that it is impossible to gain a synoptic view of them, that decentralisation becomes imperative.",
+        chapter: 4,
+        p: 51,
+      },
+      {
+        txt:
+          "We can never predict from which of the many forms in which a good or services can be provided something better may develop.",
+        chapter: 4,
+        p: 54,
+      },
+      {
+        txt:
+          "Although the state controls directly the use of only a large part of the available resources, the effects of its decision on the remaining part of the economic system become so great that indirectly it control almost everything.",
+        chapter: 5,
+        p: 64,
+      },
+      {
+        txt:
+          "The effect of the people agreeing that there must be central planning, without agreeing on the ends, will be rather as if a group of people were to commit themselves to take a journey together without agreeing where they want to go",
+        chapter: 5,
+        p: 65,
+      },
+      {
+        txt: "",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt: "",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt: "",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt: "",
+        chapter: 3,
+        p: 37,
+      },
+      {
+        txt: "",
+        chapter: 3,
+        p: 37,
       },
     ],
   },
@@ -717,12 +818,12 @@ export const bookDetails = {
         p: 47,
         chapter: 6,
       },
-      {
-        txt:
-          "When the government makes loans or subsidies to business, what it does is to tax successful private business, what it does is to tax successful private business in order to support unsuccessful private business.",
-        p: 47,
-        chapter: 6,
-      },
+      // {
+      //   txt:
+      //     "When the government makes loans or subsidies to business, what it does is to tax successful private business, what it does is to tax successful private business in order to support unsuccessful private business.",
+      //   p: 47,
+      //   chapter: 6,
+      // },
       {
         txt:
           "Among the most viable of all economic delusions is the belief that machines on net balance create unemployment.",
@@ -1243,9 +1344,181 @@ export const bookDetails = {
         chapter: 23,
       },
       {
-        txt: "B is seen. A is forgotten",
-        p: 37,
+        txt:
+          "[T]oday the ancien virtue of thrift, as well as its defense by the classical economists, is once more under attack, for allegedly new reasons, while the opposite doctrine of spending is in fashion.",
+        p: 177,
         chapter: 24,
+      },
+      {
+        txt:
+          "[W]hen money is invested it is used to buy or build capital goods--houses or office buildings or factories or ships or trucks or machines.",
+        p: 179,
+        chapter: 24,
+      },
+      {
+        txt:
+          "The word *saving*, for example, is used sometimes to mean mere *hoarding* of money, and sometimes to mean *investment*, with no clear distinction, consistently maintained, between the two uses.",
+        p: 180,
+        chapter: 24,
+      },
+      {
+        txt:
+          "[W]hen business does not know what the government is going to do next, uncertainty is created. Profits are not reinvested. Firms and individuals allow cash balances to accumulate in their banks.",
+        p: 181,
+        chapter: 24,
+      },
+      {
+        txt: `"saving" does not necessarily mean even a dollar's contraction in *total* spending.`,
+        p: 181,
+        chapter: 24,
+      },
+      {
+        txt:
+          "The saving has been used year after year to increase the quantity or improve the quality of existing machinery, and so to increase the nation's output of goods.",
+        p: 183,
+        chapter: 24,
+      },
+      {
+        txt:
+          "[D]ishoarding, as eccentric recluses die and their hoards are discovered and dissipated, probably offsets new hoarding.",
+        p: 185,
+        chapter: 24,
+      },
+      {
+        txt:
+          "[S]igns of a depression have already appeared, and have caused the hoarding, rather than that the hoarding has started the depression.",
+        p: 185,
+        chapter: 24,
+      },
+      {
+        txt:
+          "And just as the supply of and demand for any other commodity are equalized by price, so the supply of and demand for capital are equalized by interest rates.",
+        p: 185,
+        chapter: 24,
+      },
+      {
+        txt:
+          "If interest rates are artificially kept too low in relation to risks, there will be a reduction in both saving and lending.",
+        p: 186,
+        chapter: 24,
+      },
+      {
+        txt:
+          "It is true, no doubt, that an artificial reduction in the interest rate encourages increased borrowing.",
+        p: 186,
+        chapter: 24,
+      },
+      {
+        txt:
+          "The money rate will rise and a crisis will develop if the inflation is reversed, or merely brought to a halt, or even continued at a diminished rate.",
+        p: 187,
+        chapter: 24,
+      },
+      {
+        txt:
+          "Cheap money policies, in short, eventually bring about far more violent oscillations in business than those they are designed to remedy or prevent.",
+        p: 187,
+        chapter: 24,
+      },
+      {
+        txt:
+          "Almost the whole wealth of the modern world, nearly everything that distinguishes it from the pre-industrial world of the seventeeth century, consists of its accumulated capital.",
+        p: 189,
+        chapter: 24,
+      },
+      {
+        txt:
+          "[U]ntil everything can be produced at no cost at all--there is no assignable limit to the amount of new capital that can be absorbed.",
+        p: 190,
+        chapter: 24,
+      },
+      {
+        txt:
+          "Economics, as we have now seen again and again, is a science of recognizing *secondary* consequences. It is also a science of seeing *general* consequences.",
+        p: 191,
+        chapter: 25,
+      },
+      {
+        txt:
+          "[F]ew people recognize the necessary implications of the economic statements they are constantly making.",
+        p: 192,
+        chapter: 25,
+      },
+      {
+        txt:
+          "When they say, under nearly all conditions, that the way to recovery is to increase wage rates, they have found only another way of saying that the way to recovery is to increase costs of production.",
+        p: 193,
+        chapter: 25,
+      },
+      {
+        txt:
+          "[D]epth in economics consists in looking for all the consequences of a policy instead of merely resting one's gaze on those immediately visible.",
+        p: 194,
+        chapter: 25,
+      },
+      {
+        txt: "What he consumes is identical with what he produces.",
+        p: 195,
+        chapter: 25,
+      },
+      {
+        txt:
+          "Just as there is no technical improvement that would not hurt someone, so there is no change in public taste or morals, even for the better, that would not hurt someone.",
+        p: 197,
+        chapter: 25,
+      },
+      {
+        txt:
+          "[T]he solution is never to reduce supplies arbitrarily, to prevent further inventions or discoveries, or to support people for continuing to perfrom a service that has lost its value.",
+        p: 199,
+        chapter: 25,
+      },
+      {
+        txt:
+          "[M]any things that seem to be true when we concentrate on a single economic group are seen to be illusions when the interests of everyone, as consumer no less than as producer, are considered.",
+        p: 199,
+        chapter: 25,
+      },
+      {
+        txt:
+          "There is no more certain way to deter employment than to harass and penalize employers.",
+        p: 206,
+        chapter: 26,
+      },
+      {
+        txt:
+          "In sum, so far as the politicians are concerned, the lesson that this book tried to instill more than thirty years ago does not seem to have been learned anywhere.",
+        p: 207,
+        chapter: 26,
+      },
+      {
+        txt:
+          "Governments everywhere are still trying to cure by public works the unemployment brought about by their own policies.",
+        p: 207,
+        chapter: 26,
+      },
+      {
+        txt: `Governments, pushing up the commodity prices by inflating their currencies, continue to blame the higher prices on private producers, sellers, and "profiteers."`,
+        p: 207,
+        chapter: 26,
+      },
+      {
+        txt:
+          "[N]o nation is on a metallic standard, and practically every nation is swindling its own people by printing a chronically depreciating paper currency.",
+        p: 208,
+        chapter: 26,
+      },
+      {
+        txt:
+          "Practically all government attempts to redistribute wealth and income tend to smother productive incentives and lead toward general impoverishment.",
+        p: 211,
+        chapter: 26,
+      },
+      {
+        txt:
+          "Government's main economic function is to encourage and preserve a free market.",
+        p: 211,
+        chapter: 26,
       },
     ],
   },
