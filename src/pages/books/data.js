@@ -49,38 +49,39 @@ export const bookDetails = {
     author: "Friedrich Hayek",
     date: 1944,
     chapters: [
-      "The Abandoned Road",
-      "The Great Utopia",
-      "Individualism and Collectivism",
-      `The "Inevitability" of Planning`,
-      "Planning and Democracy",
-      "Planning and the Rule of Law",
-      "Economic Control and Totalitarianism",
-      "Who, Whom?",
-      "Security and Freedom",
-      "Why The Worst Get on Top",
-      "The End of Truth",
-      "The Socialist Roots of Nazism",
-      "The Totalitarians in our Midst",
+      { name: "Introduction", title: "" },
+      { name: "The Abandoned Road", title: "Chapter 1" },
+      { name: "The Great Utopia", title: "Chapter 2" },
+      { name: "Individualism and Collectivism", title: "Chapter 3" },
+      { name: `The "Inevitability" of Planning`, title: "Chapter 4" },
+      { name: "Planning and Democracy", title: "Chapter 5" },
+      { name: "Planning and the Rule of Law", title: "Chapter 6" },
+      { name: "Economic Control and Totalitarianism", title: "Chapter 7" },
+      { name: "Who, Whom?", title: "Chapter 8" },
+      { name: "Security and Freedom", title: "Chapter 9" },
+      { name: "Why The Worst Get on Top", title: "Chapter 10" },
+      { name: "The End of Truth", title: "Chapter 11" },
+      { name: "The Socialist Roots of Nazism", title: "Chapter 12" },
+      { name: "The Totalitarians in our Midst", title: "Chapter 13" },
     ],
     quotes: [
       // intro chapter
       // {
       //   txt:
       //     "[M]any who think themselves infinitely superior to the aberrations of Nazism and sincerely hate all its manifestations, work at the same time for ideals whose realisation would lead straight to the abhorred tyranny",
-      //   chapter: 1,
+      //   chapter: 0,
       // },
       // {
       //   txt:
       //     "It seems almost as if we did not want to understand the development which has produced totalitarianism because such an understanding might destroy some of the dearest illusions to which we are determined to cling.",
-      //   chapter: 1,
+      //   chapter: 0,
       // },
-      // {
-      //   txt:
-      //     "it would be a mistake to believe that the specific German rather than the socialist element produced totalitarianism.",
-      //   chapter: 1,
-      //   p: 9,
-      // },
+      {
+        txt:
+          "it would be a mistake to believe that the specific German rather than the socialist element produced totalitarianism.",
+        chapter: 0,
+        p: 9,
+      },
       {
         txt:
           "[T]he pursuit of some our most cherished ideals have apparently produced results utterly different from those which we expected.",
@@ -171,19 +172,34 @@ export const bookDetails = {
     title: "The Gulag Archipelago",
     author: "Aleksandr Solzhenitsyn",
     date: 1973,
+    parts: [
+      ["Part I", "The Prison Industry"],
+      ["Part II", "Perpetual Motion"],
+      ["Part III", "The Destructive-Camps"],
+      ["Part IV", "The Soul and Barbed Wire"],
+      ["Part V", "Katorga"],
+      ["Part VI", "Exile"],
+      ["Part VII", "Stalin Is No More"],
+    ],
     chapters: [
-      "Arrest",
-      "The History of Our Sewage Disposal System",
-      "The Interrogation",
-      "The Bluecaps",
-      "First Cell, First Love",
-      "That Spring",
-      "In The Engine Room",
-      "The Law as a Child",
-      "The Law Becomes Man",
-      "The Law Matures",
-      "The Supreme Measure",
-      "Tyurzak",
+      null,
+      { name: "Arrest", title: "Chapter 1", part: 0 },
+      {
+        name: "The History of Our Sewage Disposal System",
+        title: "Chapter 2",
+        part: 0,
+      },
+      { name: "The Interrogation", title: "Chapter 3", part: 0 },
+      { name: "The Bluecaps", title: "Chapter 4", part: 0 },
+      { name: "First Cell, First Love", title: "Chapter 5", part: 0 },
+      { name: "That Spring", title: "Chapter 6", part: 0 },
+      { name: "In The Engine Room", title: "Chapter 7", part: 0 },
+      { name: "The Law as a Child", title: "Chapter 8", part: 0 },
+      { name: "The Law Becomes Man", title: "Chapter 9", part: 0 },
+      { name: "The Law Matures", title: "Chapter 10", part: 0 },
+      { name: "The Supreme Measure", title: "Chapter 11", part: 0 },
+      { name: "Tyurzak", title: "Chapter 12", part: 0 },
+      { name: "The Ships of the Archipelago", title: "Chapter 1", part: 0 },
     ],
     quotes: [
       // {
@@ -621,33 +637,47 @@ export const bookDetails = {
     title: "Economics in One Lesson",
     author: "Henry Hazlitt",
     date: 1946,
+    parts: [
+      ["Part One", "The Lesson"],
+      ["Part Two", "The Lesson Applied"],
+      ["Part Three", "The Lesson After Thirty Years"],
+    ],
     chapters: [
-      "The Lesson",
-      "The Broken Window",
-      "The Blessings of Destruction",
-      "Public Works Mean Taxes",
-      "Taxes Discourage Production",
-      "Credit Diverts Production",
-      "The Curse of Machine",
-      "Spread-the-Work Schemes",
-      "Disbanding Troops and Bureaucrats",
-      "The Fetish of Full Employment",
-      `Who's "Protected" by Tariffs?`,
-      "The Drive for Exports",
-      `"Parity" Prices`,
-      "Saving the X Industry",
-      "How the Price System Works",
-      `"Stabilizing" Commodities`,
-      "Government Price-Fixing",
-      "What Rent Control Does",
-      "Minimum Wage Laws",
-      "Do Union Really Raise Wages",
-      `"Enough to Buy Back the Product"`,
-      "The Function of Profits",
-      "The Mirage of Inflation",
-      "The Assault on Saving",
-      "The Lesson Restated",
-      "The Lesson After Thirty Years",
+      null, // intro
+      { name: "The Lesson", title: "Chapter I", part: 0 },
+      { name: "The Broken Window", title: "Chapter II", part: 1 },
+      { name: "The Blessings of Destruction", title: "Chapter III", part: 1 },
+      { name: "Public Works Mean Taxes", title: "Chapter IV", part: 1 },
+      { name: "Taxes Discourage Production", title: "Chapter V", part: 1 },
+      { name: "Credit Diverts Production", title: "Chapter VI", part: 1 },
+      { name: "The Curse of Machine", title: "Chapter VII", part: 1 },
+      { name: "Spread-the-Work Schemes", title: "Chapter VIII", part: 1 },
+      {
+        name: "Disbanding Troops and Bureaucrats",
+        title: "Chapter IX",
+        part: 1,
+      },
+      { name: "The Fetish of Full Employment", title: "Chapter X", part: 1 },
+      { name: `Who's "Protected" by Tariffs?`, title: "Chapter XI", part: 1 },
+      { name: "The Drive for Exports", title: "Chapter XII", part: 1 },
+      { name: `"Parity" Prices`, title: "Chapter XIII", part: 1 },
+      { name: "Saving the X Industry", title: "Chapter XIV", part: 1 },
+      { name: "How the Price System Works", title: "Chapter XV", part: 1 },
+      { name: `"Stabilizing" Commodities`, title: "Chapter XVI", part: 1 },
+      { name: "Government Price-Fixing", title: "Chapter XVII", part: 1 },
+      { name: "What Rent Control Does", title: "Chapter XVIII", part: 1 },
+      { name: "Minimum Wage Laws", title: "Chapter XIX", part: 1 },
+      { name: "Do Union Really Raise Wages", title: "Chapter XX", part: 1 },
+      {
+        name: `"Enough to Buy Back the Product"`,
+        title: "Chapter XXI",
+        part: 1,
+      },
+      { name: "The Function of Profits", title: "Chapter XXII", part: 1 },
+      { name: "The Mirage of Inflation", title: "Chapter XXIII", part: 1 },
+      { name: "The Assault on Saving", title: "Chapter XXIV", part: 1 },
+      { name: "The Lesson Restated", title: "Chapter XXV", part: 1 },
+      { name: "The Lesson After Thirty Years", title: "Chapter XXVI", part: 2 },
     ],
 
     quotes: [
@@ -1530,42 +1560,34 @@ export const bookDetails = {
       {
         txt:
           "There is nothing like returning to a place that remains unchanged to find the ways in which you yourself have altered.",
-        chapter: 1,
       },
       {
         txt:
           "Politics, in my experience, is nothing but a racket to steal money from the poor.",
-        chapter: 1,
       },
       {
         txt:
           "Laws stripping people of their rights were inevitably described as laws restoring those rights.",
-        chapter: 1,
       },
       {
         txt:
           "It was a crime to walk through a Whites Only door, a crime to ride a Whites Only bus, a crime to use a Whites Only drinking fountain, a crime to walk on a Whites Only beach, a crime to be on the streets past eleven, a crime not to have a pass book and a crime to have the wrong signature in that book, a crime to be unemployed and a crime to be employed in the wrong place, a crime to live in certain places and a crime to have no place to live.",
-        chapter: 1,
       },
       {
         txt:
           "It is what we make out of what we have, not what we are given, that separates one person from another.",
-        chapter: 1,
       },
       {
         txt:
           "newspapers are only a poor shadow of reality; their information is important to a freedom fighter not because it reveals the truth, but because it discloses the biases and perceptions of both those who produce the paper and those who read it.",
-        chapter: 1,
       },
       {
         txt:
           "It is said that no one truly knows a nation until one has been inside its jails. A nation should not be judged by how it treats its highest citizens, but its lowest ones-and South Africa treated its imprisoned African citizens like animals.",
-        chapter: 1,
       },
       {
         txt:
           "When the women begin to take an active part in the struggle, no power on earth can stop us from achieving freedom in our lifetime.",
-        chapter: 1,
       },
     ],
   },
