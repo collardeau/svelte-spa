@@ -199,7 +199,41 @@ export const bookDetails = {
       { name: "The Law Matures", title: "Chapter 10", part: 0 },
       { name: "The Supreme Measure", title: "Chapter 11", part: 0 },
       { name: "Tyurzak", title: "Chapter 12", part: 0 },
-      { name: "The Ships of the Archipelago", title: "Chapter 1", part: 0 },
+      { name: "The Ships of the Archipelago", title: "Chapter 1", part: 1 },
+      { name: "The Ports of the Archipelago", title: "Chapter 2", part: 1 },
+      { name: "The Slave Caravans", title: "Chapter 3", part: 1 },
+      { name: "From Island to Island", title: "Chapter 4", part: 1 },
+      { name: "The Fingers of Aurora", title: "Chapter 1", part: 2 },
+      {
+        name: "The Archipelago Rises from the Sea",
+        title: "Chapter 2",
+        part: 2,
+      },
+      { name: "The Archipleago Metastasizes", title: "Chapter 3", part: 2 },
+      { name: "The Archipleago Hardens", title: "Chapter 4", part: 2 },
+      { name: "What the Archipelago Stands On", title: "Chapter 5", part: 2 },
+      { name: `They've Brought the Fascists!`, title: "Chapter 6", part: 2 },
+      {
+        name: "The Way of Life and Customs of the Natives",
+        title: "Chapter 7",
+        part: 2,
+      },
+      { name: "Women in Camp", title: "Chapter 8", part: 2 },
+      { name: "The Trusties", title: "Chapter 9", part: 2 },
+      { name: "In Place of Politicals", title: "Chapter 10", part: 2 },
+      { name: "The Loyalists", title: "Chapter 11", part: 2 },
+      { name: "Knock, Knock, Knock ...", title: "Chapter 12", part: 2 },
+      { name: "Hand Over Your Second Skin Too!", title: "Chapter 13", part: 2 },
+      { name: "Changing One's Fate!", title: "Chapter 14", part: 2 },
+      { name: "Punishments", title: "Chapter 15", part: 2 },
+      { name: "The Socially Friendly", title: "Chapter 16", part: 2 },
+      { name: "The Kids", title: "Chapter 17", part: 2 },
+      { name: "The Muses in Gulag", title: "Chapter 18", part: 2 },
+      { name: "The Zeks as a Nation", title: "Chapter 19", part: 2 },
+      { name: "The Dogs' Service", title: "Chapter 20", part: 2 },
+      { name: "Campside", title: "Chapter 21", part: 2 },
+      { name: "We Are Building", title: "Chapter 22", part: 2 },
+      { name: "The Ascent", title: "Chapter 1", part: 3 },
     ],
     quotes: [
       // {
@@ -627,9 +661,97 @@ export const bookDetails = {
         p: 145,
       },
       {
+        txt:
+          "[T]he loading and unloading of the dirty faces takes place far, far from the passenger platform and is seen only by switchmen and roadbed inspectors.",
+        chapter: 13,
+        p: 150,
+      },
+      {
+        txt:
+          "[A] Stolypin car might be *seven days* en route (with twenty-five people in a compartment).",
+        chapter: 13,
+        p: 152,
+      },
+      {
+        txt:
+          "As long there are any cubic centimeters of unbreathed air left in the compartment, even if it is beneath the upper shelves, even if between shoulders, legs, and heads, the compartment is ready to take additional prisoners.",
+        chapter: 13,
+        p: 152,
+      },
+      {
+        txt:
+          "[T]he prisoners argue about who's to drink first; they want the healthy prisoners to drink first, and only then those with tuberculosis, and last of all those with syphilis!",
+        chapter: 13,
+        p: 154,
+      },
+      {
+        txt:
+          "[B]y owning things and trembling about their fate aren't you forfeiting the rare opportunity of observing and understanding?",
+        chapter: 13,
+        p: 157,
+      },
+      {
+        txt:
+          "Own only what you can always carry with you: know languages, know countries, know people. Let your memory be your travel bag. Use your memory!",
+        chapter: 13,
+        p: 158,
+      },
+      {
+        txt:
+          "Now was the latrine bucket really an evil for the prisoner? On the contrary, it was the most merciful device of the prison administration. The actual horror began the moment there was *no* latrine bucket in the cell.",
+        chapter: 14,
+        p: 161,
+      },
+      {
+        txt:
+          "Human nature, if it changes at all, changes not much faster than the geological face of the earth.",
+        chapter: 14,
+        p: 164,
+      },
+      {
+        txt:
+          "[T]he main thing was to undermine, to crush the prisoner's will power so he wouldn't think of trying to escape, so that for a long time he wouldn't notice his new advantage: the fact that he had exchanged a stone-walled prison for a railroad car with thin plank walls.",
+        chapter: 15,
+        p: 169,
+      },
+      {
+        txt:
+          "The convoy does everything with intentional brusqueness, rudely, sharply, not spreaking one word in an ordinary human voice. After all, the purpose is to terrify and dishearten.",
+        chapter: 15,
+        p: 170,
+      },
+      {
+        txt:
+          "They don't heat the car, they don't protect the other prisoners from the thieves, they don't give you enough to drink, and they don't give you enough to eat--but on the other hand they don't let you sleep either.",
+        chapter: 15,
+        p: 170,
+      },
+      {
+        txt:
+          "When they unloaded a trainload from the Leningrad prisons (1942) in Solikamsk, the entire embankment was covered with corpses, and only a few got there alive.",
+        chapter: 15,
+        p: 171,
+      },
+      {
+        txt:
+          "[I]t was not unusual for the red trains to arrive nowhere, and the end of the journey often marked the opening day of a *new* camp.",
+        chapter: 15,
+        p: 171,
+      },
+      {
+        txt: "In camp it will be ... worse.",
+        chapter: 15,
+        p: 172,
+      },
+      {
         txt: "Me? What for?",
-        chapter: 13, // part II chapter 1
-        p: 3,
+        chapter: 17,
+        p: 170,
+      },
+      {
+        txt: "Me? What for?",
+        chapter: 17,
+        p: 170,
       },
     ],
   },
