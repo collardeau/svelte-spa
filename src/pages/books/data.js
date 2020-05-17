@@ -234,6 +234,62 @@ export const bookDetails = {
       { name: "Campside", title: "Chapter 21", part: 2 },
       { name: "We Are Building", title: "Chapter 22", part: 2 },
       { name: "The Ascent", title: "Chapter 1", part: 3 },
+      { name: "Of Corruption?", title: "Chapter 2", part: 3 },
+      { name: "Our Muzzled Freedom", title: "Chapter 3", part: 3 },
+      { name: "The Doomed", title: "Chapter 1", part: 4 },
+      { name: "The First Whiff of Revolution", title: "Chapter 2", part: 4 },
+      { name: "Chains, Chains ...", title: "Chapter 3", part: 4 },
+      { name: "Why Did We Stand For It?", title: "Chapter 4", part: 4 },
+      {
+        name: "Poetry Under a Tombstone, Truth Under a Stone",
+        title: "Chapter 5",
+        part: 4,
+      },
+      { name: "The Committed Escaper", title: "Chapter 6", part: 4 },
+      {
+        name: "The White Kitten (Georgi Tenno's Tale)",
+        title: "Chapter 7",
+        part: 4,
+      },
+      { name: "Escapes--Morale and Mechanics", title: "Chapter 8", part: 4 },
+      { name: "The Kids with Tommy Guns", title: "Chapter 9", part: 4 },
+      {
+        name: "Behind the Wire the Ground is Burning",
+        title: "Chapter 10",
+        part: 4,
+      },
+      { name: "Tearing at the Chains", title: "Chapter 11", part: 4 },
+      { name: "The Forty Days of Kengir", title: "Chapter 12", part: 4 },
+      {
+        name: "Exile in the First Years of Freedom",
+        title: "Chapter 1",
+        part: 5,
+      },
+      { name: "The Peasant Plague", title: "Chapter 2", part: 5 },
+      { name: "The Ranks of Exile Thicken", title: "Chapter 3", part: 5 },
+      { name: "Nations in Exile", title: "Chapter 4", part: 5 },
+      {
+        name: "End of Sentence",
+        title: "Chapter 5",
+        part: 5,
+      },
+      { name: "The Good Life in Exile", title: "Chapter 6", part: 5 },
+      {
+        name: "Zeks at Liberty",
+        title: "Chapter 7",
+        part: 5,
+      },
+      {
+        name: "Looking Back on It All",
+        title: "Chapter 1",
+        part: 6,
+      },
+      {
+        name: "Rulers Change, the Archipelago Remains",
+        title: "Chapter 2",
+        part: 6,
+      },
+      { name: "The Law Today", title: "Chapter 3", part: 6 },
     ],
     quotes: [
       // {
@@ -739,19 +795,595 @@ export const bookDetails = {
         p: 171,
       },
       {
-        txt: "In camp it will be ... worse.",
+        txt:
+          "How, in establishing the dictatorship of the proletariat, could they delay with a new type of prison?",
         chapter: 15,
-        p: 172,
+        p: 177,
       },
       {
-        txt: "Me? What for?",
+        txt:
+          "Thus we can observe that the leading idea of the Archipelago-- forced labor-- had been advanced in the first month of the October revolution.",
         chapter: 17,
-        p: 170,
+        p: 178,
       },
       {
-        txt: "Me? What for?",
-        chapter: 17,
-        p: 170,
+        txt:
+          "[A]ll the sick prisoners are carried out on blankets and laid out on the snow for three hours. When they have washed out the infirmary, they haul the patients in again.",
+        chapter: 18,
+        p: 188,
+      },
+      {
+        txt:
+          "Poles the thickness of an arm were set from wall to wall and prisoners were ordered to sit on these poles all day.",
+        chapter: 18,
+        p: 185,
+      },
+      {
+        txt:
+          "But how could they escape from Solovki? For half a year the sea was frozen over, but not solidly, and in places there was open water, and the snowstorms raged, and the frost bit hard, and things were enveloped in mists and darkness.",
+        chapter: 18,
+        p: 188,
+      },
+      {
+        txt:
+          "[F]orced labor should be set up in such a way that the prisoner should not earn anything from his work but that the state should derive economic profit from it.",
+        chapter: 19,
+        p: 193,
+      },
+      {
+        txt:
+          "The whole long history of the Archipelago, about which it has fallen to me to write this home-grown, homemade book, has, in the course of half a century, found in the Soviet Union almost no expression whatever in the printed word.",
+        chapter: 19,
+        p: 198,
+      },
+      {
+        txt:
+          "The prisoners were so famished that at Zarosshy Spring they ate the corpse of a horse which had been lying dead for more than a week and which not only stank but was covered with flies and maggots.",
+        chapter: 20,
+        p: 212,
+      },
+      {
+        txt:
+          "The prisoner did not know what barracks he would be in the morrow (and even when he returned from work he could not be certain that he would sleep in that place that night).",
+        chapter: 21,
+        p: 216,
+      },
+      {
+        txt:
+          "The zek [prisoner] was separated from his family on the first day of his arrest and, in 50 percent of all cases--forever.",
+        chapter: 21,
+        p: 217,
+      },
+      {
+        txt:
+          "You come to hate this forest, this beauty of the earth, whose praises have been sung in verse and prose.",
+        chapter: 23,
+        p: 221,
+      },
+      {
+        txt:
+          "[T]hey came to a cold, snowy woods, they stretched wire on the trees, and whoever managed to survive until the first barracks knew those barracks would be for the guard anyway.",
+        chapter: 23,
+        p: 225,
+      },
+      {
+        txt:
+          "Philosophers, psychologists, medical men, and writers could have observed in our camps, as nowhere else, in detail and on a large scale the special process of the narrowing of the intellectual and spiritual horizons of a human being, the reduction of the human being to an animal and the process of dying alive.",
+        chapter: 23,
+        p: 225,
+      },
+      {
+        txt:
+          "If black astonished head lice are crawling on the face of your neighbor on the bunks, it is a sure sign of death.",
+        chapter: 23,
+        p: 228,
+      },
+      {
+        txt:
+          "Mostly it was not a surgeon but a convoy guard who *verified* the corpse--to be certain the zek was really dead and not pretending. And for this they ran the corpse through with a bayonet or smashed the skull with a big mallet.",
+        chapter: 23,
+        p: 229,
+      },
+      {
+        txt:
+          "The corpses were hauled away on sledges or on carts, depending on the time of year. Sometimes, for convenience, they used one box for six corpses, and if they were no boxes, then they tied the hands and legs with cord so they didn't flop about.",
+        chapter: 23,
+        p: 229,
+      },
+      {
+        txt:
+          "You'd better make your arrangements, make your arrangements, inside *the camp compound*, darling, while it is being proposed in a gentlemanly way. There's cleanliness here, and laundry facilities, and decent clothes and unfatiguing work--and it's all yours.",
+        chapter: 24,
+        p: 233,
+      },
+      {
+        txt: "Because not every one was lucky enough *to get propositioned*.",
+        chapter: 24,
+        p: 233,
+      },
+      {
+        txt:
+          "What if you said ... no? All right, that's your lookout! Put on britches and pea jacket. And go marching off to the woods, with your formless, fat exterior, and your frail inner being. You'll come crawling yet. You'll go down on bended knees.",
+        chapter: 24,
+        p: 233,
+      },
+      {
+        txt:
+          "And what of it if you loved someone out in freedom and wanted to remain true to him? What profit is there in the fidelity of a female corpse?",
+        chapter: 24,
+        p: 233,
+      },
+      {
+        txt:
+          "Obvious old age and obvious ugliness were the only defense for a woman there--nothing else. Attractiveness was a curse.",
+        chapter: 24,
+        p: 234,
+      },
+      {
+        txt:
+          "[E]verything that is feminine in a woman, whether it be constant or whether it be monthy, ceases to be.",
+        chapter: 24,
+        p: 235,
+      },
+      {
+        txt:
+          "[T]hese issues of whether to give birth or not, which were difficult enough for any woman at all, were still more confused for a woman camp inmate. And what would happen to the child subsequently?",
+        chapter: 24,
+        p: 237,
+      },
+      {
+        txt:
+          "A *deaf and dumb* carpenter got a term for counterrevolutionary *agitation*! How? He was laying floors in a club. Everything had been removed from a big hall, and there was no nail or hook anywhere. While he was working, he hung his jacket and his service cap on a bust of Lenin. Someone came in and saw it. 58, ten years.",
+        chapter: 26,
+        p: 240,
+      },
+      {
+        txt: "A stone is not a human being, and even stones get crushed.",
+        chapter: 28,
+        p: 248,
+      },
+      {
+        txt:
+          "Oh, blessed are those pitiless tyrannies, those despotisms, those savage countries, where a person once arrested cannot be arrested a second time!",
+        chapter: 29,
+        p: 249,
+      },
+      {
+        txt:
+          "As long as our camps thrived and our exile lasted, this black threat hovered over the heads of the convicted: to be given a new term before they had finished the first one.",
+        chapter: 29,
+        p: 250,
+      },
+      {
+        txt:
+          "To defend yourself in that savage world was impossible. To go on strike was suicide. To go on hunger strikes was useless.",
+        chapter: 30,
+        p: 254,
+      },
+      {
+        txt:
+          "The continual escapes in one or another place, even those that did not succeed, were a true proof that the energy of the zeks had not yet been lost.",
+        chapter: 30,
+        p: 254,
+      },
+      {
+        txt:
+          "And even if you were fortunate enough to escape unscathed, how could you live afterward on a false passpot, with a false name, when documents were checked at every intersection, when suspicious eyes followed passers-by from behind every gateway?",
+        chapter: 30,
+        p: 255,
+      },
+      {
+        txt:
+          "The hostility of the surrounding population, encouraged by the authorities, became the principal hindrance to escapes.",
+        chapter: 30,
+        p: 256,
+      },
+      {
+        txt:
+          "But the desperate heart sometimes did not weigh things. It saw: the river was flowing and a log was floating down it--and one jump! We'll float on down.",
+        chapter: 30,
+        p: 256,
+      },
+      {
+        txt:
+          "[T]he punishment cell for work shirkers was a log frame *without a roof*.",
+        chapter: 31,
+        p: 259,
+      },
+      {
+        txt:
+          "Through its laws the Stalinist power said to the thieves clearly: Do not steal from me! Steal from the private persons! You see, private property is a belch from the past.",
+        chapter: 32,
+        p: 263,
+      },
+      {
+        txt:
+          "[A]ccording to the Progressive Doctrine, criminal activity arises only from the presence of classes; we have no classes in our country, therefore there is no crime and therefore you cannot write about it in the press!",
+        chapter: 32,
+        p: 263,
+      },
+      {
+        txt:
+          "It was the same with criminal activity as it was with malaria. It was simply announced one day that it no longer existed in our country, and from then on it became impossible to treat it or even to diagnose it.",
+        chapter: 32,
+        p: 264,
+      },
+      {
+        txt:
+          "In 1927 prisoners aged sixteen (they didn't count the younger ones) to twenty-four represented 48 percent of all prisoners.",
+        chapter: 33,
+        p: 267,
+      },
+      {
+        txt: "They were assigned to dump the shit from latrines.",
+        chapter: 33,
+        p: 269,
+      },
+      {
+        txt:
+          "But the young people, by the laws of their young life, were not about to be flattened by this life style but, intead, grew into it and adapted to it.",
+        chapter: 33,
+        p: 269,
+      },
+      {
+        txt:
+          "The simplest reply to the overpowering injustices was to create injustices oneself! This was the easiest conclusion, and it would now become the rule of life of the kids for a long time to come (or even forever).",
+        chapter: 33,
+        p: 271,
+      },
+      {
+        txt:
+          "No one could avoid being cooked up in that marsh! No boy could remain a separate individual--he would be trampled, torn apart, ostracized, if he did not immediately declare himself a thieves' apprentice.",
+        chapter: 33,
+        p: 271,
+      },
+      {
+        txt:
+          "But suddenly, with diabolical speed, two or three kids would attack from the side. They knocked one old man to the ground, six hands frisked him all over, and they made off like a whirlwind.",
+        chapter: 33,
+        p: 274,
+      },
+      {
+        txt: "[T]he weaker their victim, the more merciless were the kids.",
+        chapter: 33,
+        p: 274,
+      },
+      {
+        txt:
+          "[T]he personality of the prison keepers interest you only to the extent that it helps you evade their threats and exploit their weaknesses.",
+        chapter: 36,
+        p: 282,
+      },
+      {
+        txt:
+          "Thanks to this process of selection one can conclude that the percentage of the merciless and cruel among the camp keepers is much higher than in a random sample of the population.",
+        chapter: 36,
+        p: 282,
+      },
+      {
+        txt:
+          "[A]mong the camp keepers, who have passed through a severe negative-selection process--both in morality and mentality--the similiarity is astonishing, and we can, in all likelihood, describe without difficulty their basic *universal* characteristics.",
+        chapter: 36,
+        p: 283,
+      },
+      {
+        txt:
+          "Innumerable are the examples of senseless orders, the sole purpose of which was to demonstrate their power.",
+        chapter: 36,
+        p: 284,
+      },
+      {
+        txt:
+          "Unlimited power in the hands of limited people always leads to cruelty.",
+        chapter: 36,
+        p: 285,
+      },
+      {
+        txt:
+          "I have already deduced the generalized judgment that a camp keeper *could not be a decent person*--either he had to change direction of they got rid of him.",
+        chapter: 36,
+        p: 286,
+      },
+      {
+        txt:
+          "For Stalin's purposes the camps were a wonderful place into which he could herd millions as a form of intimidation.",
+        chapter: 38,
+        p: 291,
+      },
+      {
+        txt:
+          "The labor of the zeks was needed for degrading and particularly heavy work, which no one, under socialism, would wish to perform.",
+        chapter: 38,
+        p: 291,
+      },
+      {
+        txt:
+          "80 miles of canal were dug to a depth of over sixteen feet and top width of 280 feet. And almost all of it with pick, shovel, and wheelbarrow.",
+        chapter: 38,
+        p: 292,
+      },
+      {
+        txt:
+          "All that the camp inmates made for their own dear state was openly and blatantly botched: you could break the bricks they made with your bare hands; the paint would peel off the panels; the plaster would fall off; posts would fall down; tables rock; legs fall out; handles come off.",
+        chapter: 38,
+        p: 293,
+      },
+      {
+        txt:
+          "[N]ot only does the Archipelago not pay its own way, but the nation has to pay dearly for the additional satisfaction of having it.",
+        chapter: 38,
+        p: 296,
+      },
+      {
+        txt: `Now in a swift staccato, as they joke in camp--"winter-summer, winter-summer"--but a long draw-out autumn, an endless winter, an unwilling spring, and only a summer that is short.`,
+        chapter: 39,
+        p: 299,
+      },
+      {
+        txt: "Just not to perish from the disaster! It had to be survived.",
+        chapter: 39,
+        p: 300,
+      },
+      {
+        txt:
+          "I even image that, statistically speaking, there were fewer suicides per thousand of the population in camp than in freedom.",
+        chapter: 39,
+        p: 300,
+      },
+      {
+        txt:
+          "And maybe the government would have to soften up and begin to take pity on its subject?--well, hardly! Stalin wouldn't have been stopped at that. He would have merely picked up another twenty million people from freedom.",
+        chapter: 39,
+        p: 301,
+      },
+      {
+        txt:
+          "If these millions of helpless and pitiful vermin still did not put an end to themselves--this meant some kind of invicible feeling was alive inside them.",
+        chapter: 39,
+        p: 301,
+      },
+      {
+        txt:
+          "[I]f one has nothing to repent of--what then, what then does the prisoner think about all the time?",
+        chapter: 39,
+        p: 301,
+      },
+      {
+        txt:
+          "If I can only manage to survive--oh, how differently, how wisely, I am going to live! The day of our future *release*? It shines like a rising sun!",
+        chapter: 39,
+        p: 302,
+      },
+      {
+        txt: `The proverb says: "Freedom spoils, and lack of freedom teaches.`,
+        chapter: 39,
+        p: 304,
+      },
+      {
+        txt:
+          "And the thought of freedom after a time even becomes a forced thought. Farfetched. Strange.",
+        chapter: 39,
+        p: 305,
+      },
+      {
+        txt:
+          "While they openly claim your labor and your body, to the point of exhaustion and even death, the camp keepers do not encroach at all on your thoughts.",
+        chapter: 39,
+        p: 305,
+      },
+      {
+        txt:
+          "No one can deprive you of your family and property--you have already been deprived of them. What does not exist--not even God can take away. And this is a basic freedom.",
+        chapter: 39,
+        p: 306,
+      },
+      {
+        txt:
+          "If it is the essence that counts, then the time has come to reconcile yourself to *general work*. To tatters. To torn skin on the hands. To a piece of bread which is smaller and worse. And perhaps ... to death. But while you're alive, you drag your way along proudly with an aching back.",
+        chapter: 39,
+        p: 308,
+      },
+      {
+        txt:
+          "Formerly you never forgave anyone. You judged people without mercy. And you praised people with equal lack of moderation. And now an understanding mildness has become the basis of your uncategorical judgments.",
+        chapter: 39,
+        p: 308,
+      },
+      {
+        txt:
+          "And now the rule of your life is this: Do not rejoice when you have found, do not weep when you have lost.",
+        chapter: 39,
+        p: 309,
+      },
+      {
+        txt:
+          "It is impossible to expel evil from the world in its entirety, but it is possible to constrict it within each person.",
+        chapter: 39,
+        p: 312,
+      },
+      {
+        txt:
+          "Camp life was organized in such a way that envy pecked at your soul from all sides, even the best defended-sould.",
+        chapter: 40,
+        p: 315,
+      },
+      {
+        txt:
+          "And how can one explain that certain unstable people found faith right there in camp, that they were strenghtened by it, and that they survived uncorrupted?",
+        chapter: 40,
+        p: 317,
+      },
+      {
+        txt: `[P]eople became corrupted in camp who had already been corrupted out in freedom or who were ready for it.`,
+        chapter: 40,
+        p: 319,
+      },
+      {
+        txt:
+          "Yes, the camps were calculated and intended to corrupt. But this didn't mean that they succeeded in crushing *everyone*",
+        chapter: 40,
+        p: 319,
+      },
+      {
+        txt:
+          "Just as there is no minute when people are not dying or being born, so there was no minute when people were not being arrested.",
+        chapter: 41,
+        p: 321,
+      },
+      {
+        txt:
+          "[I]t would take only one careless word or gesture and he would fly off irrevocably into the abyss.",
+        chapter: 41,
+        p: 321,
+      },
+      {
+        txt:
+          "The security questionnaires were so detailed and so inquisitive that more than half the inhabitants of the country had a bad conscience and were constantly and permanently tormented by the approach of the period when they had to be filled out.",
+        chapter: 41,
+        p: 321,
+      },
+      {
+        txt:
+          "Informing one another of nothing, neither shouting nor groaning, and learning nothing from one another, we were completely in the hands of the newspaper and the official orators.",
+        chapter: 41,
+        p: 322,
+      },
+      {
+        txt:
+          "Any person who had let himself be recruited would, out of fear of public exposure, be very much interested in the continuing stability of the regime.",
+        chapter: 41,
+        p: 323,
+      },
+      {
+        txt:
+          "Every act of resistance to the government required heroism quite out of proportion to the magnitude of the act. It was safer to keep dynamite during the rule of Alexander II than it was to shelter the orphan of an enemy of the people under Stalin.",
+        chapter: 41,
+        p: 324,
+      },
+      {
+        txt:
+          "[W]e can assume that at least every third or at least every fifth case was the consequence of somebody's denunciation and that somebody was willing to provide evidence as a witness!",
+        chapter: 41,
+        p: 325,
+      },
+      {
+        txt:
+          "[E]very conversation of any kind with any other Soviet person called for lies.",
+        chapter: 41,
+        p: 326,
+      },
+      {
+        txt:
+          "But that was not all: Your children were growing up! And if the children were still little, then you had to decide what was the best way to bring them up; whether to start them off on lies instead of the truth (so that it would be *easier* for them to live) and then to lie forevermore in front of them; or to tell them the truth, with the risk that they might make a slip, that they might let it out, which meant that you had to instill into them from the start that the truth was murderous, that beyond the threshold of the house you had to lie, only like, just like papa and mama.",
+        chapter: 41,
+        p: 326,
+      },
+      {
+        txt:
+          "But once again we have adopted Stalin's yardstick: except as decreed by the Supreme Soviet, thou shalt not mate! Your body is, first and foremost, the property of the Fatherland.",
+        chapter: 42,
+        p: 333,
+      },
+      {
+        txt:
+          "Perhaps in fairness we should at last admit that those whom we seek to destroy have a right to hate us. Or have they no such right? Are they supposed to die gracefully?",
+        chapter: 42,
+        p: 340,
+      },
+      {
+        txt:
+          "Mankind is almost incapable of dispassionate, unemotional thinking.",
+        chapter: 42,
+        p: 340,
+      },
+      {
+        txt:
+          "[N]owhere in history, was there a regime more vicious, more bloodthirsty, and at the same time more cunning and ingenious that the Bolshevik, the self-styled Soviet regime.",
+        chapter: 42,
+        p: 342,
+      },
+      {
+        txt:
+          "[H]ow could we readily believe that the Western allies had entered this war not for the sake of freedom in general, but for their own Western European freedom, only against Nazism, intending to take full advantage of the Soviet armies and leave it at that? Was it not more natural for us to believe that our allies were true to the very *principle* of freedom and they would not abandon us to a worse tyranny?",
+        chapter: 42,
+        p: 342,
+      },
+      {
+        txt:
+          "[T]he handcuffs became an instrument of torture instead of a mere device to inhibit activity: they crushed the wrists, causing constant acute pain, and prisoners were kept like that for hours, always with their hands behind their backs, palms outward.",
+        chapter: 44,
+        p: 345,
+      },
+      {
+        txt:
+          "This is the point, this is where their power lies: no news could leak out. If somne muffled rumor did, with no confirmation from newspapers, with informers busily nosing it out, it would not get far enough to matter: there would be no outburst of public indignation.",
+        chapter: 45,
+        p: 353,
+      },
+      {
+        txt:
+          "[S]ociety was not ready. Because without a response from public opinion, a mutiny even in a huge camp has no scope for development.",
+        chapter: 45,
+        p: 345,
+      },
+      {
+        txt:
+          "No longer burdened with frivolous and superfluous knowledge, a prisoner's memory is astonishingly capacious, and can expand indefinitely. We have too little faith in memory!",
+        chapter: 46,
+        p: 355,
+      },
+      {
+        txt:
+          "[T]he sparks of the spirit cannot be kept from spreading, breaking through to each other. Like recognizes and is gathered to like in a manner none can explain.",
+        chapter: 46,
+        p: 360,
+      },
+      {
+        txt:
+          "[A]ll three would try to sit in the back row and when the truck slowed down at a turning they would jump, all three of them at once--right, left, and rear--past the guards, knocking them over if necesary. The guards would open fire, but they would not hit all three.",
+        chapter: 47,
+        p: 370,
+      },
+      {
+        txt:
+          "The question is this: Are you prepared to die? You are? Then you are also prepared to escape.",
+        chapter: 47,
+        p: 375,
+      },
+      {
+        txt:
+          "Guard away, you guard dogs! Your job is to keep us here, ours is to run away.",
+        chapter: 47,
+        p: 377,
+      },
+      {
+        txt:
+          "Can a man do without ideas of his own about good and evil, and merely derive them from the printed instructions and verbal orders of his superiors? Oaths! Those solemn pledges pronounced with a tremor in the voice and intended to defend the people against evildoers: see how easily they can be misdirected to the service of evildoers and against the people!",
+        chapter: 50,
+        p: 385,
+      },
+      {
+        txt:
+          "No, the surprising thing is not that mutinies and risings did not occur in the camps, but that in spite of everything they *did*.",
+        chapter: 51,
+        p: 386,
+      },
+      {
+        txt:
+          "A remarkable fresh breeze was blowing! On the surface, we were prisoners living in a camp just as before, but in reality we had become free--free because for the very first time in our lives, we had started saying openly and aloud all that we thoughts!",
+        chapter: 51,
+        p: 389,
+      },
+      {
+        txt:
+          "The revolution was gathering strength. The wind that seemed to have subsided had sprung up again in a hurricane to fill our eager lungs.",
+        chapter: 51,
+        p: 392,
+      },
+      {
+        txt: "",
+        chapter: 52,
+        p: 393,
       },
     ],
   },
