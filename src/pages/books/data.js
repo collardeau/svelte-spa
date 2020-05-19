@@ -63,24 +63,39 @@ export const bookDetails = {
       { name: "The End of Truth", title: "Chapter 11" },
       { name: "The Socialist Roots of Nazism", title: "Chapter 12" },
       { name: "The Totalitarians in our Midst", title: "Chapter 13" },
+      { name: "Material Conditions and Ideal Ends", title: "Chapter 14" },
+      { name: "The Prospects of International Order", title: "Chapter 15" },
     ],
     quotes: [
-      // intro chapter
-      // {
-      //   txt:
-      //     "[M]any who think themselves infinitely superior to the aberrations of Nazism and sincerely hate all its manifestations, work at the same time for ideals whose realisation would lead straight to the abhorred tyranny",
-      //   chapter: 0,
-      // },
-      // {
-      //   txt:
-      //     "It seems almost as if we did not want to understand the development which has produced totalitarianism because such an understanding might destroy some of the dearest illusions to which we are determined to cling.",
-      //   chapter: 0,
-      // },
+      {
+        txt:
+          "Few are ready to recognise that the rise of Fascism and Nazism was not a reaction against the socialist trends of the preceding period, but a necessary outcome of those tendencies.",
+        chapter: 0,
+        p: 4,
+      },
+      {
+        txt:
+          "[M]any who think themselves infinitely superior to the aberrations of Nazism and sincerely hate all its manifestations, work at the same time for ideals whose realisation would lead straight to the abhorred tyranny",
+        chapter: 0,
+        p: 4,
+      },
+      {
+        txt:
+          "It seems almost as if we did not want to understand the development which has produced totalitarianism because such an understanding might destroy some of the dearest illusions to which we are determined to cling.",
+        chapter: 0,
+        p: 7,
+      },
       {
         txt:
           "it would be a mistake to believe that the specific German rather than the socialist element produced totalitarianism.",
         chapter: 0,
         p: 9,
+      },
+      {
+        txt:
+          "When the course of civilisation takes an unexpected turn, when instead of the continuous progress which we have come to expect, we find ourselves threatened by evils associated by us with past ages of barbarism, we blame naturally anything but ourselves.",
+        chapter: 1,
+        p: 10,
       },
       {
         txt:
@@ -96,15 +111,55 @@ export const bookDetails = {
       },
       {
         txt:
-          "Socialism was embraced by the greater part of the intelligentsia as the apparent heir of the liberal tradition: therefore it is not surprising that to them the idea should appear inconceivable of socialism leading to the opposite of liberty.",
+          "[B]y the beginning of the twentieth century the working man in the Western world had reached a degree of material comfort, security, and personal independence which a hundred years before had seemed scarcely possible.",
+        chapter: 1,
+        p: 17,
+      },
+      {
+        txt:
+          "The fundamental principle that in the ordering of our affairs we should make as much use as possible of the spontaneous forces of society, and resort as little as possible to coercion, is capable of an infinite variety of applications.",
+        chapter: 1,
+        p: 17,
+      },
+      {
+        txt: `We have in effect undertaken to dispense with the forces which produced unforeseen results and to replace the impersonal and anonymous mechanism of the market by collective and "conscious" direction of all social forces to deliberately chosen goals.`,
+        chapter: 1,
+        p: 21,
+      },
+      {
+        txt:
+          "Only under the influence of the strong democratic currents preceding the revolution of 1848 did socialism begin to ally itself with the forces of freedom.",
+        chapter: 2,
+        p: 25,
+      },
+      {
+        txt:
+          "To the great apostles of political freedom that word had meant freedom from coercion, freedom from the arbitrary power of other men, release from the ties which left the individual no choice but obedience to the orders of a superior to whom he was attached. The new freedom promised, however, was to be freedom from necessity.",
         chapter: 2,
         p: 27,
       },
-      // {
-      //   txt: `While "progressives" in this country and elsewhere were still deluding themselves that communism and fascism represented opposite poles, more and more people began to ask themselves whether these new tyrannies were not the outcome of the same tendencies.`,
-      //   chapter: 2,
-      //   p: 27,
-      // },
+      {
+        txt:
+          "Socialism was embraced by the greater part of the intelligentsia as the apparent heir of the liberal tradition: therefore it is not surprising that to them the idea should appear inconceivable of socialism leading to the opposite of liberty.",
+        chapter: 2,
+        p: 26,
+      },
+      {
+        txt: `While "progressives" in this country and elsewhere were still deluding themselves that communism and fascism represented opposite poles, more and more people began to ask themselves whether these new tyrannies were not the outcome of the same tendencies.`,
+        chapter: 2,
+        p: 27,
+      },
+      {
+        txt: `That democratic socialism, the great utopia of the last few generations, is not only unachievable, but that to strive for it produces something so utterly different that few of those who now wish it would be prepared to accept the consequences, many will not believe till the connection has been laid bare in all aspects.`,
+        chapter: 2,
+        p: 32,
+      },
+      {
+        txt:
+          "Many peope, on the other hand, who value the ultimate ends of socialism no less than the socialists, refuse to support socialism because of the dangers to other values they see in the methods proposed by the socialists.",
+        chapter: 3,
+        p: 34,
+      },
       {
         txt:
           "The holder of coercive power should confine himself in general to creating conditions under which the knowledge and initiative of individuals is given the best scope so that *they* can plan most successfully",
@@ -116,6 +171,36 @@ export const bookDetails = {
           "[W]here effective competition can be created, it is a better way of guiding individual efforts than any other.",
         chapter: 3,
         p: 37,
+      },
+      {
+        txt:
+          "[T]he market should be free to sell and buy at any price at which they can find a partner to the transaction, and that anybody should be free to produce, sell, and buy anything that may be produced or sold at all.",
+        chapter: 3,
+        p: 38,
+      },
+      {
+        txt:
+          "To prohibit the use of certain poisonous substances, or to require special precautions in their use, to limit working hours or to require certain sanitary arrangements, is fully compatible with the preservation of competition.",
+        chapter: 3,
+        p: 38,
+      },
+      {
+        txt:
+          "What in effect unites the socialists of the Left and the Right is this common hostility to competition and their common desire to replace it by a directed economy.",
+        chapter: 3,
+        p: 42,
+      },
+      {
+        txt:
+          "Both competition and central direction becomes poor and inefficent tools if they are incomplete; they are alternative principles used to solve the same problem, and a mixture of the two means that neither will really work and that the result will be worse than if either system had been consistently relied upon.",
+        chapter: 3,
+        p: 43,
+      },
+      {
+        txt:
+          "It is only since the transition to protection and the general change in British economic policy accompanying it, that the growth of monopolies has proceeded at an amazing rate.",
+        chapter: 4,
+        p: 49,
       },
       {
         txt:
@@ -131,6 +216,48 @@ export const bookDetails = {
       },
       {
         txt:
+          "But the argument for freedom is precisely that we ought to leave room for the unforeseeable free growth.",
+        chapter: 4,
+        p: 54,
+      },
+      {
+        txt:
+          "The hopes [experts] place in planning, however, are not the result of a comprehensive view of society, but rather of a very limited view, and often the result of a great exaggeration of the importance of the ends they place foremost.",
+        chapter: 4,
+        p: 57,
+      },
+      {
+        txt:
+          "From the saintly and single-minded idealist to the fanatic is often but a step.",
+        chapter: 4,
+        p: 57,
+      },
+      {
+        txt:
+          "The welfare and the happiness of millions cannot be measured on a single scale of less and more.",
+        chapter: 5,
+        p: 60,
+      },
+      {
+        txt:
+          "[I]t would be impossible for any mind to comprehend the infinite variety of different needs of different people which compete for the available resources and to attach a definite weight to each.",
+        chapter: 5,
+        p: 62,
+      },
+      {
+        txt:
+          "[I]t is impossible for any man to survey more than a limited field, to be aware of the urgency of more than a limited number of needs.",
+        chapter: 5,
+        p: 62,
+      },
+      {
+        txt:
+          "It is the recognition of the individual as the ultimate judge of his ends, the belief that as far as possible his own views ought to govern his actions, that forms the essence of the individual position.",
+        chapter: 5,
+        p: 63,
+      },
+      {
+        txt:
           "Although the state controls directly the use of only a large part of the available resources, the effects of its decision on the remaining part of the economic system become so great that indirectly it control almost everything.",
         chapter: 5,
         p: 64,
@@ -142,29 +269,268 @@ export const bookDetails = {
         p: 65,
       },
       {
-        txt: "",
-        chapter: 3,
-        p: 37,
+        txt: `Parliaments come to be regarded as ineffective "talking shops", unable or incompetent to carry out the tasks for which they have been chosen.
+        `,
+        chapter: 5,
+        p: 65,
       },
       {
-        txt: "",
-        chapter: 3,
-        p: 37,
+        txt:
+          "Hilter did not have to destroy democracy; he merely took advantage of the decay of democracy and at the critical moment obtained the support of many to whom, though they detested Hitler, he yet seemed the only man strong enough to get things done.",
+        chapter: 5,
+        p: 71,
       },
       {
-        txt: "",
-        chapter: 3,
-        p: 37,
+        txt:
+          "When it becomes dominated by a collectivist creed, democracy will inevitably destroy itself.",
+        chapter: 5,
+        p: 73,
       },
       {
-        txt: "",
-        chapter: 3,
-        p: 37,
+        txt:
+          "Democracy is essentially a means, a utilitarian device for safeguarding internal peace and individual freedom. As such it is by no means infallible or certain.",
+        chapter: 5,
+        p: 73,
       },
       {
-        txt: "",
-        chapter: 3,
-        p: 37,
+        txt: `A true "dictatorship of the proletariat", even if democratic in form, if it undertook centrally to direct the economic system, would probably destroy personal freedom as completely as any autocracy has ever done.`,
+        chapter: 5,
+        p: 74,
+      },
+      {
+        txt: `If the individual are to be able to use their knowledge effectively in making plans, they must be able to predict actions fo the state which may affect these plans.`,
+        chapter: 6,
+        p: 79,
+      },
+      {
+        txt: `The idea that there is no limit to the powers of the legislator is in part a result of popular sovereignty and democratic governement.`,
+        chapter: 6,
+        p: 85,
+      },
+      {
+        txt: `By giving the government unlimited powers the most arbitrary rule can be made legal: and in this way a democracy may set up the most complete despotism imaginable.`,
+        chapter: 6,
+        p: 86,
+      },
+      {
+        txt: `Economic control is not merely control of a sector of human life which can be separated from the rest; it is the control of the means for all our ends.`,
+        chapter: 7,
+        p: 95,
+      },
+      {
+        txt: `It is only because the control of the means of production is divided among many people acting indepedently that nobody has complete power over us.`,
+        chapter: 8,
+        p: 108,
+      },
+      {
+        txt: `[T]he power which a multiple millionaire, who may be my neighbor and perhaps my employer, has over me is very much less than that which the smaller *fonctionnaire* possesses who wields the coercive power of the state.`,
+        chapter: 8,
+        p: 108,
+      },
+      {
+        txt: `[T]he institution of private property is one of the main things that have given man that limited amount of free and equalness that Marx hoped to render infinite by abolishing this institution.`,
+        chapter: 8,
+        p: 109,
+      },
+      {
+        txt: `Inequality is undoubtedly more readily borne, and affects the dignity of the person much less, if it is determined by impersonal forces, that when it is due to design.`,
+        chapter: 8,
+        p: 110,
+      },
+      {
+        txt: `And all our efforts directed towards improving our position will have to aim, not at foreseeing and preparing as well as we can for the circumstances over which we have no control, but at influencing in our favor the authority which has all the power.`,
+        chapter: 8,
+        p: 111,
+      },
+      {
+        txt: `In deciding the relative importance of the different ends, the planner also decides the relative importance of the different groups and persons.`,
+        chapter: 8,
+        p: 116,
+      },
+      {
+        txt: `It is because successful planning requires the creation of a common view on the essential values that the restriction of our freedom with regard to material things touches so directly on our spiritual freedom.`,
+        chapter: 8,
+        p: 117,
+      },
+      {
+        txt: `It is not rational conviction but the acceptance of a creed which is required to justify a particular plan.`,
+        chapter: 8,
+        p: 117,
+      },
+      {
+        txt: `[I]t becomes more and more evident to everybody that his income and general position is determined by the coercive apparatus of the state, that he can maintain or improve his position only as a member of an organised group capable of influencing or controlling the state machine in his interest.`,
+        chapter: 8,
+        p: 119,
+      },
+      {
+        txt: `There are bound to arise rival socialist movements that appeal to the support of those whose relative position is worsened.`,
+        chapter: 8,
+        p: 120,
+      },
+      {
+        txt: `They knew that the strongest group which rallied enough supporters in favor of a new hierarchical order of society, and which frankly promised priviledges to the classes to which it appealed, was likely to obtain the support of all those who were disappointed because they had been promised equality but found that they had merely furthered the interest of a particular class.`,
+        chapter: 8,
+        p: 122,
+      },
+      {
+        txt: `In any system which for the distribution of men between the different trades and occupations relies on their own choice it is necessary that the renumeration in these trades should correspond to their usefulness to the other members of socity, even if this should stand in no relation to subjective merit.`,
+        chapter: 9,
+        p: 126,
+      },
+      {
+        txt: `[I]n the world as it is men are, in fact, not likely to give their best for long periods unless their own interests are directly involved.`,
+        chapter: 9,
+        p: 129,
+      },
+      {
+        txt: `Every restriction on the freedom of entry into a trade reduces the security of all those outside it.`,
+        chapter: 9,
+        p: 132,
+      },
+      {
+        txt: `[N]othing is more fatal than the present fashion among intellectual leaders of extolling security at the expense of freedom.`,
+        chapter: 9,
+        p: 137,
+      },
+      {
+        txt: `And those who think that it is not the system which we need fear, but the danger that it might be run by bad men, might even be tempted to forestall this danger by seeing that it is established in time by good men.`,
+        chapter: 10,
+        p: 139,
+      },
+      {
+        txt: `Just as the democratic statesman who sets out to plan economic life will soon be confronted with the alternative of either assuming dictatorial powers or abandoning his plans, so the totalitarian dictator would soon have to chose between disregard of ordinary morals and failure.`,
+        chapter: 10,
+        p: 139,
+      },
+      {
+        txt: `It is then the man or the party who seems so strong and resolute enough to "get things done" who exercises the greatest appeal.`,
+        chapter: 10,
+        p: 140,
+      },
+      {
+        txt: `[H]e will be able to obtain the support of all the docile and gullible, who have no strong convictions of their own but are prepared to accept a ready-made system of values if it is only drummed into their ears sufficiently loudly and frequently.`,
+        chapter: 10,
+        p: 142,
+      },
+      {
+        txt: `It seems to be almost a law of human nature that it is easier for people to agree on a negative programme, on the hatred of an enemy, on the envy of those better off, than on any positive task.`,
+        chapter: 10,
+        p: 143,
+      },
+      {
+        txt: `[T]he desire of the individual to identify himself with a group is very frequently the result of a feeling of inferiority.`,
+        chapter: 10,
+        p: 146,
+      },
+      {
+        txt: `To act on behalf of a group seems to free people of many of the moral restraints which control their behavior as individuals within the group.`,
+        chapter: 10,
+        p: 146,
+      },
+      {
+        txt: `There is, in a competitive society, nobody who can exercise even a fraction of the power which a socialist planning board would possess.`,
+        chapter: 10,
+        p: 149,
+      },
+      {
+        txt: `[T]he readiness to do bad things becomes a path to promotion and power.`,
+        chapter: 10,
+        p: 155,
+      },
+      {
+        txt: `To make a totalitarian system function efficently it is not enough that everybody should be forced to work for the same ends. It is essential that the people should come to regard them as their own ends.`,
+        chapter: 11,
+        p: 157,
+      },
+      {
+        txt: `If the feeling of oppression in totalitarian countries is in general much less acute than most people in liberal countries imagine, this is because the totalitarian governments succeed to a high degree in making people think as they want them to.`,
+        chapter: 11,
+        p: 157,
+      },
+      {
+        txt: `[W]herever liberty as we understand it has been destroyed, this has almost always been done in the name of some new freedom promised to the people.`,
+        chapter: 11,
+        p: 162,
+      },
+      {
+        txt: `But freedom or liberty are by no means the only words whose meaning have been changed into their opposites to make them serve as instruments to totalitarian propaganda.`,
+        chapter: 11,
+        p: 162,
+      },
+      {
+        txt: `[W]ords become empty shells deprived of any definite meaning, as capable of denoting one thing as its opposite and used solely for the emotional associations which still adhere to them.`,
+        chapter: 11,
+        p: 163,
+      },
+      {
+        txt: `Pulic criticism or even expressions of doubt must be suppressed because they tend to weaken public support.`,
+        chapter: 11,
+        p: 164,
+      },
+      {
+        txt: `Once science has to serve, not truth, but the interest of a class, a community, or a state, the sole task of argument and discussion is to vindicate and to spread still further the beliefs by which the whole life of the community is directed.`,
+        chapter: 11,
+        p: 167,
+      },
+      {
+        txt: `In any society freedom of thought will probably be of direct significance only for a small minority.`,
+        chapter: 11,
+        p: 168,
+      },
+      {
+        txt: `The interaction of individuals, possessing different knowledge and different views, is what constitues the life of thought.`,
+        chapter: 11,
+        p: 169,
+      },
+      {
+        txt: `As was also true in Germany, most of the works which are preparing the way for a totalitarian course in this country are the product of sincere idealists and often of men of considerable intellectual distinction.`,
+        chapter: 13,
+        p: 190,
+      },
+      {
+        txt: `Even if railways, road and air transport, or the suplly of gas and electricity, were all inevitably monopolies, the consumer is unquestionably in a much stronger position so long as they remain separate monopolies than when they are "co-ordinated" by a central control.`,
+        chapter: 13,
+        p: 203,
+      },
+      {
+        txt: `[I]ndividual freedom cannot be reconciled with the supremacy of one single purpose to which the whole society must be entirely and permanently subordinated.`,
+        chapter: 14,
+        p: 211,
+      },
+      {
+        txt: `[T]he fascination of vague but popular phrases like "full employment" may well lead to extremely short-sighted measures, and where the categorical and irresponsible "it must be done at all cost" of the single-minded idealist is likely to do the greatest harm.`,
+        chapter: 14,
+        p: 212,
+      },
+      {
+        txt: `[T]he one decisive factor in the rise of the totalitarianism on the Continent, which is yet absent in this country, is is the existence of a large recently dispossessed middle class.`,
+        chapter: 14,
+        p: 215,
+      },
+      {
+        txt: `If the resources of different nations are treated as exclusive properties of these nations as wholes, if international economic relations, instead of being relations between individuals, become increasingly relations between whole nations organised as trading bodies, they inevitably become the source of friction and envy between whole nations.`,
+        chapter: 15,
+        p: 226,
+      },
+      {
+        txt: `The conflict between planning and freedom cannot but become more serious as the similarity of standards and values among those submitted to a unitary plan diminishes.`,
+        chapter: 15,
+        p: 227,
+      },
+      {
+        txt: `Exlusive control of an essential commodity or service (as, for example, air transport) is in effect one of the most far-reaching powers which can be conferred on any authority.`,
+        chapter: 15,
+        p: 235,
+      },
+      {
+        txt: `The controller of the supply of any such raw material as petrol or timber, rubber or tin, would be the master of the fate of whole industries and countries.`,
+        chapter: 15,
+        p: 235,
+      },
+      {
+        txt: `We shall all be the gainers if we can create a world fit for small states to live in.`,
+        chapter: 15,
+        p: 242,
       },
     ],
   },
