@@ -1747,9 +1747,201 @@ export const bookDetails = {
         p: 392,
       },
       {
-        txt: "",
+        txt:
+          "I remember very well my state of mind: a nauseated indifference of my fate; a momentary indifference whether I survived or not.",
         chapter: 52,
-        p: 393,
+        p: 396,
+      },
+      {
+        txt:
+          "Why must we go on paying you till the day we die for the crime of being born into this unhappy world?",
+        chapter: 52,
+        p: 396,
+      },
+      {
+        txt:
+          "Damn and blast the lot of you, I'll serve my time all over again if you like!",
+        chapter: 52,
+        p: 398,
+      },
+      {
+        txt:
+          "It had taken only two days and two nights of united action--and look how our serfmasters had changed their tone!",
+        chapter: 52,
+        p: 399,
+      },
+      {
+        txt:
+          "But what happened had not gone for nothing, and our comrades had not fallen in vain. The atmostphere in the camp would never be as oppresive as before.",
+        chapter: 52,
+        p: 401,
+      },
+      {
+        txt:
+          "All that the downtrodden can do is go on hoping. After every disappointment they must find fresh reason for hope.",
+        chapter: 53,
+        p: 407,
+      },
+      {
+        txt: `How could the prisoners call out through the walls, to the workers one, or two, or three kilometers away: "Brothers! We want only justice! They were murdering us for no crime of ours, they were treating us worse than dogs! Here are our demands"?`,
+        chapter: 53,
+        p: 411,
+      },
+      {
+        txt:
+          "Using cigarette paper, they pasted together an enormous air balloon.",
+        chapter: 53,
+        p: 411,
+      },
+      {
+        txt:
+          "A war of kites in the second half of the twentieth century! And all to silence a word of truth.",
+        chapter: 53,
+        p: 412,
+      },
+      {
+        txt:
+          "The zeks quite seriously prepared to advance against machine guns with pikes.",
+        chapter: 53,
+        p: 413,
+      },
+      {
+        txt:
+          "But when all these people gathered at meetings to decide whether to surrender or to hold on, they found themselves again in that heated climate where their personal opinions dissolved, and ceased to exist even for themselves.",
+        chapter: 53,
+        p: 415,
+      },
+      {
+        txt:
+          "Yet others ran right into the line of fire, either to fight or to seek a quicker death.",
+        chapter: 53,
+        p: 416,
+      },
+      {
+        txt:
+          "Women tried to shield men with their own bodies--and they, too, were bayoneted!",
+        chapter: 53,
+        p: 417,
+      },
+      {
+        txt:
+          "Some prisoners hid in the latrines, and were riddled with bullets there.",
+        chapter: 53,
+        p: 417,
+      },
+      {
+        txt:
+          "Exile was so common in Russia precisely because they weren't enough jails for long-term prisoners.",
+        chapter: 54,
+        p: 421,
+      },
+      {
+        txt:
+          "The most dreadful thing of all is that people are condemned to inactivity.",
+        chapter: 54,
+        p: 422,
+      },
+      {
+        txt: "Exile was a temporary pen to hold sheep marked for slaughter.",
+        chapter: 54,
+        p: 423,
+      },
+      {
+        txt:
+          "Our country as well as our European neighbors keep silent about the six million people who were subsequently starved to death during the famine artificially brought about by the Bolsheviks.",
+        chapter: 55,
+        p: 424,
+      },
+      {
+        txt:
+          "Everything necessary seemed to have been done to ensure that these odious work fiends should die off quickly and rid our country of themselves and of bread.",
+        chapter: 55,
+        p: 430,
+      },
+      {
+        txt:
+          "No Genghis Khan ever destroyed so many peasants as our glorious *Organs*, under the leadership of the Party.",
+        chapter: 55,
+        p: 430,
+      },
+      {
+        txt: `Exile made possible a speedy, reliable, and irreversible cleansing of any important region in the "mainland."`,
+        chapter: 56,
+        p: 433,
+      },
+      {
+        txt:
+          "[A]t the end of their sentences 58's, with minor exceptions, were to be *released into exile*.",
+        chapter: 56,
+        p: 434,
+      },
+      {
+        txt:
+          "Neatness and uniformity! That is the advantage of exiling whole nations at once!",
+        chapter: 57,
+        p: 437,
+      },
+      {
+        txt:
+          "[O]nce we had been declared enemies, the state would ever after assert the right of the stronger and trample us, crush us, squash us, until the day we died.",
+        chapter: 58,
+        p: 439,
+      },
+      {
+        txt:
+          "I cannot sleep! I walk and walk and walk in the moonlight. The donkeys sing their song. The camels sing. Every fiber in the me sings: I am free! I am free!",
+        chapter: 58,
+        p: 442,
+      },
+      {
+        txt:
+          "[O]nce the inhuman pressure from outside was lifted, the tension inside them also slackened. Such people are destroyed by a sudden drop of pressure.",
+        chapter: 60,
+        p: 445,
+      },
+      {
+        txt:
+          "The giant Chulpenyov, who had never caught a cold in seven years as a lumberjack, contracted a variety of illnesses once he was freed.",
+        chapter: 60,
+        p: 445,
+      },
+      {
+        txt: "The hard times brace you, and the soft times drive you to drink.",
+        chapter: 60,
+        p: 445,
+      },
+      {
+        txt:
+          "This was your spiritual birthplace, and a secret part of your soul will remain here forever--while your feet trudge on into the dumb and unwelcoming expanse of *freedom*.",
+        chapter: 60,
+        p: 446,
+      },
+      {
+        txt:
+          "I felt as through I had torn my heart away from what was dearest and most precious to it, from my comrades in misfortune.",
+        chapter: 60,
+        p: 446,
+      },
+      {
+        txt: `"What has changed, if all the laws providing for twenty-five years' imprisonment issued under Stalin are still in force?"`,
+        chapter: 61,
+        p: 453,
+      },
+      {
+        txt: "Rulers change, the Archipelago remains.",
+        chapter: 62,
+        p: 457,
+      },
+      {
+        txt: `All you freedom-loving "left-wing" thinkers in the West! You left laborites! You progressive American, German, and French students! As far as you are concerned, none of this amounts to much. As far as you are concerned, this whole book of mine is a waste of effort. You may suddenly understand it all someday--but only when you *yourselves* hear "hands behind your backs there!" and step ashore on our Archipelago.`,
+        chapter: 63,
+        p: 468,
+      },
+      {
+        txt:
+          "The same treacherous secrecy, the same fog of injustice, still hangs in our air, worse than the smoke of city chimneys.",
+        chapter: 63,
+        p: 468,
       },
     ],
   },
