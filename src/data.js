@@ -37,14 +37,14 @@ export const targetLinks = [
 ];
 export const projects = [
   {
-    href: "https://angry-wilson-12adf3.netlify.com/",
+    href: "https://kairos-weather.netlify.com/",
     // href: "https://kairos.now.sh/",
     title: "Kairos",
     descr: "find sunny destinations"
   },
   {
     // href: "https://travel-info.online",
-    href: "https://vigorous-keller-47ab0d.netlify.com/",
+    href: "https://travel-info.netlify.com/",
     title: "Travel Info",
     descr: "easy travel searches"
   },
@@ -56,7 +56,7 @@ export const projects = [
   // },
   {
     // href: "https://life-on-bicycles.com",
-    href: "https://sad-blackwell-1b3275.netlify.com",
+    href: "https://life-on-bicycles.netlify.com",
     title: "Life On Bicycles",
     descr: "promotion bicycle culture"
   }
