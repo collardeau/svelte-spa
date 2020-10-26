@@ -43,17 +43,20 @@ export const projects = [
     descr: "find sunny destinations"
   },
   {
-    href: "https://travel-info.online",
+    // href: "https://travel-info.online",
+    href: "https://vigorous-keller-47ab0d.netlify.com/",
     title: "Travel Info",
     descr: "easy travel searches"
   },
   // {
   //   href: "http://conceptor-app.com",
+  // href: "http://conceptor.collardeau.com",
   //   title: "Conceptor",
   //   descr: "just a landing page"
   // },
   {
-    href: "https://life-on-bicycles.com",
+    // href: "https://life-on-bicycles.com",
+    href: "https://sad-blackwell-1b3275.netlify.com",
     title: "Life On Bicycles",
     descr: "promotion bicycle culture"
   }
