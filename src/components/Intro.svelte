@@ -3,7 +3,7 @@
 </script>
 
 <div class="container">
-  <img src="img/avatar-2.jpg" alt="avatar" />
+  <img src="img/avatar-3.jpg" alt="avatar" />
   <div class="details">
     <p>
       My name is
@@ -20,7 +20,7 @@
     margin-top: var(--gap-2);
   }
   img {
-    width: var(--size-4);
+    width: var(--size-3);
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: var(--gap-2);
