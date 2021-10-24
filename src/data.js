@@ -16,20 +16,17 @@ export const works = [
 
 export const targetLinks = [
   {
-    href:
-      "https://www.fastcompany.com/90177570/target-has-a-secret-app-for-superfans-and-it-looks-like-instagram",
+    href: "https://www.fastcompany.com/90177570/target-has-a-secret-app-for-superfans-and-it-looks-like-instagram",
     text: "Target has a secret app for superfans, and it looks like Instagram",
     source: "fastcompany.com",
   },
   {
-    href:
-      "https://www.businessinsider.com/target-studio-connect-lets-shoppers-designers-collaborate2018-7?r=US&IR=T",
+    href: "https://www.businessinsider.com/target-studio-connect-lets-shoppers-designers-collaborate2018-7?r=US&IR=T",
     text: "A new Target app connects customers to the design team",
     source: "businessinsider.com",
   },
   {
-    href:
-      "https://www.bustle.com/p/targets-app-studio-connect-invites-super-fans-of-the-store-to-collaborate-with-designers-9788159",
+    href: "https://www.bustle.com/p/targets-app-studio-connect-invites-super-fans-of-the-store-to-collaborate-with-designers-9788159",
     text: `Target’s App “Studio Connect” Invites Super Fans Of The Store To
     Collaborate With Designers`,
     source: "bustle.com",
@@ -65,6 +62,11 @@ export const projects = [
     title: "Life On Bicycles",
     descr: "promotion bicycle culture",
   },
+  {
+    href: "https://book-vibes.com",
+    title: "Book Vibes",
+    descr: "preview a book in its own words",
+  },
   // {
   //   href: "http://karaoke.collardeau.com/",
   //   txt: "Karaoke Machine",
@@ -85,14 +87,12 @@ export const blogs = [
     source: "dev.to",
   },
   {
-    href:
-      "https://medium.com/@collardeau/a-committed-guide-to-reactjs-47c0371df3ab",
+    href: "https://medium.com/@collardeau/a-committed-guide-to-reactjs-47c0371df3ab",
     title: "A Committed Intro Guide to ReactJS",
     source: "medium.com",
   },
   {
-    href:
-      "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
+    href: "https://medium.com/@collardeau/intro-to-functional-programming-concepts-in-javascript-b0650773139c",
     title: "An Intro to Functional Programming Concepts",
     source: "medium.com",
   },
